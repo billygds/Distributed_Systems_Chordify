@@ -4,6 +4,11 @@ import threading
 import json
 import traceback
 import time
+import os
+import sys
+import signal
+
+from numpy import conj
 
 class ChordNode:
     def __init__(self, ip, port, bootstrap_ip=None, bootstrap_port=None):
@@ -21,9 +26,19 @@ class ChordNode:
         # Εκκίνηση server
         server_thread = threading.Thread(target=self.start_server)
         server_thread.start()
-        server_thread.join() #Το κύριο νήμα δεν τερματίζει αν δεν τελειώσει ο σερβερ
+        #server_thread.join() #Το κύριο νήμα δεν τερματίζει αν δεν τελειώσει ο σερβερ
+
+        # Διαχείρηση Ctrl+C
+        signal.signal(signal.SIGINT, self.signal_handler) # Capture Ctrl+C
+
+        print("[NODE] Server running. Press Ctrl+C to shut down.")
         while True:
-            time.sleep(1) #Python runtime δεν τερματίζει πρόωρα
+            time.sleep(1)  # Κρατάει το πρόγραμμα ανοιχτό χωρίς να μπλοκάρει το Ctrl+C
+    
+    def signal_handler(self, sig, frame):
+        print("\n[NODE] Received Ctrl+C. Shutting down...")
+        os._exit(0)
+        
 
     def generate_id(self, ip, port):
         """ Δημιουργεί μοναδικό ID με SHA-1(ip:port) """
@@ -83,10 +98,9 @@ class ChordNode:
             return self.query(key)
         elif command == "delete":
             return self.delete(key)
-        elif command == "shutdown":
-            self.shutdown()
-            return {"status": "success", "message": "Server shutting down"}
-        return {"status": "error", "message": "Invalid command"}
+        #elif command == "shutdown":
+        #    return self.shutdown(conn)  # Περνάμε τη σύνδεση
+        return {"status": "error", "message": f"Invalid command received: {command}"}
 
     def insert(self, key, value):
         """ Αποθηκεύει ένα τραγούδι στο DHT """
@@ -109,12 +123,19 @@ class ChordNode:
             return {"status": "success", "message": f"Deleted {key}"}
         return {"status": "error", "message": "Key not found"}
 
-    def shutdown(self):
-        """Τερματίζει τον server σωστά"""
+    #def shutdown(self, conn):
+        """Τερματίζει τον server σωστά χωρίς να κλείνει απότομα τις συνδέσεις"""
         print("[NODE] Shutting down...")
-        self.running = False  # Χρησιμοποιείται αν υπάρξει κάποιο loop στο μέλλον
-        exit(0)
 
+        response = {"status": "success", "message": "Server shutting down"}
+        
+        try:
+            conn.send(json.dumps(response).encode())  # Στέλνει απάντηση πριν το exit
+            time.sleep(1)  # Δίνει χρόνο στον client να λάβει την απάντηση
+        except Exception as e:
+            print(f"[ERROR] Could not send shutdown response: {e}")
+
+        os._exit(0)  # Τερματίζει το πρόγραμμα
 
     def join_network(self, bootstrap_ip, bootstrap_port):
         """ Ενώνει τον κόμβο στο Chord δίκτυο """
