@@ -21,7 +21,7 @@ def send_request(ip, port, command, key=None, value=None):
         return {"status": "error", "message": str(e)}
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
+    if len(sys.argv) < 3:
         print("Usage: python testClient.py <command> <key> [<value>]")
         print("Commands: insert <key> <value>, query <key>, delete <key>, shutdown")
         sys.exit(1)
@@ -41,4 +41,4 @@ if __name__ == "__main__":
 # python testClient.py insert song.mp3 192.168.1.2
 # python testClient.py query song.mp3
 # python testClient.py delete song.mp3
-# python testClient.py shutdown
+
