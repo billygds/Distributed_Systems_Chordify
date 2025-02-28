@@ -8,7 +8,6 @@ import os
 import sys
 import signal
 
-from numpy import conj
 
 class ChordNode:
     def __init__(self, ip, port, bootstrap_ip=None, bootstrap_port=None):
@@ -17,23 +16,27 @@ class ChordNode:
         self.node_id = self.generate_id(ip, port)
         self.data_store = {}  # DHT key-value store
         self.predecessor = None
-        self.successor = (ip, port)  # Αρχικά δείχνει τον εαυτό του
 
-        # Αν υπάρχει bootstrap node, συνδέσου στο δίκτυο
         if bootstrap_ip and bootstrap_port:
-            self.join_network(bootstrap_ip, bootstrap_port)
+            # This is a new node joining an existing network
+            print(f"[NODE {self.node_id}] Attempting to join network via {bootstrap_ip}:{bootstrap_port}")
+            self.join(bootstrap_ip, bootstrap_port)
+        else:
+            # This is the bootstrap node
+            self.successor = {"node_id": self.node_id, "ip": self.ip, "port": self.port}
+            print(f"[BOOTSTRAP NODE] Initialized with self-successor: {self.successor}")
 
-        # Εκκίνηση server
+        # Start the server
         server_thread = threading.Thread(target=self.start_server)
         server_thread.start()
-        #server_thread.join() #Το κύριο νήμα δεν τερματίζει αν δεν τελειώσει ο σερβερ
 
-        # Διαχείρηση Ctrl+C
-        signal.signal(signal.SIGINT, self.signal_handler) # Capture Ctrl+C
+        # Capture Ctrl+C
+        signal.signal(signal.SIGINT, self.signal_handler)
 
-        print("[NODE] Server running. Press Ctrl+C to shut down.")
+        print(f"[NODE {self.node_id}] Server running at {self.ip}:{self.port}. Press Ctrl+C to shut down.")
         while True:
-            time.sleep(1)  # Κρατάει το πρόγραμμα ανοιχτό χωρίς να μπλοκάρει το Ctrl+C
+            time.sleep(1)  # Keep the program alive
+
     
     def signal_handler(self, sig, frame):
         print("\n[NODE] Received Ctrl+C. Shutting down...")
@@ -73,12 +76,95 @@ class ChordNode:
             server.close() #Σωστό κλείσιμο του socket
 
 
+    def join(self, bootstrap_ip, bootstrap_port):
+        """ Εισάγει τον κόμβο στον δακτύλιο Chord μέσω του bootstrap node """
+        print(f"[NODE {self.node_id}] Attempting to join network via {bootstrap_ip}:{bootstrap_port}")
+
+        try:
+            # Συνδέεται στον bootstrap node για να βρει τον successor του
+            request = {"command": "find_successor", "node_id": self.node_id}
+            print(f"[DEBUG] Sending request to bootstrap node: {request}")
+
+            successor_response = self.send_request(bootstrap_ip, bootstrap_port, request)
+
+            print(f"[DEBUG] Response from bootstrap: {successor_response}")
+
+            if successor_response["status"] == "success":
+                self.successor = successor_response["successor"]
+                print(f"[NODE {self.node_id}] Successor found: {self.successor}")
+
+                # Ενημερώνει τον successor για τον νέο predecessor
+                update_predecessor_request = {
+                    "command": "update_predecessor",
+                    "node_id": self.node_id,
+                    "ip": self.ip,
+                    "port": self.port
+                }
+                print(f"[DEBUG] Sending update_predecessor request: {update_predecessor_request}")
+
+                update_response = self.send_request(self.successor["ip"], self.successor["port"], update_predecessor_request)
+                print(f"[NODE {self.node_id}] Update predecessor response: {update_response}")
+
+            else:
+                print(f"[ERROR] Could not find successor: {successor_response['message']}")
+
+        except Exception as e:
+            print(f"[ERROR] Failed to join network: {e}")
+
+
+
+    def find_successor(self, node_id):
+        """Finds the correct successor for a joining node."""
+        print(f"[DEBUG] find_successor() called for node_id: {node_id}")
+
+        # If the current node is its own successor, return itself (Bootstrap case)
+        if self.successor["node_id"] == self.node_id:
+            print(f"[DEBUG] Returning bootstrap node as successor: {self.successor}")
+            return {"status": "success", "successor": self.successor}
+
+        # If this node is the correct successor
+        if self.node_id < node_id <= self.successor["node_id"]:
+            print(f"[DEBUG] Returning successor: {self.successor}")
+            return {"status": "success", "successor": self.successor}
+
+        # If this node is not the correct successor, forward the request
+        print(f"[DEBUG] Forwarding find_successor request to {self.successor}")
+        forward_request = {"command": "find_successor", "node_id": node_id}
+        return self.send_request(self.successor["ip"], self.successor["port"], forward_request)
+
+
+
+
+
+    def update_predecessor(self, node_id, ip, port):
+        """ Ορίζει τον νέο predecessor """
+        self.predecessor = {"node_id": node_id, "ip": ip, "port": port}
+        print(f"[NODE {self.node_id}] Predecessor updated: {self.predecessor}")
+        return {"status": "success", "message": "Predecessor updated"}
+
+
+    def send_request(self, ip, port, request):
+        """ Στέλνει request σε άλλον κόμβο """
+        try:
+            client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            client.connect((ip, port))
+            client.send(json.dumps(request).encode())
+            response = client.recv(1024).decode()
+            client.close()
+            return json.loads(response)
+        except Exception as e:
+            return {"status": "error", "message": str(e)}
+
+
+
+
     def handle_request(self, conn):
         """ Διαχειρίζεται εισερχόμενα αιτήματα από άλλους κόμβους """
         try:
             data = conn.recv(1024).decode()
             if data:
                 request = json.loads(data)
+                print(f"[DEBUG] Received request: {request}")  # Προσθέτουμε debugging
                 response = self.process_request(request)
                 conn.send(json.dumps(response).encode())
         except Exception as e:
@@ -86,11 +172,13 @@ class ChordNode:
         finally:
             conn.close()
 
+
     def process_request(self, request):
         """ Διαχειρίζεται τα αιτήματα insert, query, delete, shutdown """
         command = request.get("command")
         key = request.get("key")
         value = request.get("value")
+        node_id = request.get("node_id")
 
         if command == "insert":
             return self.insert(key, value)
@@ -98,6 +186,10 @@ class ChordNode:
             return self.query(key)
         elif command == "delete":
             return self.delete(key)
+        elif command == "find_successor":
+            return self.find_successor(node_id)  # Call find_successor with node_id
+        elif command == "update_predecessor":
+            return self.update_predecessor(node_id, request["ip"], request["port"])
         #elif command == "shutdown":
         #    return self.shutdown(conn)  # Περνάμε τη σύνδεση
         return {"status": "error", "message": f"Invalid command received: {command}"}
@@ -143,5 +235,25 @@ class ChordNode:
         self.successor = (bootstrap_ip, bootstrap_port)  # Προσωρινά ορίζουμε ως successor τον bootstrap
 
 # Εκκίνηση κόμβου
+# Node startup logic
 if __name__ == "__main__":
-    node = ChordNode("127.0.0.1", 5000)
+    if len(sys.argv) == 3:
+        # This is the bootstrap node
+        ip = sys.argv[1]
+        port = int(sys.argv[2])
+        node = ChordNode(ip, port)
+    
+    elif len(sys.argv) == 5:
+        # This is a new node joining an existing network
+        ip = sys.argv[1]
+        port = int(sys.argv[2])
+        bootstrap_ip = sys.argv[3]
+        bootstrap_port = int(sys.argv[4])
+        node = ChordNode(ip, port, bootstrap_ip, bootstrap_port)
+
+    else:
+        print("Usage:")
+        print("  Bootstrap node: python node.py <ip> <port>")
+        print("  Joining node:  python node.py <ip> <port> <bootstrap_ip> <bootstrap_port>")
+        sys.exit(1)
+
