@@ -75,29 +75,29 @@ class Chord:
         return self.node.predecessor is None or (self.node.predecessor["node_id"] < key_hash <= self.node.node_id)
     
     def stabilize(self):
-    """ Periodically checks and updates successor information """
-    while True:
-        try:
-            if self.node.successor:
-                check_request = {"command": "get_predecessor"}
-                response = self.node.send_request(self.node.successor["ip"], self.node.successor["port"], check_request)
+        """ Periodically checks and updates successor information """
+        while True:
+            try:
+                if self.node.successor:
+                    check_request = {"command": "get_predecessor"}
+                    response = self.node.send_request(self.node.successor["ip"], self.node.successor["port"], check_request)
 
-                if response["status"] == "success" and response["predecessor"]:
-                    pred_id = response["predecessor"]["node_id"]
-                    if self.node.node_id < pred_id < self.node.successor["node_id"]:
-                        print(f"[STABILIZE] Updating successor from {self.node.successor['node_id']} to {pred_id}")
-                        self.node.successor = response["predecessor"]
+                    if response["status"] == "success" and response["predecessor"]:
+                        pred_id = response["predecessor"]["node_id"]
+                        if self.node.node_id < pred_id < self.node.successor["node_id"]:
+                            print(f"[STABILIZE] Updating successor from {self.node.successor['node_id']} to {pred_id}")
+                            self.node.successor = response["predecessor"]
 
-                # Notify the successor about this node
-                notify_request = {
-                    "command": "notify",
-                    "node_id": self.node.node_id,
-                    "ip": self.node.ip,
-                    "port": self.node.port
-                }
-                self.node.send_request(self.node.successor["ip"], self.node.successor["port"], notify_request)
+                    # Notify the successor about this node
+                    notify_request = {
+                        "command": "notify",
+                        "node_id": self.node.node_id,
+                        "ip": self.node.ip,
+                        "port": self.node.port
+                    }
+                    self.node.send_request(self.node.successor["ip"], self.node.successor["port"], notify_request)
 
-        except Exception as e:
-            print(f"[ERROR] Stabilization failed: {e}")
+            except Exception as e:
+                print(f"[ERROR] Stabilization failed: {e}")
 
-        time.sleep(5)  # Run stabilization every 5 seconds
+            time.sleep(5)  # Run stabilization every 5 seconds

@@ -45,10 +45,10 @@ if __name__ == "__main__":
         if len(sys.argv) < 3:
             print("Usage: python testClient.py depart <node_id>")
             sys.exit(1)
+
         node_id = sys.argv[2]
-        response = send_request(ip, port, "depart", key=node_id)
-    else:
-        response = send_request(ip, port, command, key, value)
+        response = send_request(ip, port, "depart", value=node_id)
+
 
     if "status" in response and response["status"] == "success":
         print(response)
