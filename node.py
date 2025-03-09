@@ -101,10 +101,12 @@ class ChordNode:
                     "port": self.port
                 }
                 print(f"[DEBUG] Sending update_predecessor request: {update_predecessor_request}")
+                self.send_request(self.successor["ip"], self.successor["port"], update_predecessor_request)
 
-                update_response = self.send_request(self.successor["ip"], self.successor["port"], update_predecessor_request)
-                print(f"[NODE {self.node_id}] Update predecessor response: {update_response}")
-
+                # Request the predecessor of the new successor
+                predecessor_response = self.send_request(self.successor["ip"], self.successor["port"], {"command": "get_predecessor"})
+                print(f"[NODE {self.node_id}] New predecessor get response: {predecessor_response}")
+                
                 # Ενημερώνουμε τον predecessor μας (που είναι ο bootstrap) ότι έχει νέο successor
                 update_successor_request = {
                     "command": "update_successor",
@@ -114,7 +116,7 @@ class ChordNode:
                 }
                 print(f"[DEBUG] Sending update_successor request to bootstrap: {update_successor_request}")
 
-                update_response = self.send_request(bootstrap_ip, bootstrap_port, update_successor_request)
+                update_response = self.send_request(self.predecessor[ip], self.predecessor[port], update_successor_request)
                 print(f"[NODE {self.node_id}] Update successor response: {update_response}")
 
             else:
