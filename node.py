@@ -146,7 +146,7 @@ class ChordNode:
 
         # If this node is not the correct successor, forward the request
         print(f"[DEBUG] Forwarding find_successor request to {self.successor}")
-        forward_request = {"command": "find_successor", "node_id": node_id}
+        forward_request = {"command": "find_neighbours", "node_id": node_id}
         return self.send_request(self.successor["ip"], self.successor["port"], forward_request)
 
 
