@@ -1,0 +1,4 @@
+-> Μενει να κανουμε concat το καινουργιο value σε υπαρχον value για 
+insert που εχει κληθει με υπαρχον key
+
+-> Random String Generator για Values
