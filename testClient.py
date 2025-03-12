@@ -54,6 +54,6 @@ if __name__ == "__main__":
         response = send_request(ip, port, command, key, value)
 
     if "status" in response and response["status"] == "success":
-        print(response)
+        print(json.dumps(response,indent=4))
     else:
         print({"status": "error", "message": "Invalid response from server", "response": response})

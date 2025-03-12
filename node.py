@@ -318,11 +318,14 @@ class ChordNode:
         return {"status": "success", "message": f"Inserted {key} -> {self.data_store[hashed_key]}"}
 
     def query(self, key):
-        """ Αναζητά ένα τραγούδι στο DHT """
-        hashed_key = int(hashlib.sha1(key.encode()).hexdigest(), 16) % (2**160)
-        if hashed_key in self.data_store:
-            return {"status": "success", "value": self.data_store[hashed_key]}
-        return {"status": "error", "message": "Key not found"}
+        """ Αναζητά ένα τραγούδι στο DHT.Αν σταλθεί *,τυπώνονται ολα τα δεδομενα των κομβων"""
+        if key != "*" :
+            hashed_key = int(hashlib.sha1(key.encode()).hexdigest(), 16) % (2**160)
+            if hashed_key in self.data_store:
+                return {"status": "success", "value": self.data_store[hashed_key]}
+            return {"status": "error", "message": "Key not found"}
+        else:
+            return {"status":"success","value":list(self.data_store.values())}
 
     def delete(self, key):
         """ Διαγράφει ένα τραγούδι από το DHT """
