@@ -158,77 +158,6 @@ class ChordNode:
         return self.send_request(self.successor["ip"], self.successor["port"], forward_request)
 
 
-    def find_successor(self, node_id):
-        """Finds the correct successor for a joining node."""
-        print(f"[DEBUG] find_successor() called for node_id: {node_id}")
-
-        # If the current node is its own successor, return itself (Bootstrap case)
-        if self.successor["node_id"] == self.node_id:
-            print(f"[DEBUG] Returning bootstrap node as successor: {self.successor}")
-            return {"status": "success", "successor": self.successor}
-
-        # If this node is the correct successor
-        if self.node_id < node_id <= self.successor["node_id"]:
-            print(f"[DEBUG] Returning successor: {self.successor}")
-            return {"status": "success", "successor": self.successor}
-
-        # Handle wrap-around case: if this node has the highest ID, its successor is the smallest node
-        if self.node_id > self.successor["node_id"]:
-            if node_id > self.node_id or node_id <= self.successor["node_id"]:
-                print(f"[DEBUG] Returning smallest node as successor: {self.successor}")
-                return {"status": "success", "successor": self.successor}
-
-        # If this node is not the correct successor, forward the request
-        print(f"[DEBUG] Forwarding find_successor request to {self.successor}")
-        forward_request = {"command": "find_successor", "node_id": node_id}
-        return self.send_request(self.successor["ip"], self.successor["port"], forward_request)
-    
-    
-    def find_predecessor(self, node_id):
-        """Finds the correct predecessor for a given node_id in the Chord ring."""
-        print(f"[DEBUG] find_predecessor() called for node_id: {node_id}")
-
-        # If this node has no predecessor, return an error
-        if self.predecessor is None:
-            return {"status": "error", "message": "No predecessor found"}
-
-        print(node_id)
-        print(self.node_id)
-        print(self.predecessor['node_id'])
-        # If the current node is its own successor, return itself (Bootstrap case)
-        if self.successor["node_id"] == self.node_id:
-            print(f"[DEBUG] Returning bootstrap node as predecessor: {self.successor}")
-            return {"status": "success", "predecessor": self.successor}
-
-        # If this node is the correct predecessor
-        if (self.predecessor["node_id"] < node_id <= self.node_id) or (
-            self.node_id < self.predecessor["node_id"] and (
-                node_id > self.predecessor["node_id"] or node_id <= self.node_id
-            )
-        ) or (
-            node_id > self.node_id and self.node_id > self.predecessor["node_id"]
-        ):
-            print(f"[DEBUG] Returning predecessor: {self.predecessor}")
-            return {"status": "success", "predecessor": self.predecessor}
-
-        # Handle wrap-around case: if this node has the smallest ID, its predecessor is the highest node
-        if self.node_id < self.predecessor["node_id"]:
-            if node_id > self.predecessor["node_id"] or node_id <= self.node_id:
-                print(f"[DEBUG] Returning highest node as predecessor: {self.predecessor}")
-                return {"status": "success", "predecessor": self.predecessor}
-
-        # If this node is not the correct predecessor, forward the request
-        print(f"[DEBUG] Forwarding find_predecessor request to {self.predecessor}")
-        forward_request = {"command": "find_predecessor", "node_id": node_id}
-
-        try:
-            return self.send_request(self.predecessor["ip"], self.predecessor["port"], forward_request)
-        except Exception as e:
-            print(f"[ERROR] Failed to forward find_predecessor request: {e}")
-            return {"status": "error", "message": str(e)}
-
-
-
     def update_successor(self, node_id, ip, port):
         """ Ενημερώνει τον successor του κόμβου """
         self.successor = {"node_id": node_id, "ip": ip, "port": port}
@@ -309,13 +238,35 @@ class ChordNode:
         return {"status": "error", "message": f"Invalid command received: {command}"}
 
     def insert(self, key, value):
-        """ Αποθηκεύει ένα τραγούδι στο DHT """
+        """ Αποθηκεύει ένα τραγούδι στο DHT.Ακολουθεί δρομολόγηση Chord Ring """
+        print('Starting Insert')
         hashed_key = int(hashlib.sha1(key.encode()).hexdigest(), 16) % (2**160)
-        if hashed_key in self.data_store:
-            self.data_store[hashed_key] = self.data_store[hashed_key] + value
+        #key > self.predecessor.node_id
+        if (self.predecessor['node_id'] < hashed_key and self.node_id >= hashed_key) or self.predecessor['node_id'] > self.node_id:
+            if hashed_key in self.data_store:
+                self.data_store[hashed_key] = self.data_store[hashed_key] + value
+            else:
+                self.data_store[hashed_key] = value
+            return {"status": "success", "message": f"Inserted {key} -> {self.data_store[hashed_key]}"}
+        elif self.predecessor['node_id'] >= hashed_key:
+            print('Forwarding to predecessor:')
+            print(self.predecessor)
+            print('Hashed key:' + str(hashed_key))
+            return self.send_request(self.predecessor['ip'],self.predecessor['port'],{
+                'command': 'insert',
+                'key': key,
+                'value': value
+            })
         else:
-            self.data_store[hashed_key] = value
-        return {"status": "success", "message": f"Inserted {key} -> {self.data_store[hashed_key]}"}
+            print('Forwarding to successor:')
+            print(self.successor)
+            print('Hashed key:' + str(hashed_key))
+            return self.send_request(self.successor['ip'],self.successor['port'],{
+                'command': 'insert',
+                'key': key,
+                'value': value
+            })
+
 
     def query(self, key):
         """ Αναζητά ένα τραγούδι στο DHT.Αν σταλθεί *,τυπώνονται ολα τα δεδομενα των κομβων"""
