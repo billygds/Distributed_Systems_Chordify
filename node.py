@@ -212,7 +212,12 @@ class ChordNode:
         if command == "insert":
             return self.insert(key, random_string_value())
         elif command == "query":
-            return self.query(key)
+            if key !='*':
+                return self.query(key)
+            else:
+                return self.query_all({})
+        elif command == "query_all":
+            return self.query_all(value)
         elif command == "delete":
             return self.delete(key)
         elif command == "depart":
@@ -241,13 +246,17 @@ class ChordNode:
         """ Αποθηκεύει ένα τραγούδι στο DHT.Ακολουθεί δρομολόγηση Chord Ring """
         print('Starting Insert')
         hashed_key = int(hashlib.sha1(key.encode()).hexdigest(), 16) % (2**160)
-        #key > self.predecessor.node_id
+
+        #If this is the case,we are on the correct node
+        #Either this node is the first with ID >= key,or this is the one with the smallest ID
         if (self.predecessor['node_id'] < hashed_key and self.node_id >= hashed_key) or self.predecessor['node_id'] > self.node_id:
             if hashed_key in self.data_store:
                 self.data_store[hashed_key] = self.data_store[hashed_key] + value
             else:
                 self.data_store[hashed_key] = value
             return {"status": "success", "message": f"Inserted {key} -> {self.data_store[hashed_key]}"}
+        
+        #This is not the correct node,forward to predecessor
         elif self.predecessor['node_id'] >= hashed_key:
             print('Forwarding to predecessor:')
             print(self.predecessor)
@@ -257,6 +266,8 @@ class ChordNode:
                 'key': key,
                 'value': value
             })
+        
+        #Forward to successor
         else:
             print('Forwarding to successor:')
             print(self.successor)
@@ -269,14 +280,56 @@ class ChordNode:
 
 
     def query(self, key):
-        """ Αναζητά ένα τραγούδι στο DHT.Αν σταλθεί *,τυπώνονται ολα τα δεδομενα των κομβων"""
+        """ Αναζητά ένα τραγούδι στο DHT """
+        #If this is the case,we are on the correct node
+        #Either this node is the first with ID >= key,or this is the one with the smallest ID
         if key != "*" :
             hashed_key = int(hashlib.sha1(key.encode()).hexdigest(), 16) % (2**160)
-            if hashed_key in self.data_store:
-                return {"status": "success", "value": self.data_store[hashed_key]}
-            return {"status": "error", "message": "Key not found"}
-        else:
-            return {"status":"success","value":list(self.data_store.values())}
+            if (self.predecessor['node_id'] < hashed_key and self.node_id >= hashed_key) or self.predecessor['node_id'] > self.node_id:
+                    hashed_key = int(hashlib.sha1(key.encode()).hexdigest(), 16) % (2**160)
+                    if hashed_key in self.data_store:
+                        return {"status": "success", "value": self.data_store[hashed_key]}
+                    return {"status": "error", "message": "Key not found"}
+                
+            #This is not the correct node,forward to predecessor
+            elif self.predecessor['node_id'] >= hashed_key:
+                print('Forwarding to predecessor:')
+                print(self.predecessor)
+                print('Hashed key:' + str(hashed_key))
+                return self.send_request(self.predecessor['ip'],self.predecessor['port'],{
+                    'command': 'query',
+                    'key': key,
+                })
+            
+            #Forward to successor
+            else:
+                print('Forwarding to successor:')
+                print(self.successor)
+                print('Hashed key:' + str(hashed_key))
+                return self.send_request(self.successor['ip'],self.successor['port'],{
+                    'command': 'query',
+                    'key': key,
+                })
+        #else:
+        #    return {"status":"success","value":list(self.data_store.values())}
+
+    def query_all(self,nodes_info):
+        """ Τυπώνει ολα τα δεδομενα των κομβων """
+        #If this is the case,we are on the correct node
+        #Either this node is the first with ID >= key,or this is the one with the smallest ID
+        nodes_info[self.node_id] = list(self.data_store.values())
+
+        if self.successor['port'] == 5000 and nodes_info:
+            print(f"[NODE {self.node_id}] Completed node info collection.")
+            return {"status":"success","nodes_info":nodes_info}\
+            
+        print(f"[NODE {self.node_id}] Forwarding node info request to {self.successor}")
+        return self.send_request(self.successor["ip"], self.successor["port"], {
+            "command":"query_all",
+            "value": nodes_info
+        })
+        #else:
+        #    return {"status":"success","value":list(self.data_store.values())}
 
     def delete(self, key):
         """ Διαγράφει ένα τραγούδι από το DHT """
