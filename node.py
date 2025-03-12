@@ -383,12 +383,37 @@ class ChordNode:
 
     def depart(self, node_id):
         """ Αποχώρηση συγκεκριμένου κόμβου από το Chord δίκτυο """
+       
         node_id = int(node_id)
+
         if self.node_id == node_id:
             # Ο κόμβος που πρέπει να αποχωρήσει εκτελεί το depart
             print(f"[NODE {self.node_id}] Departing from network...")
 
             if self.successor and self.predecessor:
+                 # Ελέγχουμε αν ο successor έχει το μικρότερο ID (είναι ο πρώτος στον δακτύλιο)
+
+            successor_id = self.successor["node_id"]
+            smallest_id_node = min(self.node_id, self.successor["node_id"], self.predecessor["node_id"])
+
+            if successor_id == smallest_id_node:
+                # Αν ο successor έχει το μικρότερο ID, μεταφέρουμε τα δεδομένα στον predecessor
+                target_node = self.predecessor
+                print(f"[NODE {self.node_id}] Successor has smallest ID, transferring data to predecessor {self.predecessor}")
+            else:
+                # Κανονική μεταφορά στον successor
+                target_node = self.successor
+                print(f"[NODE {self.node_id}] Transferring data to successor {self.successor}")
+
+            # Μεταφορά δεδομένων μέσω insert
+            for key, value in self.data_store.items():
+                insert_request = {
+                    "command": "insert",
+                    "key": key,
+                    "value": value
+                }
+                self.send_request(target_node["ip"], target_node["port"], insert_request)
+
                 # Ενημέρωση του predecessor να δείχνει στον successor
                 notify_predecessor_request = {
                     "command": "update_successor",
@@ -407,13 +432,7 @@ class ChordNode:
                 }
                 self.send_request(self.successor["ip"], self.successor["port"], notify_successor_request)
 
-                # Μεταφορά των δεδομένων στον successor
-                transfer_data_request = {
-                    "command": "receive_data",
-                    "data_store": self.data_store
-                }
-                self.send_request(self.successor["ip"], self.successor["port"], transfer_data_request)
-
+                
             print(f"[NODE {self.node_id}] Successfully departed.")
 
             # Επιστρέφουμε απάντηση στο process_request() ΠΡΙΝ τερματίσουμε
