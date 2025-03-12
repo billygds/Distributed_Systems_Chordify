@@ -319,7 +319,7 @@ class ChordNode:
         #Either this node is the first with ID >= key,or this is the one with the smallest ID
         nodes_info[self.node_id] = list(self.data_store.values())
 
-        if self.successor['port'] == 5000 and nodes_info:
+        if str(self.successor['node_id']) in nodes_info and nodes_info:
             print(f"[NODE {self.node_id}] Completed node info collection.")
             return {"status":"success","nodes_info":nodes_info}\
             
