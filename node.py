@@ -257,7 +257,7 @@ class ChordNode:
             hashed_key = key
 
         #If this is the case,we are on the correct node
-        #Either this node is the Bootstrap or the first with ID >= key,or this is the one with the smallest ID
+        #Either this node is the only one,the Bootstrap or the first with ID >= key,or this is the one with the smallest ID
         if (self.successor['node_id'] == self.node_id or self.predecessor['node_id'] < hashed_key and self.node_id >= hashed_key) or self.predecessor['node_id'] > self.node_id:
             if hashed_key in self.data_store:
                 self.data_store[hashed_key] = self.data_store[hashed_key] + value
