@@ -382,19 +382,18 @@ class ChordNode:
         self.successor = (bootstrap_ip, bootstrap_port)  # Προσωρινά ορίζουμε ως successor τον bootstrap
 
     def depart(self, node_id):
-        """ Αποχώρηση συγκεκριμένου κόμβου από το Chord δίκτυο """
-       
+        """ Αποχώρηση συγκεκριμένου κόμβου από το Chord δίκτυο με μεταφορά δεδομένων μέσω insert """
+    
+        # Μετατρέπουμε το node_id σε int αν έχει σταλεί ως string
         node_id = int(node_id)
 
         if self.node_id == node_id:
-            # Ο κόμβος που πρέπει να αποχωρήσει εκτελεί το depart
             print(f"[NODE {self.node_id}] Departing from network...")
 
             if self.successor and self.predecessor:
-                 # Ελέγχουμε αν ο successor έχει το μικρότερο ID (είναι ο πρώτος στον δακτύλιο)
-
-            successor_id = self.successor["node_id"]
-            smallest_id_node = min(self.node_id, self.successor["node_id"], self.predecessor["node_id"])
+                # Ελέγχουμε αν ο successor έχει το μικρότερο ID (είναι ο πρώτος στον δακτύλιο)
+                successor_id = self.successor["node_id"]
+                smallest_id_node = min(self.node_id, self.successor["node_id"], self.predecessor["node_id"])    
 
             if successor_id == smallest_id_node:
                 # Αν ο successor έχει το μικρότερο ID, μεταφέρουμε τα δεδομένα στον predecessor
@@ -414,34 +413,33 @@ class ChordNode:
                 }
                 self.send_request(target_node["ip"], target_node["port"], insert_request)
 
-                # Ενημέρωση του predecessor να δείχνει στον successor
-                notify_predecessor_request = {
-                    "command": "update_successor",
-                    "node_id": self.successor["node_id"],
-                    "ip": self.successor["ip"],
-                    "port": self.successor["port"]
-                }
-                self.send_request(self.predecessor["ip"], self.predecessor["port"], notify_predecessor_request)
+            # Ενημέρωση του predecessor να δείχνει στον successor
+            notify_predecessor_request = {
+                "command": "update_successor",
+                "node_id": self.successor["node_id"],
+                "ip": self.successor["ip"],
+                "port": self.successor["port"]
+            }
+            self.send_request(self.predecessor["ip"], self.predecessor["port"], notify_predecessor_request)
 
-                # Ενημέρωση του successor να δείχνει στον predecessor
-                notify_successor_request = {
-                    "command": "update_predecessor",
-                    "node_id": self.predecessor["node_id"],
-                    "ip": self.predecessor["ip"],
-                    "port": self.predecessor["port"]
-                }
-                self.send_request(self.successor["ip"], self.successor["port"], notify_successor_request)
+            # Ενημέρωση του successor να δείχνει στον predecessor
+            notify_successor_request = {
+                "command": "update_predecessor",
+                "node_id": self.predecessor["node_id"],
+                "ip": self.predecessor["ip"],
+                "port": self.predecessor["port"]
+            }
+            self.send_request(self.successor["ip"], self.successor["port"], notify_successor_request)
 
-                
             print(f"[NODE {self.node_id}] Successfully departed.")
-
-            # Επιστρέφουμε απάντηση στο process_request() ΠΡΙΝ τερματίσουμε
+    
+            # Επιστρέφουμε απάντηση πριν τον τερματισμό
             response = {"status": "success", "message": "Node successfully departed"}
             print(f"[DEBUG] Sending response before exiting: {response}")
-
+    
             # Περιμένουμε λίγο για να προλάβει να σταλεί η απάντηση
             time.sleep(1)
-
+    
             os._exit(0)  # Τερματισμός του κόμβου
 
         else:
