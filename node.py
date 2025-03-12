@@ -210,7 +210,12 @@ class ChordNode:
         node_id = request.get("node_id")
 
         if command == "insert":
-            return self.insert(key, random_string_value())
+            if request.get("is_already_hashed") and request.get("is_already_hashed")==True:
+                print(request)
+                return self.insert(key,value,True)
+            else:
+                return self.insert(key, random_string_value())
+
         elif command == "query":
             if key !='*':
                 return self.query(key)
@@ -242,14 +247,18 @@ class ChordNode:
         #    return self.shutdown(conn)  # Περνάμε τη σύνδεση
         return {"status": "error", "message": f"Invalid command received: {command}"}
 
-    def insert(self, key, value):
+    def insert(self, key, value,is_already_hashed=False):
         """ Αποθηκεύει ένα τραγούδι στο DHT.Ακολουθεί δρομολόγηση Chord Ring """
         print('Starting Insert')
-        hashed_key = int(hashlib.sha1(key.encode()).hexdigest(), 16) % (2**160)
+        if is_already_hashed == False:
+            print("Hashing")
+            hashed_key = int(hashlib.sha1(key.encode()).hexdigest(), 16) % (2**160)
+        else:
+            hashed_key = key
 
         #If this is the case,we are on the correct node
-        #Either this node is the first with ID >= key,or this is the one with the smallest ID
-        if (self.predecessor['node_id'] < hashed_key and self.node_id >= hashed_key) or self.predecessor['node_id'] > self.node_id:
+        #Either this node is the Bootstrap or the first with ID >= key,or this is the one with the smallest ID
+        if (self.successor['node_id'] == self.node_id or self.predecessor['node_id'] < hashed_key and self.node_id >= hashed_key) or self.predecessor['node_id'] > self.node_id:
             if hashed_key in self.data_store:
                 self.data_store[hashed_key] = self.data_store[hashed_key] + value
             else:
@@ -261,22 +270,30 @@ class ChordNode:
             print('Forwarding to predecessor:')
             print(self.predecessor)
             print('Hashed key:' + str(hashed_key))
-            return self.send_request(self.predecessor['ip'],self.predecessor['port'],{
+            forward_insert_predecessor = {
                 'command': 'insert',
                 'key': key,
                 'value': value
-            })
+            }
+            if is_already_hashed == True:
+                forward_insert_predecessor['is_already_hashed'] = True
+            print(forward_insert_predecessor)
+            return self.send_request(self.predecessor['ip'],self.predecessor['port'],forward_insert_predecessor)
         
         #Forward to successor
         else:
             print('Forwarding to successor:')
             print(self.successor)
             print('Hashed key:' + str(hashed_key))
-            return self.send_request(self.successor['ip'],self.successor['port'],{
+            forward_insert_successor = {
                 'command': 'insert',
                 'key': key,
                 'value': value
-            })
+            }
+            if is_already_hashed == True:
+                forward_insert_successor['is_already_hashed'] = True
+            print(forward_insert_successor)
+            return self.send_request(self.successor['ip'],self.successor['port'],forward_insert_successor)
 
 
     def query(self, key):
@@ -390,29 +407,12 @@ class ChordNode:
         if self.node_id == node_id:
             print(f"[NODE {self.node_id}] Departing from network...")
 
+            '''
             if self.successor and self.predecessor:
                 # Ελέγχουμε αν ο successor έχει το μικρότερο ID (είναι ο πρώτος στον δακτύλιο)
                 successor_id = self.successor["node_id"]
-                smallest_id_node = min(self.node_id, self.successor["node_id"], self.predecessor["node_id"])    
-
-            if successor_id == smallest_id_node:
-                # Αν ο successor έχει το μικρότερο ID, μεταφέρουμε τα δεδομένα στον predecessor
-                target_node = self.predecessor
-                print(f"[NODE {self.node_id}] Successor has smallest ID, transferring data to predecessor {self.predecessor}")
-            else:
-                # Κανονική μεταφορά στον successor
-                target_node = self.successor
-                print(f"[NODE {self.node_id}] Transferring data to successor {self.successor}")
-
-            # Μεταφορά δεδομένων μέσω insert
-            for key, value in self.data_store.items():
-                insert_request = {
-                    "command": "insert",
-                    "key": key,
-                    "value": value
-                }
-                self.send_request(target_node["ip"], target_node["port"], insert_request)
-
+                smallest_id_node = min(self.node_id, self.successor["node_id"], self.predecessor["node_id"])   
+            ''' 
             # Ενημέρωση του predecessor να δείχνει στον successor
             notify_predecessor_request = {
                 "command": "update_successor",
@@ -430,6 +430,28 @@ class ChordNode:
                 "port": self.predecessor["port"]
             }
             self.send_request(self.successor["ip"], self.successor["port"], notify_successor_request)
+
+            if self.node_id > self.successor['node_id']:
+                # Αν ο successor έχει το μικρότερο ID, μεταφέρουμε τα δεδομένα στον predecessor
+                target_node = self.predecessor
+                print(f"[NODE {self.node_id}] Successor has smallest ID, transferring data to predecessor {self.predecessor}")
+            else:
+                # Κανονική μεταφορά στον successor
+                target_node = self.successor
+                print(f"[NODE {self.node_id}] Transferring data to successor {self.successor}")
+
+            # Μεταφορά δεδομένων μέσω insert
+            for key, value in self.data_store.items():
+                insert_request = {
+                    "command": "insert",
+                    "key": key,
+                    "value": value,
+                    "is_already_hashed": True
+                }
+                print(insert_request)
+                self.send_request(target_node["ip"], target_node["port"], insert_request)
+
+            
 
             print(f"[NODE {self.node_id}] Successfully departed.")
     
