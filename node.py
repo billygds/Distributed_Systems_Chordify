@@ -334,10 +334,33 @@ class ChordNode:
     def delete(self, key):
         """ Διαγράφει ένα τραγούδι από το DHT """
         hashed_key = int(hashlib.sha1(key.encode()).hexdigest(), 16) % (2**160)
-        if hashed_key in self.data_store:
-            del self.data_store[hashed_key]
-            return {"status": "success", "message": f"Deleted {key}"}
-        return {"status": "error", "message": "Key not found"}
+        #If this is the case,we are on the correct node
+        #Either this node is the first with ID >= key,or this is the one with the smallest ID
+        if (self.predecessor['node_id'] < hashed_key and self.node_id >= hashed_key) or self.predecessor['node_id'] > self.node_id:
+            if hashed_key in self.data_store:
+                del self.data_store[hashed_key]
+                return {"status": "success", "message": f"Deleted {key}"}
+            return {"status": "error", "message": "Key not found"}
+        
+        #This is not the correct node,forward to predecessor
+        elif self.predecessor['node_id'] >= hashed_key:
+            print('Forwarding to predecessor:')
+            print(self.predecessor)
+            print('Hashed key:' + str(hashed_key))
+            return self.send_request(self.predecessor['ip'],self.predecessor['port'],{
+                'command': 'delete',
+                'key': key,
+            })
+        
+        #Forward to successor
+        else:
+            print('Forwarding to successor:')
+            print(self.successor)
+            print('Hashed key:' + str(hashed_key))
+            return self.send_request(self.successor['ip'],self.successor['port'],{
+                'command': 'delete',
+                'key': key,
+            })
 
     #def shutdown(self, conn):
         """Τερματίζει τον server σωστά χωρίς να κλείνει απότομα τις συνδέσεις"""
