@@ -48,9 +48,12 @@ if __name__ == "__main__":
 
         node_id = sys.argv[2]
         response = send_request(ip, port, "depart", value=node_id)
-
+    elif command == "insert":
+        response = response = send_request(ip, port, command, key)
+    else:
+        response = send_request(ip, port, command, key, value)
 
     if "status" in response and response["status"] == "success":
-        print(response)
+        print(json.dumps(response,indent=4))
     else:
         print({"status": "error", "message": "Invalid response from server", "response": response})
