@@ -7,7 +7,15 @@ import time
 import os
 import sys
 import signal
+import random
+import string
 
+#Random string generator for value
+def random_string_value(length=12):
+    """Generate a random string of letters and digits with a max length of 12."""
+    length = min(length, 12)  # Ensure max length is 12
+    characters = string.ascii_letters + string.digits  # A-Z, a-z, 0-9
+    return ''.join(random.choices(characters, k=length))
 
 class ChordNode:
     def __init__(self, ip, port, bootstrap_ip=None, bootstrap_port=None):
@@ -273,7 +281,7 @@ class ChordNode:
         node_id = request.get("node_id")
 
         if command == "insert":
-            return self.insert(key, value)
+            return self.insert(key, random_string_value())
         elif command == "query":
             return self.query(key)
         elif command == "delete":
@@ -303,8 +311,11 @@ class ChordNode:
     def insert(self, key, value):
         """ Αποθηκεύει ένα τραγούδι στο DHT """
         hashed_key = int(hashlib.sha1(key.encode()).hexdigest(), 16) % (2**160)
-        self.data_store[hashed_key] = value
-        return {"status": "success", "message": f"Inserted {key} -> {value}"}
+        if hashed_key in self.data_store:
+            self.data_store[hashed_key] = self.data_store[hashed_key] + value
+        else:
+            self.data_store[hashed_key] = value
+        return {"status": "success", "message": f"Inserted {key} -> {self.data_store[hashed_key]}"}
 
     def query(self, key):
         """ Αναζητά ένα τραγούδι στο DHT """
