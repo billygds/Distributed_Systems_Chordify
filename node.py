@@ -135,8 +135,6 @@ class ChordNode:
 
                 #Λαμβανουμε το k replication factor απο το bootstrap
                 self.k = self.send_request(bootstrap_ip,bootstrap_port,{"command":"get_k"})['k']
-                print(self.k)
-
 
             else:
                 print(f"[ERROR] Could not find successor: {neighbours_response['message']}")
@@ -234,10 +232,15 @@ class ChordNode:
 
         if command == "insert":
             if request.get("is_already_hashed") and request.get("is_already_hashed")==True:
-                print(request)
-                return self.insert(key,value,True)
+                if request.get('k'):
+                    return self.insert(key,value,True,request.get('k'))
+                else:
+                    return self.insert(key,value,True)
             else:
-                return self.insert(key, random_string_value())
+                if request.get('k'):
+                    return self.insert(key, random_string_value(),False,request.get('k'))
+                else:
+                    return self.insert(key, random_string_value())
 
         elif command == "query":
             if key !='*':
@@ -282,25 +285,21 @@ class ChordNode:
         else:
             hashed_key = key
         
+        print(k)
         # If k is not provided (first insert call), use the node's k value
         if k is None:
             k = self.k
-
-        #If this is the case,we are on the correct node
-        #Either this node is the only one,the Bootstrap or the first with ID >= key,or this is the one with the smallest ID
-        if (self.successor['node_id'] == self.node_id or self.predecessor['node_id'] < hashed_key and self.node_id >= hashed_key) or self.predecessor['node_id'] > self.node_id:
+        #If k is provided,insert into node and forward to successor
+        else:
+            k=int(k)
             if hashed_key in self.data_store:
                 self.data_store[hashed_key] = self.data_store[hashed_key] + value
             else:
                 self.data_store[hashed_key] = value
-            return {"status": "success", "message": f"Inserted {key} -> {self.data_store[hashed_key]}"}
-
-        
-            # If k > 1, forward to next node for replication
             if k > 1:
                 forward_insert = {
                     'command': 'insert',
-                    'key': key,
+                    'key': hashed_key,
                     'value': value,
                     'is_already_hashed': True,
                     'k': k - 1  # Decrease k by 1
@@ -309,7 +308,35 @@ class ChordNode:
                 return self.send_request(self.successor['ip'], self.successor['port'], forward_insert)
             else:
                 print(f"[NODE {self.node_id}] Final replication node reached. Replication complete.")
-                return {"status": "success", "message": "Replication successful"}
+                return {"status": "success", "message": f"Inserted {key} -> {self.data_store[hashed_key]},replication successful"}
+
+        #The following code is for the case that this is the first insert,so we must search
+        #the correct node
+
+        #If this is the case,we are on the correct node
+        #Either this node is the only one,the Bootstrap or the first with ID >= key,or this is the one with the smallest ID
+        if (self.successor['node_id'] == self.node_id or self.predecessor['node_id'] < hashed_key and self.node_id >= hashed_key) or self.predecessor['node_id'] > self.node_id:
+            if hashed_key in self.data_store:
+                self.data_store[hashed_key] = self.data_store[hashed_key] + value
+            else:
+                self.data_store[hashed_key] = value
+            #return {"status": "success", "message": f"Inserted {key} -> {self.data_store[hashed_key]}"}
+
+        
+            # If k > 1, forward to next node for replication
+            if k > 1:
+                forward_insert = {
+                    'command': 'insert',
+                    'key': hashed_key,
+                    'value': value,
+                    'is_already_hashed': True,
+                    'k': k - 1  # Decrease k by 1
+                }
+                print(f"[NODE {self.node_id}] Forwarding replication to {self.successor['ip']}:{self.successor['port']} (k={k-1})")
+                return self.send_request(self.successor['ip'], self.successor['port'], forward_insert)
+            else:
+                print(f"[NODE {self.node_id}] Final replication node reached. Replication complete.")
+                return {"status": "success", "message": f"Inserted {key} -> {self.data_store[hashed_key]},replication successful"}
         
         #This is not the correct node,forward to predecessor
         elif self.predecessor['node_id'] >= hashed_key:
@@ -320,7 +347,6 @@ class ChordNode:
                 'command': 'insert',
                 'key': key,
                 'value': value,
-                'k': k
             }
             if is_already_hashed == True:
                 forward_insert_predecessor['is_already_hashed'] = True
@@ -336,7 +362,6 @@ class ChordNode:
                 'command': 'insert',
                 'key': key,
                 'value': value,
-                'k': k
             }
             if is_already_hashed == True:
                 forward_insert_successor['is_already_hashed'] = True
