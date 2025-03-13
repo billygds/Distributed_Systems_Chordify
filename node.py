@@ -18,19 +18,28 @@ def random_string_value(length=12):
     return ''.join(random.choices(characters, k=length))
 
 class ChordNode:
-    def __init__(self, ip, port, bootstrap_ip=None, bootstrap_port=None):
+    def __init__(self, ip, port, bootstrap_ip=None, bootstrap_port=None, k=None):
         self.ip = ip
         self.port = port
         self.node_id = self.generate_id(ip, port)
         self.data_store = {}  # DHT key-value store
         self.predecessor = None
+        self.k = None
 
         if bootstrap_ip and bootstrap_port:
             # This is a new node joining an existing network
             print(f"[NODE {self.node_id}] Attempting to join network via {bootstrap_ip}:{bootstrap_port}")
             self.join(bootstrap_ip, bootstrap_port)
+            
+            '''
+            self.k = self.request_k_from_bootstrap(bootstrap_ip, bootstrap_port)
+            if self.k is None:
+                print(f"[ERROR] Could not retrieve k from bootstrap node. Exiting.")
+                sys.exit(1)
+            '''
         else:
-            # This is the bootstrap node
+             # This is the bootstrap node, initialize `k`
+            self.k = factor
             self.successor = {"node_id": self.node_id, "ip": self.ip, "port": self.port}
             print(f"[BOOTSTRAP NODE] Initialized with self-successor: {self.successor}")
 
@@ -84,7 +93,7 @@ class ChordNode:
             server.close() #Κλείσιμο του socket
 
 
-    def join(self, bootstrap_ip, bootstrap_port):
+    def join(self, bootstrap_ip, bootstrap_port,):
         """ Εισάγει τον κόμβο στον δακτύλιο Chord μέσω του bootstrap node """
         print(f"[NODE {self.node_id}] Attempting to join network via {bootstrap_ip}:{bootstrap_port}")
 
@@ -124,12 +133,24 @@ class ChordNode:
                 update_response = self.send_request(self.predecessor['ip'], self.predecessor['port'], update_successor_request)
                 print(f"[NODE {self.node_id}] Update successor response: {update_response}")
 
+                #Λαμβανουμε το k replication factor απο το bootstrap
+                self.k = self.send_request(bootstrap_ip,bootstrap_port,{"command":"get_k"})['k']
 
             else:
                 print(f"[ERROR] Could not find successor: {neighbours_response['message']}")
 
         except Exception as e:
             print(f"[ERROR] Failed to join network: {e}")
+    
+    def request_k_from_bootstrap(self, bootstrap_ip, bootstrap_port):
+        """Requests the value of k from the bootstrap node using send_request."""
+        request = {"command": "REQUEST_K"}  # Send a structured request
+        response = self.send_request(bootstrap_ip, bootstrap_port, request)  # Use existing method
+        if response.get("status") == "success" and "k" in response:
+            return int(response["k"])  # Convert k to an integer and return
+        else:
+            print(f"[ERROR] Failed to retrieve k from bootstrap node: {response}")
+            return None  # Return None if the request fails
 
 
     def find_neighbours(self, node_id):
@@ -211,10 +232,15 @@ class ChordNode:
 
         if command == "insert":
             if request.get("is_already_hashed") and request.get("is_already_hashed")==True:
-                print(request)
-                return self.insert(key,value,True)
+                if request.get('k'):
+                    return self.insert(key,value,True,request.get('k'))
+                else:
+                    return self.insert(key,value,True)
             else:
-                return self.insert(key, random_string_value())
+                if request.get('k'):
+                    return self.insert(key, random_string_value(),False,request.get('k'))
+                else:
+                    return self.insert(key, random_string_value())
 
         elif command == "query":
             if key !='*':
@@ -224,7 +250,10 @@ class ChordNode:
         elif command == "query_all":
             return self.query_all(value)
         elif command == "delete":
-            return self.delete(key)
+            if request.get("is_already_hashed") and request.get("k"):
+                return self.delete(key,True,request.get('k'))
+            else:
+                return self.delete(key)
         elif command == "depart":
             node_id = request.get("node_id") or request.get("value")  # Διαβάζουμε από value αν λείπει το node_id
             if node_id is None:
@@ -234,6 +263,7 @@ class ChordNode:
         elif command == "receive_data":
             return self.receive_data(request["data_store"])
         elif command == "find_successor":
+            
             return self.find_successor(node_id)  # Call find_successor with node_id
         elif command == "find_predecessor":
             return self.find_predecessor(node_id)  # Call find_predecessor with node_id
@@ -243,11 +273,14 @@ class ChordNode:
             return self.update_successor(request["node_id"], request["ip"], request["port"])
         elif command == "update_predecessor":
             return self.update_predecessor(request["node_id"], request["ip"], request["port"])
+        elif command == "get_k":
+            return {"status":"success","k":self.k}
+            #return self.request_k_from_bootstrap(bootstrap_ip, bootstrap_port) # Send back k
         #elif command == "shutdown":
         #    return self.shutdown(conn)  # Περνάμε τη σύνδεση
         return {"status": "error", "message": f"Invalid command received: {command}"}
 
-    def insert(self, key, value,is_already_hashed=False):
+    def insert(self, key, value,is_already_hashed=False, k=None):
         """ Αποθηκεύει ένα τραγούδι στο DHT.Ακολουθεί δρομολόγηση Chord Ring """
         print('Starting Insert')
         if is_already_hashed == False:
@@ -255,6 +288,34 @@ class ChordNode:
             hashed_key = int(hashlib.sha1(key.encode()).hexdigest(), 16) % (2**160)
         else:
             hashed_key = key
+        
+        print(k)
+        # If k is not provided (first insert call), use the node's k value
+        if k is None:
+            k = self.k
+        #If k is provided,insert into node and forward to successor
+        else:
+            k=int(k)
+            if hashed_key in self.data_store:
+                self.data_store[hashed_key] = self.data_store[hashed_key] + value
+            else:
+                self.data_store[hashed_key] = value
+            if k > 1:
+                forward_insert = {
+                    'command': 'insert',
+                    'key': hashed_key,
+                    'value': value,
+                    'is_already_hashed': True,
+                    'k': k - 1  # Decrease k by 1
+                }
+                print(f"[NODE {self.node_id}] Forwarding replication to {self.successor['ip']}:{self.successor['port']} (k={k-1})")
+                return self.send_request(self.successor['ip'], self.successor['port'], forward_insert)
+            else:
+                print(f"[NODE {self.node_id}] Final replication node reached. Replication complete.")
+                return {"status": "success", "message": f"Inserted {key} -> {self.data_store[hashed_key]},replication successful"}
+
+        #The following code is for the case that this is the first insert,so we must search
+        #the correct node
 
         #If this is the case,we are on the correct node
         #Either this node is the only one,the Bootstrap or the first with ID >= key,or this is the one with the smallest ID
@@ -263,7 +324,23 @@ class ChordNode:
                 self.data_store[hashed_key] = self.data_store[hashed_key] + value
             else:
                 self.data_store[hashed_key] = value
-            return {"status": "success", "message": f"Inserted {key} -> {self.data_store[hashed_key]}"}
+            #return {"status": "success", "message": f"Inserted {key} -> {self.data_store[hashed_key]}"}
+
+        
+            # If k > 1, forward to next node for replication
+            if k > 1:
+                forward_insert = {
+                    'command': 'insert',
+                    'key': hashed_key,
+                    'value': value,
+                    'is_already_hashed': True,
+                    'k': k - 1  # Decrease k by 1
+                }
+                print(f"[NODE {self.node_id}] Forwarding replication to {self.successor['ip']}:{self.successor['port']} (k={k-1})")
+                return self.send_request(self.successor['ip'], self.successor['port'], forward_insert)
+            else:
+                print(f"[NODE {self.node_id}] Final replication node reached. Replication complete.")
+                return {"status": "success", "message": f"Inserted {key} -> {self.data_store[hashed_key]},replication successful"}
         
         #This is not the correct node,forward to predecessor
         elif self.predecessor['node_id'] >= hashed_key:
@@ -273,7 +350,7 @@ class ChordNode:
             forward_insert_predecessor = {
                 'command': 'insert',
                 'key': key,
-                'value': value
+                'value': value,
             }
             if is_already_hashed == True:
                 forward_insert_predecessor['is_already_hashed'] = True
@@ -288,7 +365,7 @@ class ChordNode:
             forward_insert_successor = {
                 'command': 'insert',
                 'key': key,
-                'value': value
+                'value': value,
             }
             if is_already_hashed == True:
                 forward_insert_successor['is_already_hashed'] = True
@@ -348,15 +425,57 @@ class ChordNode:
         #else:
         #    return {"status":"success","value":list(self.data_store.values())}
 
-    def delete(self, key):
+    def delete(self, key,is_already_hashed=False,k=None):
         """ Διαγράφει ένα τραγούδι από το DHT """
-        hashed_key = int(hashlib.sha1(key.encode()).hexdigest(), 16) % (2**160)
+        if is_already_hashed == False:
+            hashed_key = int(hashlib.sha1(key.encode()).hexdigest(), 16) % (2**160)
+        else:
+            hashed_key = key
+        
+        if k is None:
+            k = self.k
+        else:
+            #delete the data in this node and forward to successor
+            k=int(k)
+            if hashed_key in self.data_store:
+                del self.data_store[hashed_key]
+
+                if k > 1:
+                    forward_delete = {
+                        'command': 'delete',
+                        'key': hashed_key,
+                        'is_already_hashed': True,
+                        'k': k - 1  # Decrease k by 1
+                    }
+                    print(f"[NODE {self.node_id}] Forwarding deletion to {self.successor['ip']}:{self.successor['port']} (k={k-1})")
+                    return self.send_request(self.successor['ip'], self.successor['port'], forward_delete)
+                else:
+                    print(f"[NODE {self.node_id}] Final deletion node reached. Deletion complete.")
+                    return {"status": "success", "message": f"Deleted {key}"}
+                
+            else:
+                return {"status": "error", "message": "Key not found"}
+
         #If this is the case,we are on the correct node
         #Either this node is the first with ID >= key,or this is the one with the smallest ID
         if (self.predecessor['node_id'] < hashed_key and self.node_id >= hashed_key) or self.predecessor['node_id'] > self.node_id:
             if hashed_key in self.data_store:
                 del self.data_store[hashed_key]
-                return {"status": "success", "message": f"Deleted {key}"}
+                #return {"status": "success", "message": f"Deleted {key}"}
+            
+                if k > 1:
+                        forward_delete = {
+                            'command': 'delete',
+                            'key': hashed_key,
+                            'is_already_hashed': True,
+                            'k': k - 1  # Decrease k by 1
+                        }
+                        print(f"[NODE {self.node_id}] Forwarding deletion to {self.successor['ip']}:{self.successor['port']} (k={k-1})")
+                        return self.send_request(self.successor['ip'], self.successor['port'], forward_delete)
+                else:
+                    print(f"[NODE {self.node_id}] Final deletion node reached. Deletion complete.")
+                    return {"status": "success", "message": f"Deleted {key}"}
+                
             return {"status": "error", "message": "Key not found"}
         
         #This is not the correct node,forward to predecessor
@@ -481,10 +600,11 @@ class ChordNode:
 # Εκκίνηση κόμβου
 # Node startup logic
 if __name__ == "__main__":
-    if len(sys.argv) == 3:
+    if len(sys.argv) == 4:
         # This is the bootstrap node
         ip = sys.argv[1]
         port = int(sys.argv[2])
+        factor = int(sys.argv[3])
         node = ChordNode(ip, port)
     
     elif len(sys.argv) == 5:
