@@ -18,19 +18,27 @@ def random_string_value(length=12):
     return ''.join(random.choices(characters, k=length))
 
 class ChordNode:
-    def __init__(self, ip, port, bootstrap_ip=None, bootstrap_port=None):
+    def __init__(self, ip, port, bootstrap_ip=None, bootstrap_port=None, k=None):
         self.ip = ip
         self.port = port
         self.node_id = self.generate_id(ip, port)
         self.data_store = {}  # DHT key-value store
         self.predecessor = None
+        self.k = None
 
         if bootstrap_ip and bootstrap_port:
             # This is a new node joining an existing network
             print(f"[NODE {self.node_id}] Attempting to join network via {bootstrap_ip}:{bootstrap_port}")
             self.join(bootstrap_ip, bootstrap_port)
+            
+            self.k = self.request_k_from_bootstrap(bootstrap_ip, bootstrap_port)
+            if self.k is None:
+                print(f"[ERROR] Could not retrieve k from bootstrap node. Exiting.")
+                sys.exit(1)
+
         else:
-            # This is the bootstrap node
+             # This is the bootstrap node, initialize `k`
+            self.k = factor
             self.successor = {"node_id": self.node_id, "ip": self.ip, "port": self.port}
             print(f"[BOOTSTRAP NODE] Initialized with self-successor: {self.successor}")
 
@@ -45,6 +53,7 @@ class ChordNode:
         while True:
             time.sleep(1)  # Keep the program alive
 
+    
     
     def signal_handler(self, sig, frame):
         print("\n[NODE] Received Ctrl+C. Shutting down...")
@@ -84,7 +93,7 @@ class ChordNode:
             server.close() #Κλείσιμο του socket
 
 
-    def join(self, bootstrap_ip, bootstrap_port):
+    def join(self, bootstrap_ip, bootstrap_port,):
         """ Εισάγει τον κόμβο στον δακτύλιο Chord μέσω του bootstrap node """
         print(f"[NODE {self.node_id}] Attempting to join network via {bootstrap_ip}:{bootstrap_port}")
 
@@ -130,6 +139,16 @@ class ChordNode:
 
         except Exception as e:
             print(f"[ERROR] Failed to join network: {e}")
+    
+    def request_k_from_bootstrap(self, bootstrap_ip, bootstrap_port):
+        """Requests the value of k from the bootstrap node using send_request."""
+        request = {"command": "REQUEST_K"}  # Send a structured request
+        response = self.send_request(bootstrap_ip, bootstrap_port, request)  # Use existing method
+        if response.get("status") == "success" and "k" in response:
+            return int(response["k"])  # Convert k to an integer and return
+        else:
+            print(f"[ERROR] Failed to retrieve k from bootstrap node: {response}")
+            return None  # Return None if the request fails
 
 
     def find_neighbours(self, node_id):
@@ -243,11 +262,13 @@ class ChordNode:
             return self.update_successor(request["node_id"], request["ip"], request["port"])
         elif command == "update_predecessor":
             return self.update_predecessor(request["node_id"], request["ip"], request["port"])
+        elif command == "REQUEST_K":
+            return self.request_k_from_bootstrap(bootstrap_ip, bootstrap_port) # Send back k
         #elif command == "shutdown":
         #    return self.shutdown(conn)  # Περνάμε τη σύνδεση
         return {"status": "error", "message": f"Invalid command received: {command}"}
 
-    def insert(self, key, value,is_already_hashed=False):
+    def insert(self, key, value,is_already_hashed=False, k=None):
         """ Αποθηκεύει ένα τραγούδι στο DHT.Ακολουθεί δρομολόγηση Chord Ring """
         print('Starting Insert')
         if is_already_hashed == False:
@@ -255,6 +276,10 @@ class ChordNode:
             hashed_key = int(hashlib.sha1(key.encode()).hexdigest(), 16) % (2**160)
         else:
             hashed_key = key
+        
+        # If k is not provided (first insert call), use the node's k value
+        if k is None:
+            k = self.k
 
         #If this is the case,we are on the correct node
         #Either this node is the only one,the Bootstrap or the first with ID >= key,or this is the one with the smallest ID
@@ -264,6 +289,22 @@ class ChordNode:
             else:
                 self.data_store[hashed_key] = value
             return {"status": "success", "message": f"Inserted {key} -> {self.data_store[hashed_key]}"}
+
+        
+         # If k > 1, forward to next node for replication
+        if k > 1:
+            forward_insert = {
+                'command': 'insert',
+                'key': key,
+                'value': value,
+                'is_already_hashed': True,
+                'k': k - 1  # Decrease k by 1
+            }
+            print(f"[NODE {self.node_id}] Forwarding replication to {self.successor['ip']}:{self.successor['port']} (k={k-1})")
+            return self.send_request(self.successor['ip'], self.successor['port'], forward_insert)
+        else:
+            print(f"[NODE {self.node_id}] Final replication node reached. Replication complete.")
+            return {"status": "success", "message": "Replication successful"}
         
         #This is not the correct node,forward to predecessor
         elif self.predecessor['node_id'] >= hashed_key:
@@ -273,7 +314,8 @@ class ChordNode:
             forward_insert_predecessor = {
                 'command': 'insert',
                 'key': key,
-                'value': value
+                'value': value,
+                'k': k
             }
             if is_already_hashed == True:
                 forward_insert_predecessor['is_already_hashed'] = True
@@ -288,7 +330,8 @@ class ChordNode:
             forward_insert_successor = {
                 'command': 'insert',
                 'key': key,
-                'value': value
+                'value': value,
+                'k': k
             }
             if is_already_hashed == True:
                 forward_insert_successor['is_already_hashed'] = True
@@ -481,10 +524,11 @@ class ChordNode:
 # Εκκίνηση κόμβου
 # Node startup logic
 if __name__ == "__main__":
-    if len(sys.argv) == 3:
+    if len(sys.argv) == 4:
         # This is the bootstrap node
         ip = sys.argv[1]
         port = int(sys.argv[2])
+        factor = int(sys.argv[3])
         node = ChordNode(ip, port)
     
     elif len(sys.argv) == 5:
