@@ -250,7 +250,10 @@ class ChordNode:
         elif command == "query_all":
             return self.query_all(value)
         elif command == "delete":
-            return self.delete(key)
+            if request.get("is_already_hashed") and request.get("k"):
+                return self.delete(key,True,request.get('k'))
+            else:
+                return self.delete(key)
         elif command == "depart":
             node_id = request.get("node_id") or request.get("value")  # Διαβάζουμε από value αν λείπει το node_id
             if node_id is None:
@@ -260,6 +263,7 @@ class ChordNode:
         elif command == "receive_data":
             return self.receive_data(request["data_store"])
         elif command == "find_successor":
+            
             return self.find_successor(node_id)  # Call find_successor with node_id
         elif command == "find_predecessor":
             return self.find_predecessor(node_id)  # Call find_predecessor with node_id
@@ -421,15 +425,57 @@ class ChordNode:
         #else:
         #    return {"status":"success","value":list(self.data_store.values())}
 
-    def delete(self, key):
+    def delete(self, key,is_already_hashed=False,k=None):
         """ Διαγράφει ένα τραγούδι από το DHT """
-        hashed_key = int(hashlib.sha1(key.encode()).hexdigest(), 16) % (2**160)
+        if is_already_hashed == False:
+            hashed_key = int(hashlib.sha1(key.encode()).hexdigest(), 16) % (2**160)
+        else:
+            hashed_key = key
+        
+        if k is None:
+            k = self.k
+        else:
+            #delete the data in this node and forward to successor
+            k=int(k)
+            if hashed_key in self.data_store:
+                del self.data_store[hashed_key]
+
+                if k > 1:
+                    forward_delete = {
+                        'command': 'delete',
+                        'key': hashed_key,
+                        'is_already_hashed': True,
+                        'k': k - 1  # Decrease k by 1
+                    }
+                    print(f"[NODE {self.node_id}] Forwarding deletion to {self.successor['ip']}:{self.successor['port']} (k={k-1})")
+                    return self.send_request(self.successor['ip'], self.successor['port'], forward_delete)
+                else:
+                    print(f"[NODE {self.node_id}] Final deletion node reached. Deletion complete.")
+                    return {"status": "success", "message": f"Deleted {key}"}
+                
+            else:
+                return {"status": "error", "message": "Key not found"}
+
         #If this is the case,we are on the correct node
         #Either this node is the first with ID >= key,or this is the one with the smallest ID
         if (self.predecessor['node_id'] < hashed_key and self.node_id >= hashed_key) or self.predecessor['node_id'] > self.node_id:
             if hashed_key in self.data_store:
                 del self.data_store[hashed_key]
-                return {"status": "success", "message": f"Deleted {key}"}
+                #return {"status": "success", "message": f"Deleted {key}"}
+            
+                if k > 1:
+                        forward_delete = {
+                            'command': 'delete',
+                            'key': hashed_key,
+                            'is_already_hashed': True,
+                            'k': k - 1  # Decrease k by 1
+                        }
+                        print(f"[NODE {self.node_id}] Forwarding deletion to {self.successor['ip']}:{self.successor['port']} (k={k-1})")
+                        return self.send_request(self.successor['ip'], self.successor['port'], forward_delete)
+                else:
+                    print(f"[NODE {self.node_id}] Final deletion node reached. Deletion complete.")
+                    return {"status": "success", "message": f"Deleted {key}"}
+                
             return {"status": "error", "message": "Key not found"}
         
         #This is not the correct node,forward to predecessor
