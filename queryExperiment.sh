@@ -1,8 +1,7 @@
-#!/bin/bash
 
-#--------Usage---------
-#chmod +x queryExperiment.sh
-#dos2unix insertExperiment.sh
+#--------Usage in Ubuntu---------
+#chmod +x queryExperiment.sh - Once
+#dos2unix insertExperiment.sh - Once
 #bash queryExperiment.sh
 
 # Configuration
