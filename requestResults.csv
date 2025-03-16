@@ -1,0 +1,10 @@
+k,consistency,time
+Running requests with k=3 and consistency=linearizability
+Request execution time for k=3, consistency=linearizability: .513080280 seconds
+3,linearizability,.513080280
+Experiment with k=3 and consistency=linearizability completed.
+Running requests with k=3 and consistency=eventual
+Request execution time for k=3, consistency=eventual: .510866146 seconds
+3,eventual,.510866146
+Experiment with k=3 and consistency=eventual completed.
+All experiments completed. Results saved in requestResults.csv.
