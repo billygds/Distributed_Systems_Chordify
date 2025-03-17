@@ -1,26 +1,26 @@
 k,consistency,time
 Running inserts with k=1 and consistency=linearizability
-Write throughput for k=1, consistency=linearizability: 7.401822073 seconds
-1,linearizability,7.401822073
+Write throughput for k=1, consistency=linearizability: 9.053399831 seconds
+1,linearizability,9.053399831
 Experiment with k=1 and consistency=linearizability completed.
 Running inserts with k=1 and consistency=eventual
-Write throughput for k=1, consistency=eventual: 7.369296379 seconds
-1,eventual,7.369296379
+Write throughput for k=1, consistency=eventual: 8.171908418 seconds
+1,eventual,8.171908418
 Experiment with k=1 and consistency=eventual completed.
 Running inserts with k=3 and consistency=linearizability
-Write throughput for k=3, consistency=linearizability: 7.578804169 seconds
-3,linearizability,7.578804169
+Write throughput for k=3, consistency=linearizability: 9.278668588 seconds
+3,linearizability,9.278668588
 Experiment with k=3 and consistency=linearizability completed.
 Running inserts with k=3 and consistency=eventual
-Write throughput for k=3, consistency=eventual: 7.849847059 seconds
-3,eventual,7.849847059
+Write throughput for k=3, consistency=eventual: 6.069540030 seconds
+3,eventual,6.069540030
 Experiment with k=3 and consistency=eventual completed.
 Running inserts with k=5 and consistency=linearizability
-Write throughput for k=5, consistency=linearizability: 7.988588530 seconds
-5,linearizability,7.988588530
+Write throughput for k=5, consistency=linearizability: 6.532705744 seconds
+5,linearizability,6.532705744
 Experiment with k=5 and consistency=linearizability completed.
 Running inserts with k=5 and consistency=eventual
-Write throughput for k=5, consistency=eventual: 7.908856772 seconds
-5,eventual,7.908856772
+Write throughput for k=5, consistency=eventual: 10.314342253 seconds
+5,eventual,10.314342253
 Experiment with k=5 and consistency=eventual completed.
 All experiments completed. Results saved in insertResults.csv.

@@ -1,0 +1,2189 @@
+[DEBUG] Trying to start server on 127.0.0.1:5003
+[DEBUG] Creating socket...
+[NODE 420139047123305418451206450639216810642337245175] Server running at 127.0.0.1:5003. Press Ctrl+C to shut down.
+[NODE 420139047123305418451206450639216810642337245175] Attempting to join network via 127.0.0.1:5000
+[NODE 420139047123305418451206450639216810642337245175] Attempting to join network via 127.0.0.1:5000
+[DEBUG] Sending request to bootstrap node: {'command': 'find_neighbours', 'node_id': 420139047123305418451206450639216810642337245175}
+[DEBUG] Setting socket options...
+[DEBUG] Binding server to 127.0.0.1:5003...
+[DEBUG] Server is now listening...
+[NODE 420139047123305418451206450639216810642337245175] Listening on 127.0.0.1:5003...
+[DEBUG] Response from bootstrap: {'status': 'success', 'successor': {'node_id': 687218964143197871100890128042487595246201047671, 'ip': '127.0.0.1', 'port': 5002}, 'predecessor': {'node_id': 1041195083025998055559450424623959893298787457821, 'ip': '127.0.0.1', 'port': 5000}}
+{'status': 'success', 'successor': {'node_id': 687218964143197871100890128042487595246201047671, 'ip': '127.0.0.1', 'port': 5002}, 'predecessor': {'node_id': 1041195083025998055559450424623959893298787457821, 'ip': '127.0.0.1', 'port': 5000}}
+[NODE 420139047123305418451206450639216810642337245175] Successor found: {'node_id': 687218964143197871100890128042487595246201047671, 'ip': '127.0.0.1', 'port': 5002}
+[DEBUG] Sending update_predecessor request: {'command': 'update_predecessor', 'node_id': 420139047123305418451206450639216810642337245175, 'ip': '127.0.0.1', 'port': 5003}
+[DEBUG] Sending update_successor request to predecessor: {'command': 'update_successor', 'node_id': 420139047123305418451206450639216810642337245175, 'ip': '127.0.0.1', 'port': 5003}
+[NODE 420139047123305418451206450639216810642337245175] Update successor response: {'status': 'success', 'message': 'Successor updated'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 33700)
+[DEBUG] Received request: {'command': 'update_predecessor', 'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+[NODE 420139047123305418451206450639216810642337245175] Predecessor updated: {'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 33708)
+[DEBUG] Received request: {'command': 'manage_join_data'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 45730)
+[DEBUG] Received request: {'command': 'update_predecessor', 'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
+[NODE 420139047123305418451206450639216810642337245175] Predecessor updated: {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 45740)
+[DEBUG] Received request: {'command': 'manage_join_data'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 45742)
+[DEBUG] Received request: {'command': 'update_predecessor', 'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+[NODE 420139047123305418451206450639216810642337245175] Predecessor updated: {'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 45750)
+[DEBUG] Received request: {'command': 'manage_join_data'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 45760)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35244)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Voodoo Child (Slight Return)', 'value': '35IihqOw8u6a'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:343239923793796158650169204890044537649941311032
+{'command': 'insert', 'key': 'Voodoo Child (Slight Return)', 'value': 'pwHsFLSZ8JMH'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35258)
+[DEBUG] Received request: {'command': 'insert', 'key': 343239923793796158650169204890044537649941311032, 'value': '6G6gqfrY9Xxl', 'is_already_hashed': True, 'k': 4}
+Starting Insert
+4
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=3)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35260)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Positively 4th Street', 'value': 'P0g56wodVEGK'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:76889073928081872276054772942600557335049010238
+{'command': 'insert', 'key': 'Positively 4th Street', 'value': 'Uk8olzeNcEGB'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35264)
+[DEBUG] Received request: {'command': 'insert', 'key': 76889073928081872276054772942600557335049010238, 'value': 'rtJm3Y6Ubxye', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35268)
+[DEBUG] Received request: {'command': 'insert', 'key': 'All the Young Dudes', 'value': 'Hw7WoEBgfhkN'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:335573968402767522949531422639122071817691562009
+{'command': 'insert', 'key': 'All the Young Dudes', 'value': 'LFmas2mgjmUJ'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35280)
+[DEBUG] Received request: {'command': 'insert', 'key': 335573968402767522949531422639122071817691562009, 'value': 'fBriAC29MNnU', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35286)
+[DEBUG] Received request: {'command': 'insert', 'key': 'The Twist', 'value': 'Dwj51682ZEZj'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:277287666930670833102467411674208651649940588280
+{'command': 'insert', 'key': 'The Twist', 'value': 'JrfmOm4EHIhG'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35296)
+[DEBUG] Received request: {'command': 'insert', 'key': 277287666930670833102467411674208651649940588280, 'value': 'S0mjKrAKut9W', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35302)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35316)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Be-Bop-A-Lula', 'value': 'mW1BzTx4DUup'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:144619483863009382300017115323603137391048022992
+{'command': 'insert', 'key': 'Be-Bop-A-Lula', 'value': 'e9ARUEh363BQ'}
+[DEBUG] Received request: {'command': 'insert', 'key': 'When Doves Cry', 'value': 'wVgyfLbpn9CJ'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:336085150568377099115621611997061346445674625646
+{'command': 'insert', 'key': 'When Doves Cry', 'value': 'XB37kQoKCGvX'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35330)
+[DEBUG] Received request: {'command': 'insert', 'key': 144619483863009382300017115323603137391048022992, 'value': 'Np1g7dvg1s3w', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35332)
+[DEBUG] Received request: {'command': 'insert', 'key': 336085150568377099115621611997061346445674625646, 'value': '9KTukIrsRsc7', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35340)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Tears in Heaven', 'value': '4Mhi9EaCbYkU'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:341221206504595432456342198222637661096331227853
+{'command': 'insert', 'key': 'Tears in Heaven', 'value': 'Z60BoXY3y2b0'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35350)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Ruby Tuesday', 'value': 'rq5SghjxEAHo'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:194829411839581263392418640846921025240150877229
+{'command': 'insert', 'key': 'Ruby Tuesday', 'value': 'O48tjX2vEv5f'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35358)
+[DEBUG] Received request: {'command': 'insert', 'key': 341221206504595432456342198222637661096331227853, 'value': 'TaVcHTKTGvN5', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35368)
+[DEBUG] Received request: {'command': 'insert', 'key': 194829411839581263392418640846921025240150877229, 'value': 'CNweac93aLOH', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35384)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Highway to Hell', 'value': 'Fnc3fJKJD64q'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:238572670173255423447815223049816016761177608210
+{'command': 'insert', 'key': 'Highway to Hell', 'value': 'Sf5Eo2HcrIX2'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35400)
+[DEBUG] Received request: {'command': 'insert', 'key': 238572670173255423447815223049816016761177608210, 'value': 'iRkNhtHmNgCq', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35410)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Proud Mary', 'value': 'wagjzLI2q2A5'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:175785751284695543057196853742034915948166724660
+{'command': 'insert', 'key': 'Proud Mary', 'value': 'vbrBOslCvPvA'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35422)
+[DEBUG] Received request: {'command': 'insert', 'key': 175785751284695543057196853742034915948166724660, 'value': 'fkVoJLZod5pc', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35414)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Imagine', 'value': 'FP2cmnxXuWfA'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:233493062952149182425637183770243051362192414010
+{'command': 'insert', 'key': 'Imagine', 'value': 'ogsGaVoExzGE'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35426)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Anarchy in the U.K.', 'value': 'JKPBAmm3ukM2'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:128263299517175607973697486837618754652045885065
+{'command': 'insert', 'key': 'Anarchy in the U.K.', 'value': 'RPGhvQAlMnMJ'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35432)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Heart of Glass', 'value': 'lV1khMExUpnc'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:100370646028566824558985180404665736783589608148
+{'command': 'insert', 'key': 'Heart of Glass', 'value': 'eMVoUgUVAXYe'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35436)
+[DEBUG] Received request: {'command': 'insert', 'key': 233493062952149182425637183770243051362192414010, 'value': '4DiT25IxfOW6', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35440)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hot Stuff', 'value': 'sxYE2dqoegfU'}
+Starting Insert
+Hashing
+None
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=4)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35450)
+[DEBUG] Received request: {'command': 'insert', 'key': 100370646028566824558985180404665736783589608148, 'value': 'A9JKITLtJhAo', 'is_already_hashed': True, 'k': 2}
+Starting Insert
+2
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=1)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35458)
+[DEBUG] Received request: {'command': 'insert', 'key': 128263299517175607973697486837618754652045885065, 'value': 'n48xF0CwMqVN', 'is_already_hashed': True, 'k': 2}
+Starting Insert
+2
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=1)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35470)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Lean On Me', 'value': 'AZfWiZqJat5T'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:131477801430149492095103187612376260868449630413
+{'command': 'insert', 'key': 'Lean On Me', 'value': 'cuECxAq7sJEL'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35480)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Watching the Detectives', 'value': 'ZmeI3g1J5Vq6'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:120318503291223797038746338654075927574710173227
+{'command': 'insert', 'key': 'Watching the Detectives', 'value': 'wlVfN5eYjinO'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35486)
+[DEBUG] Received request: {'command': 'insert', 'key': 131477801430149492095103187612376260868449630413, 'value': 'FTzffWh5MJE8', 'is_already_hashed': True, 'k': 2}
+Starting Insert
+2
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=1)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35490)
+[DEBUG] Received request: {'command': 'insert', 'key': 120318503291223797038746338654075927574710173227, 'value': 'NVnnhz9bHKI3', 'is_already_hashed': True, 'k': 2}
+Starting Insert
+2
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=1)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35506)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Visions of Johanna', 'value': 'qDypeuid4NJc'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:296804695539597385344355291057926380706594079372
+{'command': 'insert', 'key': 'Visions of Johanna', 'value': 'VAcmSDDsujiC'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35512)
+[DEBUG] Received request: {'command': 'insert', 'key': 296804695539597385344355291057926380706594079372, 'value': 'g6NNybOYv3er', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35518)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Living for the City', 'value': 'Lis1vPlCghXm'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:110863560124023117084242156241915743480006729834
+{'command': 'insert', 'key': 'Living for the City', 'value': 'D3OgHAPD46aP'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35526)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Paranoid Android', 'value': 'ZNA6ESNZtN1p'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:5563839545059182898047703393667988600063401893
+{'command': 'insert', 'key': 'Paranoid Android', 'value': '7k9J8A13XmNY'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35530)
+[DEBUG] Received request: {'command': 'insert', 'key': 110863560124023117084242156241915743480006729834, 'value': 'Fly79NDwmmox', 'is_already_hashed': True, 'k': 2}
+Starting Insert
+2
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=1)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35544)
+[DEBUG] Received request: {'command': 'insert', 'key': 5563839545059182898047703393667988600063401893, 'value': 'CPQf2pWxaDEj', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35552)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': 'I3VW3WCFtTTt'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:104083428957902221840953429332483363381421817453
+{'command': 'insert', 'key': 'Respect', 'value': 'kaBCugAZdGOI'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35556)
+[DEBUG] Received request: {'command': 'insert', 'key': 104083428957902221840953429332483363381421817453, 'value': 'NbQwiwd203j0', 'is_already_hashed': True, 'k': 2}
+Starting Insert
+2
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=1)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35560)
+[DEBUG] Received request: {'command': 'insert', 'key': 'The Boxer', 'value': 'U4h3OWRsCizY'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:23646318485530983132699147577343088611108515306
+{'command': 'insert', 'key': 'The Boxer', 'value': 'qjSoYLjJX2i9'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35570)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Sweet Dreams (Are Made of This)', 'value': 'RU6xVsOEs9vN'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:310740848689123741158584549195445796630972214244
+{'command': 'insert', 'key': 'Sweet Dreams (Are Made of This)', 'value': 'dgjQx9kjlsu6'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35586)
+[DEBUG] Received request: {'command': 'insert', 'key': 310740848689123741158584549195445796630972214244, 'value': 'Ga7zaeDVwzXp', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35592)
+[DEBUG] Received request: {'command': 'insert', 'key': 23646318485530983132699147577343088611108515306, 'value': 's0CED1rz4pbW', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35606)
+[DEBUG] Received request: {'command': 'insert', 'key': 1401140282369604040149904654804483179832036708449, 'value': 'ZraSGNoRujul', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35618)
+[DEBUG] Received request: {'command': 'insert', 'key': "(We're Gonna) Rock Around the Clock", 'value': 'wxdA5NLSFlg7'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:259789201400252828050540386499588218478531921204
+{'command': 'insert', 'key': "(We're Gonna) Rock Around the Clock", 'value': 'Pc4Mrq3B2MnP'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35624)
+[DEBUG] Received request: {'command': 'insert', 'key': 259789201400252828050540386499588218478531921204, 'value': 'X6t93Vr1dF2q', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35626)
+[DEBUG] Received request: {'command': 'insert', 'key': 'All Apologies', 'value': 'ywqWiob2WKoA'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:168858545085359875364985789157151565519159894748
+{'command': 'insert', 'key': 'All Apologies', 'value': 'MDB8ZyWx0dml'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35634)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Mr. Tambourine Man', 'value': 'DlLexDS8PGrU'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:112794908782384135401959210969715509386860031192
+{'command': 'insert', 'key': 'Mr. Tambourine Man', 'value': 'Johxv0uXSnzo'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35640)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35656)
+[DEBUG] Received request: {'command': 'insert', 'key': 'I Can See for Miles', 'value': 'j6htJ3lROiHj'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:26864807956385771143890168692103502674785810804
+{'command': 'insert', 'key': 'I Can See for Miles', 'value': 'Mi8dwaztc7UE'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35658)
+[DEBUG] Received request: {'command': 'insert', 'key': 26864807956385771143890168692103502674785810804, 'value': 'uKHr1L6Pk371', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35672)
+[DEBUG] Received request: {'command': 'insert', 'key': 112794908782384135401959210969715509386860031192, 'value': 'XfmfJgwherCx', 'is_already_hashed': True, 'k': 2}
+Starting Insert
+2
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=1)
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35674)
+[DEBUG] Received request: {'command': 'insert', 'key': 'In Bloom', 'value': 'OLMniI6dYKE8'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:94234579477518382618000944733170205582168784594
+{'command': 'insert', 'key': 'In Bloom', 'value': '9aGuEFPs40e3'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35688)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Johnny B. Goode', 'value': 'Z0pgKaFtnQxu'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:253981701840666735052497979912326963650619197749
+{'command': 'insert', 'key': 'Johnny B. Goode', 'value': 'n6An8PaOFLWA'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35690)
+[DEBUG] Received request: {'command': 'insert', 'key': 94234579477518382618000944733170205582168784594, 'value': 'KY2llA20hXj9', 'is_already_hashed': True, 'k': 2}
+Starting Insert
+2
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=1)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35696)
+[DEBUG] Received request: {'command': 'insert', 'key': 253981701840666735052497979912326963650619197749, 'value': 'sYiy8PxqtBOe', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35698)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Whiter Shade of Pale', 'value': 'wnZg5hXYkwhC'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:155982882848270512244287837134151934118412051785
+{'command': 'insert', 'key': 'Whiter Shade of Pale', 'value': 'u2uJVCFvJxGQ'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35708)
+[DEBUG] Received request: {'command': 'insert', 'key': 155982882848270512244287837134151934118412051785, 'value': 'FWwZliebOSyU', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35714)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Stagger Lee', 'value': '3HPRyPIqJ5Rb'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:147919169280054638732100917214028610344921786467
+{'command': 'insert', 'key': 'Stagger Lee', 'value': 'NwKa7uE8B0z2'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35726)
+[DEBUG] Received request: {'command': 'insert', 'key': 147919169280054638732100917214028610344921786467, 'value': 'OE59sE99GYk2', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35730)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35736)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hallelujah', 'value': 'ahEM4BV9Guh2'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:86986307906130800286424606109556405394788414017
+{'command': 'insert', 'key': 'Hallelujah', 'value': '62ReYMJHsS69'}
+[DEBUG] Received request: {'command': 'insert', 'key': 'Lonely Teardrops', 'value': '9uJBLMioQQzv'}
+Starting Insert
+Hashing
+None
+                                                                                                                                                                                                                                                                                              [NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=4)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35744)
+[DEBUG] Received request: {'command': 'insert', 'key': 86986307906130800286424606109556405394788414017, 'value': 'vgixSAwi4t0i', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35750)
+[DEBUG] Received request: {'command': 'insert', 'key': 1376107507459382809423558366561921158390895961486, 'value': 'Vz9gGBVVhetk', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35754)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Got My Mojo Working', 'value': 'JbC8F31WS7QX'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:153467208908468483428849801124566308709706239094
+{'command': 'insert', 'key': 'Got My Mojo Working', 'value': 'DoMwnDE4IIFK'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35770)
+[DEBUG] Received request: {'command': 'insert', 'key': 153467208908468483428849801124566308709706239094, 'value': 'R3yLZKWE8omX', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35760)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Billie Jean', 'value': 'JVC2psEKDlsb'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:206531377611808469005980260975463616881954528825
+{'command': 'insert', 'key': 'Billie Jean', 'value': '92nenaQpBOYO'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35772)
+[DEBUG] Received request: {'command': 'insert', 'key': 206531377611808469005980260975463616881954528825, 'value': '1LP0gUasf5Aw', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35784)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Oh', 'value': '4oeppOmKurF5'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:77518805432307583621180397240460251600030046445
+{'command': 'insert', 'key': 'Oh', 'value': 'yHwjKdM5qNKJ'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35790)
+[DEBUG] Received request: {'command': 'insert', 'key': 77518805432307583621180397240460251600030046445, 'value': 'ayLgH9OXzXTe', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35800)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Iron Man', 'value': 'Buyfmz0AXDUC'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:327062882516786591674081461340943217899126394829
+{'command': 'insert', 'key': 'Iron Man', 'value': 'eDX0QmRCdtfg'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35814)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Higher Ground', 'value': 'XcZhFi7ni4WJ'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:289216446288128966894237064187199897502686892938
+{'command': 'insert', 'key': 'Higher Ground', 'value': 'WhUBkFn4bvh8'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35828)
+[DEBUG] Received request: {'command': 'insert', 'key': 327062882516786591674081461340943217899126394829, 'value': '2evWe3hwPGDP', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35834)
+[DEBUG] Received request: {'command': 'insert', 'key': 289216446288128966894237064187199897502686892938, 'value': 'rsXiK0iNCMgO', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35850)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Nothing Compares 2 U', 'value': 'T9pGhWGJTgsO'}
+Starting Insert
+Hashing
+None
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=4)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35862)
+[DEBUG] Received request: {'command': 'insert', 'key': "What'd I Say", 'value': 'X9g8LBLQtOtl'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:254777470523379744342116994297812899168635182435
+{'command': 'insert', 'key': "What'd I Say", 'value': 'tyLaYwkdC2OZ'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35876)
+[DEBUG] Received request: {'command': 'insert', 'key': 254777470523379744342116994297812899168635182435, 'value': 'i8mrYGrIFOUd', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35888)
+[DEBUG] Received request: {'command': 'insert', 'key': 1437406050602601353267761940539484697440176847672, 'value': 'Yonq7M2rhKPS', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35894)
+[DEBUG] Received request: {'command': 'insert', 'key': 1445794960717623275802065164424682577131946407000, 'value': 'Z6x3hwBN9Oow', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35910)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Ooo Baby Baby', 'value': 'hmtVZVzImXVx'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:352392321804787624921627356965224624868588438986
+{'command': 'insert', 'key': 'Ooo Baby Baby', 'value': 'mxmdCE7harkp'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35916)
+[DEBUG] Received request: {'command': 'insert', 'key': 352392321804787624921627356965224624868588438986, 'value': '1fPTFXhxetul', 'is_already_hashed': True, 'k': 4}
+Starting Insert
+4
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=3)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35918)
+[DEBUG] Received request: {'command': 'insert', 'key': 1372121198455363159432129511703292349411278008639, 'value': 'PtK11wA36JgS', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35934)
+[DEBUG] Received request: {'command': 'insert', 'key': 'One Fine Day', 'value': 'bax52VFjcw41'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:292525723525035254102263568880724853845764621458
+{'command': 'insert', 'key': 'One Fine Day', 'value': 'ZLQrRwHGgKis'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35940)
+[DEBUG] Received request: {'command': 'insert', 'key': 292525723525035254102263568880724853845764621458, 'value': 'IbltGiKQgTdZ', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35952)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Ode to Billie Joe', 'value': 'cWEt0o9PF429'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:128385717665972366626834295042122006956826197660
+{'command': 'insert', 'key': 'Ode to Billie Joe', 'value': 'eAIwaQH0nXT1'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35960)
+[DEBUG] Received request: {'command': 'insert', 'key': 128385717665972366626834295042122006956826197660, 'value': 'SqZYVIN5yTjT', 'is_already_hashed': True, 'k': 2}
+Starting Insert
+2
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=1)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35962)
+[DEBUG] Received request: {'command': 'insert', 'key': 'The Letter', 'value': 'ViN638OKGGBu'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:101454383097357376573671311940610681493072405096
+{'command': 'insert', 'key': 'The Letter', 'value': 'sg9CGhRuiiDe'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35978)
+[DEBUG] Received request: {'command': 'insert', 'key': 'I Put a Spell on You', 'value': 'LsogTC3dfPx6'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:233656548019938361750387626473800516136471483872
+{'command': 'insert', 'key': 'I Put a Spell on You', 'value': '5Az2vM9uM0Lq'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 35990)
+[DEBUG] Received request: {'command': 'insert', 'key': 233656548019938361750387626473800516136471483872, 'value': '9geve5BknfW5', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36000)
+[DEBUG] Received request: {'command': 'insert', 'key': 101454383097357376573671311940610681493072405096, 'value': '3YG6QHqIZjW7', 'is_already_hashed': True, 'k': 2}
+Starting Insert
+2
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=1)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36002)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Sail Away', 'value': 'Q6tg3CZxy4HA'}
+Starting Insert
+Hashing
+None
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=4)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36008)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Fast Car', 'value': 'iMlz8U8uwhWj'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:48525198250262117902082257241522226317168247601
+{'command': 'insert', 'key': 'Fast Car', 'value': 'YamFpp9rs3z6'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36010)
+[DEBUG] Received request: {'command': 'insert', 'key': 48525198250262117902082257241522226317168247601, 'value': 'CjIusUUsHKji', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36024)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Up on the Roof', 'value': '8Dl1ND8E40Iy'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:188444228827794631604496761968605827898737716708
+{'command': 'insert', 'key': 'Up on the Roof', 'value': 'rhFXjjXJu9Y5'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36040)
+[DEBUG] Received request: {'command': 'insert', 'key': 188444228827794631604496761968605827898737716708, 'value': 'XfRx0MT3vtEo', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36054)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Sh-Boom', 'value': 'le1DpZtqmMuz'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:132261142757123903730181480092886415001780456211
+{'command': 'insert', 'key': 'Sh-Boom', 'value': 'PsdG49RlxYLs'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36056)
+[DEBUG] Received request: {'command': 'insert', 'key': 132261142757123903730181480092886415001780456211, 'value': 'OwPtBWeO6yFR', 'is_already_hashed': True, 'k': 2}
+Starting Insert
+2
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=1)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36062)
+[DEBUG] Received request: {'command': 'insert', 'key': "Blowin' in the Wind", 'value': 'nYe72RqghlUb'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:11461159126159420519261771582030383309946930432
+{'command': 'insert', 'key': "Blowin' in the Wind", 'value': 'o3HCiOgxRf8e'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36076)
+[DEBUG] Received request: {'command': 'insert', 'key': 11461159126159420519261771582030383309946930432, 'value': '1mqhUco8r1cH', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36080)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Young Blood', 'value': 'QBb4xYpDSF6s'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:300534401152028236244766528922486008997744762195
+{'command': 'insert', 'key': 'Young Blood', 'value': 'j0xFEnc8GYdy'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36086)
+[DEBUG] Received request: {'command': 'insert', 'key': 300534401152028236244766528922486008997744762195, 'value': 'Y1ruCVZ8U5Wg', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36100)
+[DEBUG] Received request: {'command': 'insert', 'key': 1395820193577406209258565676909193418934666321938, 'value': '0npfTRHSZ9MW', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36108)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Unchained Melody', 'value': 'Snc9rwTdKNh9'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:266695866584722259641154498127356762432040704236
+{'command': 'insert', 'key': 'Unchained Melody', 'value': 'vNOoXJIyDJ3f'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36122)
+[DEBUG] Received request: {'command': 'insert', 'key': 266695866584722259641154498127356762432040704236, 'value': 'F5cr09ccRpIq', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36136)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Rain', 'value': 'ZWeS86yTECID'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:60068153492430067813656136353676936042453964093
+{'command': 'insert', 'key': 'Rain', 'value': 'vW23gYXiU594'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36150)
+[DEBUG] Received request: {'command': 'insert', 'key': 60068153492430067813656136353676936042453964093, 'value': 'om9Y3eAlNLDs', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36164)
+[DEBUG] Received request: {'command': 'insert', 'key': "Let's Get It On", 'value': 'xGBhiedhuz7o'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:316429845543538491993335790165536130526604103827
+{'command': 'insert', 'key': "Let's Get It On", 'value': '0gPOVfVVNyPX'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36176)
+[DEBUG] Received request: {'command': 'insert', 'key': 316429845543538491993335790165536130526604103827, 'value': 'EJe6SlUjRgVa', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36188)
+[DEBUG] Received request: {'command': 'insert', 'key': 'London Calling', 'value': 'i1qymgAHjNSJ'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:161742344311584323992784576915862338207736939300
+{'command': 'insert', 'key': 'London Calling', 'value': 'ilFwRcMb30ME'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36192)
+[DEBUG] Received request: {'command': 'insert', 'key': 161742344311584323992784576915862338207736939300, 'value': '1TFIh4ZLHgD1', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36200)
+[DEBUG] Received request: {'command': 'insert', 'key': "I Can't Help Myself", 'value': 'PyL66vuuZMpc'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:342592031506741401153795607005606733842898805209
+{'command': 'insert', 'key': "I Can't Help Myself", 'value': 'O1Il2JMJ0yev'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36212)
+[DEBUG] Received request: {'command': 'insert', 'key': 342592031506741401153795607005606733842898805209, 'value': 'q22rRQZ006Xa', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36218)
+[DEBUG] Received request: {'command': 'insert', 'key': 'You Send Me', 'value': '7VWQBnUBarBk'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:139477571291796975735161250188374244153412816927
+{'command': 'insert', 'key': 'You Send Me', 'value': 'ptszFDbBKS33'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36228)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Wish You Were Here', 'value': 'EvFrSKQJRjhk'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:272289863504445072267511134422068677514287762223
+{'command': 'insert', 'key': 'Wish You Were Here', 'value': 'GdJUMBG07gug'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36242)
+[DEBUG] Received request: {'command': 'insert', 'key': 139477571291796975735161250188374244153412816927, 'value': 'rO5J39zqnkdO', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36244)
+[DEBUG] Received request: {'command': 'insert', 'key': 272289863504445072267511134422068677514287762223, 'value': 'w0U1xIhRc9nY', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36260)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Personality Crisis', 'value': 's9YL5jv5wud2'}
+Starting Insert
+Hashing
+None
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=4)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36266)
+[DEBUG] Received request: {'command': 'insert', 'key': 1369374047716244896925079353213721009422484534149, 'value': 'L3oSXCXgVvzj', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36280)
+[DEBUG] Received request: {'command': 'insert', 'key': "Papa Was a Rollin' Stone", 'value': 'QaqhmUGVhA4H'}
+Starting Insert
+Hashing
+None
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=4)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36284)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Honky Tonk Women', 'value': 'rpTUyke57Yhn'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:355639904824222296239740786356706192727044051686
+{'command': 'insert', 'key': 'Honky Tonk Women', 'value': '3x9u07LkzGMS'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36286)
+[DEBUG] Received request: {'command': 'insert', 'key': 355639904824222296239740786356706192727044051686, 'value': 'tonhrY03nPOi', 'is_already_hashed': True, 'k': 4}
+Starting Insert
+4
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=3)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36296)
+[DEBUG] Received request: {'command': 'insert', 'key': 'I Want to Hold Your Hand', 'value': 'mGX5gslnQxok'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:206037652003407722016290091727316350485313096873
+{'command': 'insert', 'key': 'I Want to Hold Your Hand', 'value': 'ctezrHeCkD3S'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36310)
+[DEBUG] Received request: {'command': 'insert', 'key': 206037652003407722016290091727316350485313096873, 'value': 'DNvjgK1jxeoX', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36312)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36324)
+[DEBUG] Received request: {'command': 'insert', 'key': 'White Room', 'value': 'MJJvEEicDsX9'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:318887488658563213668924685543531475130455944679
+{'command': 'insert', 'key': 'White Room', 'value': 'IippJyHizqGL'}
+[DEBUG] Received request: {'command': 'insert', 'key': 'Sunday Bloody Sunday', 'value': 'Dz2jhPTATxA2'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:142230742283618097477281354592065207812869925713
+{'command': 'insert', 'key': 'Sunday Bloody Sunday', 'value': '928KJhY2wXQ4'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36330)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Surrender', 'value': 'qHWTU2VFSFsO'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:60802179956231111348823174428337068330329005867
+{'command': 'insert', 'key': 'Surrender', 'value': 'T5YRSlwJVM9u'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36344)
+[DEBUG] Received request: {'command': 'insert', 'key': 318887488658563213668924685543531475130455944679, 'value': 'JE34zB2dc20y', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36346)
+[DEBUG] Received request: {'command': 'insert', 'key': 142230742283618097477281354592065207812869925713, 'value': 'p2dcMxxRR5Je', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36354)
+[DEBUG] Received request: {'command': 'insert', 'key': 60802179956231111348823174428337068330329005867, 'value': 'kTthIxYU3226', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36366)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Spoonful', 'value': 'b3LiALqF60vY'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:111603412098101723276403152140148719094882955993
+{'command': 'insert', 'key': 'Spoonful', 'value': 'HAnVv1awlPg8'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36368)
+[DEBUG] Received request: {'command': 'insert', 'key': 111603412098101723276403152140148719094882955993, 'value': 'MeYY6piDFsp5', 'is_already_hashed': True, 'k': 2}
+Starting Insert
+2
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=1)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36384)
+[DEBUG] Received request: {'command': 'insert', 'key': 1426589125098076759978421742659752303141414013254, 'value': 'n2BcmGUvdyZF', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36394)
+[DEBUG] Received request: {'command': 'insert', 'key': 1425182583584293706996064388530390117662809800925, 'value': 'OpDlNH6wZeAX', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36406)
+[DEBUG] Received request: {'command': 'insert', 'key': 1401515045490490186698951163843228528125955490949, 'value': 'X9mRfVih2m3D', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36418)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Purple Haze', 'value': 'w27ZI9CiC5mI'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:91941049548476550023840189992204167834546223676
+{'command': 'insert', 'key': 'Purple Haze', 'value': '7WWZMaSltdX1'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36430)
+[DEBUG] Received request: {'command': 'insert', 'key': 91941049548476550023840189992204167834546223676, 'value': 'jmxhqni5RUVw', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36442)
+[DEBUG] Received request: {'command': 'insert', 'key': 1338842520769370922223064406380939578096746708306, 'value': 'mFN2GCnSwdb3', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36456)
+[DEBUG] Received request: {'command': 'insert', 'key': "School's Out", 'value': 'dj1HX6QRWome'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:224944196450072581899559356970520578327610875837
+{'command': 'insert', 'key': "School's Out", 'value': 'DCygoo7HYwGX'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36462)
+[DEBUG] Received request: {'command': 'insert', 'key': 224944196450072581899559356970520578327610875837, 'value': 'T9IZsxwrv85u', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36472)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Shout (Parts 1 and 2)]', 'value': 'D29HWY7Ut3Gd'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:356886722000251833527968600417182609174267137661
+{'command': 'insert', 'key': 'Shout (Parts 1 and 2)]', 'value': 'yWxiTLoGwZAL'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36478)
+[DEBUG] Received request: {'command': 'insert', 'key': 356886722000251833527968600417182609174267137661, 'value': 'tl1N6sl96ZmD', 'is_already_hashed': True, 'k': 4}
+Starting Insert
+4
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=3)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36486)
+[DEBUG] Received request: {'command': 'insert', 'key': 1370747397018068212971800357686241909846625648243, 'value': 'CyZGhfXaoNnH', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36494)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Maybellene', 'value': 'ZMDQJlrDc9N3'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:72925641774570756273639713528680264466332815403
+{'command': 'insert', 'key': 'Maybellene', 'value': 'wYzCFYlpatpX'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36504)
+[DEBUG] Received request: {'command': 'insert', 'key': 72925641774570756273639713528680264466332815403, 'value': 'Quhr68q7pvwL', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36508)
+[DEBUG] Received request: {'command': 'insert', 'key': "Nuthin' But a 'G' Thang", 'value': '5vfWgS9RwKRX'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:157203574687224025797256834939891565151319442037
+{'command': 'insert', 'key': "Nuthin' But a 'G' Thang", 'value': 'oBSeJtfzuJIT'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36514)
+[DEBUG] Received request: {'command': 'insert', 'key': 157203574687224025797256834939891565151319442037, 'value': 'gT36dLBJWgTS', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36526)
+[DEBUG] Received request: {'command': 'insert', 'key': 1418648588575258735087441648789916872676316850807, 'value': '0JYOgbiDCbEc', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36542)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Dancing Queen', 'value': 'ETTY6mBRSo7g'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:177485474628194159993601298894923494130007173539
+{'command': 'insert', 'key': 'Dancing Queen', 'value': 'IZclWLKGz1RV'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36556)
+[DEBUG] Received request: {'command': 'insert', 'key': 177485474628194159993601298894923494130007173539, 'value': 'TvlyerPzOQzI', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36560)
+[DEBUG] Received request: {'command': 'insert', 'key': 1447654686234125941502690184454978881158849460337, 'value': '0VMmMhmqoaTe', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36568)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Search and Destroy', 'value': 'QLHMMxDa0a1I'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:93287653478822246205371533073231872864489183984
+{'command': 'insert', 'key': 'Search and Destroy', 'value': 'egArJhSBbCY6'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36582)
+[DEBUG] Received request: {'command': 'insert', 'key': 93287653478822246205371533073231872864489183984, 'value': 'Vq9sUI9Tg0T4', 'is_already_hashed': True, 'k': 2}
+Starting Insert
+2
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=1)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36588)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Oh', 'value': '2LlvZMtLpYbO'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:77518805432307583621180397240460251600030046445
+{'command': 'insert', 'key': 'Oh', 'value': 'XOCsszeeBN51'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36602)
+[DEBUG] Received request: {'command': 'insert', 'key': 1440462260655824186296815917249293102430833396220, 'value': 'mRwoXbuWNLYG', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36606)
+[DEBUG] Received request: {'command': 'insert', 'key': 1367726848050293638640323975434572181940389793948, 'value': '3EAdeVjdWpEo', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36612)
+[DEBUG] Received request: {'command': 'insert', 'key': 77518805432307583621180397240460251600030046445, 'value': 'WdMX1wLNVwKL', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36624)
+[DEBUG] Received request: {'command': 'insert', 'key': 'I Want You Back', 'value': 'iqdVVVEL6ACg'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:321976972079461617832258034195610012213816231617
+{'command': 'insert', 'key': 'I Want You Back', 'value': '6kRNqAuHK5Is'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36638)
+[DEBUG] Received request: {'command': 'insert', 'key': 321976972079461617832258034195610012213816231617, 'value': '30XLDBy8Vugx', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36640)
+[DEBUG] Received request: {'command': 'insert', 'key': "I Can't Explain", 'value': 'rfcl3Wyo9q7A'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:301155497947473076772161209487236284133572036189
+{'command': 'insert', 'key': "I Can't Explain", 'value': 'LoUIKvRBOFpK'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36644)
+[DEBUG] Received request: {'command': 'insert', 'key': 301155497947473076772161209487236284133572036189, 'value': '0z1gSao5Kwpj', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36650)
+[DEBUG] Received request: {'command': 'insert', 'key': "It's Too Late", 'value': '6lAjTlRgfaoI'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:300477281434828321218246103674351482885139267100
+{'command': 'insert', 'key': "It's Too Late", 'value': 'cNMzZWGtxwES'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36652)
+[DEBUG] Received request: {'command': 'insert', 'key': 300477281434828321218246103674351482885139267100, 'value': 'laMpeCxZIpN5', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36658)
+[DEBUG] Received request: {'command': 'insert', 'key': 'California Girls', 'value': '4OmQZtBtqygQ'}
+Starting Insert
+Hashing
+None
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=4)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36662)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Stand By Me', 'value': 'ei99eMeGFsZc'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:351622096031050607037822641943650542507190971388
+{'command': 'insert', 'key': 'Stand By Me', 'value': 'Pu9JKotCnFyW'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36670)
+[DEBUG] Received request: {'command': 'insert', 'key': 351622096031050607037822641943650542507190971388, 'value': 'TQgr0c4m0P9V', 'is_already_hashed': True, 'k': 4}
+Starting Insert
+4
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=3)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36678)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Born to Run', 'value': 'YW90ZBnuhpJj'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:156317656322342571828242535618728964042560945785
+{'command': 'insert', 'key': 'Born to Run', 'value': 'DIf9jeiZ7KPs'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36686)
+[DEBUG] Received request: {'command': 'insert', 'key': 156317656322342571828242535618728964042560945785, 'value': 'DZTAe749gHkv', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36700)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Wonderful World', 'value': 'LmkJEmLvHlX5'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:333993355634402955438665070657795560887975170286
+{'command': 'insert', 'key': 'Wonderful World', 'value': '0CmL1wf1E7OE'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36704)
+[DEBUG] Received request: {'command': 'insert', 'key': 333993355634402955438665070657795560887975170286, 'value': 'RjCFvWQm9sd9', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36714)
+[DEBUG] Received request: {'command': 'insert', 'key': 1344428772215043105680194545017299384206328842034, 'value': 'uyF2aab5ZxDi', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36724)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Somebody to Love', 'value': '7LKurqzLxNHI'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:17790332681206969887405992368921737355564915890
+{'command': 'insert', 'key': 'Somebody to Love', 'value': 'D1GUhcvbtA45'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36736)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hoochie Coochie Man', 'value': 'kCQVLawBb6Z1'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:66179785935571995426855144322637790508138114858
+{'command': 'insert', 'key': 'Hoochie Coochie Man', 'value': 'XUG8is83eU2q'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36742)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36758)
+[DEBUG] Received request: {'command': 'insert', 'key': 17790332681206969887405992368921737355564915890, 'value': 'Dj0w4ZmxzXSz', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[DEBUG] Received request: {'command': 'insert', 'key': 66179785935571995426855144322637790508138114858, 'value': 'SG6n8R6cqxDV', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36766)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Will You Love Me Tomorrow', 'value': 'ckJFmEc6sY3H'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:112369635580311039144930701221648514852027178723
+{'command': 'insert', 'key': 'Will You Love Me Tomorrow', 'value': 'm5Z3z627F7Cd'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36768)
+[DEBUG] Received request: {'command': 'insert', 'key': 112369635580311039144930701221648514852027178723, 'value': '4rc5zxoUTki9', 'is_already_hashed': True, 'k': 2}
+Starting Insert
+2
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=1)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36774)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Superstition', 'value': 'hQ1lLXAO1vO5'}
+Starting Insert
+Hashing
+None
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=4)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36788)
+[DEBUG] Received request: {'command': 'insert', 'key': 'In My Life', 'value': 'UhzcVrE0fn3x'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:228783349795760017579149285006678867177540181683
+{'command': 'insert', 'key': 'In My Life', 'value': 'hCUisgmJvMje'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36790)
+[DEBUG] Received request: {'command': 'insert', 'key': 228783349795760017579149285006678867177540181683, 'value': '64Vz5Jx37BJc', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36804)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Tumbling Dice', 'value': 'C5FNJEJ9ELRt'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:138257225700357781769010068971625712860929175971
+{'command': 'insert', 'key': 'Tumbling Dice', 'value': '8oxR4dBwpnEM'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36808)
+[DEBUG] Received request: {'command': 'insert', 'key': 138257225700357781769010068971625712860929175971, 'value': 'CnwOXlYTmQbR', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36814)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Born in the U.S.A.', 'value': 'UxkUMqVmgAF6'}
+Starting Insert
+Hashing
+None
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=4)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36820)
+[DEBUG] Received request: {'command': 'insert', 'key': "Don't Worry Baby", 'value': 'KDb3764A8HYK'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:47573540847289061413428243958210421597490929698
+{'command': 'insert', 'key': "Don't Worry Baby", 'value': 'IxX2KLt05ORy'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36832)
+[DEBUG] Received request: {'command': 'insert', 'key': 47573540847289061413428243958210421597490929698, 'value': 'lBGp9ylbOYua', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36846)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Shake', 'value': 'lpGBbjPaOsCq'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:165172728576838792194260066820609180234441139951
+{'command': 'insert', 'key': 'Shake', 'value': 'a8lc2Tt92w9T'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36860)
+[DEBUG] Received request: {'command': 'insert', 'key': 165172728576838792194260066820609180234441139951, 'value': 'DDfbbHqWABpk', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36870)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Whole Lotta Love', 'value': 'R4Kb7taO2jzw'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:66701153027032871399921963440579723432345758868
+{'command': 'insert', 'key': 'Whole Lotta Love', 'value': 'jMAWGMVa5sTx'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36884)
+[DEBUG] Received request: {'command': 'insert', 'key': 66701153027032871399921963440579723432345758868, 'value': 'kZnD0I8EWaGh', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36890)
+[DEBUG] Received request: {'command': 'insert', 'key': 'William', 'value': 'bJlZQCAsYqYj'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:71079783566373417588838942861682410696172320323
+{'command': 'insert', 'key': 'William', 'value': 'tEpmJeBIWOUf'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36894)
+[DEBUG] Received request: {'command': 'insert', 'key': 71079783566373417588838942861682410696172320323, 'value': '563CcNrrV71L', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36898)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Fake Plastic Trees', 'value': '9bm6ZkCYorzE'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:131298213711620215487984377286928080361644137599
+{'command': 'insert', 'key': 'Fake Plastic Trees', 'value': 'czCQC4nvmkfV'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36902)
+[DEBUG] Received request: {'command': 'insert', 'key': 131298213711620215487984377286928080361644137599, 'value': 'O46dA0xy3452', 'is_already_hashed': True, 'k': 2}
+Starting Insert
+2
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=1)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36912)
+[DEBUG] Received request: {'command': 'insert', 'key': 'God Only Knows', 'value': 'nlYOWFxYSovV'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:317849593489750306492521785671576339203311958310
+{'command': 'insert', 'key': 'God Only Knows', 'value': 'wSbmxKOrxKlt'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36924)
+[DEBUG] Received request: {'command': 'insert', 'key': 317849593489750306492521785671576339203311958310, 'value': '63OaRpO9EFHW', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36928)
+[DEBUG] Received request: {'command': 'insert', 'key': 1451684071593277930468137702879219811471142420464, 'value': '41AkW9wWpe0c', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36932)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Smoke on the Water', 'value': 'ovKLUwLWSx0y'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:13153068154462250583652994486642520250623357004
+{'command': 'insert', 'key': 'Smoke on the Water', 'value': 'gLxNirgUOugr'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 36948)
+[DEBUG] Received request: {'command': 'insert', 'key': 1411078483282494156343866529863656842684326694180, 'value': 'mwErQxXuVpzh', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49486)
+[DEBUG] Received request: {'command': 'insert', 'key': 13153068154462250583652994486642520250623357004, 'value': '2R5h11m6Dbf0', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49490)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Ziggy Stardust', 'value': 't9HgKyejHNr5'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:187007147479153512669802589044549194354514710167
+{'command': 'insert', 'key': 'Ziggy Stardust', 'value': 'WOOigz4KsH1H'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49498)
+[DEBUG] Received request: {'command': 'insert', 'key': 187007147479153512669802589044549194354514710167, 'value': 'CFTZ5wYSoBPu', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49502)
+[DEBUG] Received request: {'command': 'insert', 'key': 'The End', 'value': 'WXKeWe6klqXc'}
+Starting Insert
+Hashing
+None
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=4)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49512)
+[DEBUG] Received request: {'command': 'insert', 'key': 1368086663862013036971617892019855139637371391007, 'value': 'RS0mfVQmhI8R', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49526)
+[DEBUG] Received request: {'command': 'insert', 'key': 1393943102255773600953806820159928120728724087270, 'value': '9L9k7ZOCWcGJ', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49540)
+[DEBUG] Received request: {'command': 'insert', 'key': 1441988206909985373190593048871669802303936066481, 'value': '6oMcCbBAEAgI', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49546)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Sexual Healing', 'value': 'YEuh3t1KvNhX'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:351247129939265973069141832933252575536035910134
+{'command': 'insert', 'key': 'Sexual Healing', 'value': 'mkH7OjUipsQk'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49550)
+[DEBUG] Received request: {'command': 'insert', 'key': 351247129939265973069141832933252575536035910134, 'value': 'hneJoWBxJkGX', 'is_already_hashed': True, 'k': 4}
+Starting Insert
+4
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=3)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49564)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Mr. Tambourine Man', 'value': 'a8VGqtCEF6e3'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:112794908782384135401959210969715509386860031192
+{'command': 'insert', 'key': 'Mr. Tambourine Man', 'value': '2qKitD8YErm2'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49580)
+[DEBUG] Received request: {'command': 'insert', 'key': 112794908782384135401959210969715509386860031192, 'value': 'wvgeofQFtNOq', 'is_already_hashed': True, 'k': 2}
+Starting Insert
+2
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=1)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49596)
+[DEBUG] Received request: {'command': 'insert', 'key': 'We Will Rock You', 'value': 'P78sUB7wzICo'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:210903046807158584596439650596062517364993503799
+{'command': 'insert', 'key': 'We Will Rock You', 'value': 'pcuFfFlvuyOX'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49602)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Wheels', 'value': 'LNrKQvDg0q5C'}
+Starting Insert
+Hashing
+None
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=4)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49608)
+[DEBUG] Received request: {'command': 'insert', 'key': 210903046807158584596439650596062517364993503799, 'value': '8mvzu02Skzi0', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49622)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Green Onions', 'value': 'OIO0VEw4t276'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:343120611402741708176130440805096938227241219707
+{'command': 'insert', 'key': 'Green Onions', 'value': 'xDLWBdHqi3Fd'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49628)
+[DEBUG] Received request: {'command': 'insert', 'key': 343120611402741708176130440805096938227241219707, 'value': '4kzm52PIIRb0', 'is_already_hashed': True, 'k': 4}
+Starting Insert
+4
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=3)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49642)
+[DEBUG] Received request: {'command': 'insert', 'key': "Ain't No Sunshine", 'value': 'Dvxt09PzwZLa'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:305511726149072934848066953905635211756558748062
+{'command': 'insert', 'key': "Ain't No Sunshine", 'value': 'iYXlusqbIDWb'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49654)
+[DEBUG] Received request: {'command': 'insert', 'key': 305511726149072934848066953905635211756558748062, 'value': 'H1Go4oMASnGG', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49658)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Help!', 'value': 'bVJMPASTUoAf'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:357054339932257973449643387637459498587917481476
+{'command': 'insert', 'key': 'Help!', 'value': 'nGOmb0WvbDzY'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49664)
+[DEBUG] Received request: {'command': 'insert', 'key': 357054339932257973449643387637459498587917481476, 'value': 'dy382eRqgY4j', 'is_already_hashed': True, 'k': 4}
+Starting Insert
+4
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=3)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49678)
+[DEBUG] Received request: {'command': 'insert', 'key': "I Can't Make You Love Me", 'value': 'X9tDLCNQYIOs'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:317809740091470703535687573929298023829592897182
+{'command': 'insert', 'key': "I Can't Make You Love Me", 'value': 'vmjtmr04sAjW'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49692)
+[DEBUG] Received request: {'command': 'insert', 'key': 317809740091470703535687573929298023829592897182, 'value': '7gbg4mUEGh4h', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49698)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Everybody Needs Somebody to Love', 'value': 'gOzlbj5p1kiJ'}
+Starting Insert
+Hashing
+None
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=4)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49708)
+[DEBUG] Received request: {'command': 'insert', 'key': 1443036127408901351964016670976598687862992464833, 'value': 'zuEO8GxkHb1K', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49718)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Save the Last Dance for Me', 'value': 'cGRgYr9Olv3d'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:15202342750625065446777589445030431278831100982
+{'command': 'insert', 'key': 'Save the Last Dance for Me', 'value': 'EOKP2P8HNuWG'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49728)
+[DEBUG] Received request: {'command': 'insert', 'key': 15202342750625065446777589445030431278831100982, 'value': 'h3bL2mqQxFNp', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49738)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Lady Marmalade', 'value': 'Jt2a3uRGSRlW'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:297448216948854730499684339131658655232352207166
+{'command': 'insert', 'key': 'Lady Marmalade', 'value': 'WEjSvTo655sE'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49750)
+[DEBUG] Received request: {'command': 'insert', 'key': 297448216948854730499684339131658655232352207166, 'value': '7WsNS50SLMnx', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49754)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Help Me', 'value': 'qzhDp7bqVNM4'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:293263601280878324719772845805395896210772553252
+{'command': 'insert', 'key': 'Help Me', 'value': 'jpIpJVGD7YVX'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49766)
+[DEBUG] Received request: {'command': 'insert', 'key': 293263601280878324719772845805395896210772553252, 'value': 'aT0mA5yC1aKB', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49774)
+[DEBUG] Received request: {'command': 'insert', 'key': "I'll Feel a Whole Lot Better", 'value': 'RTm9xdJqCgHq'}
+Starting Insert
+Hashing
+None
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=4)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49786)
+[DEBUG] Received request: {'command': 'insert', 'key': 1355309876166602984827955041988165636130764833029, 'value': 'SVgYhDkFxpEH', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49794)
+[DEBUG] Received request: {'command': 'insert', 'key': "Ain't It a Shame", 'value': 'HAMKD7wrSRsB'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:106705866732257196016312190360906842968329567690
+{'command': 'insert', 'key': "Ain't It a Shame", 'value': 'XysVNI8QdmVz'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49806)
+[DEBUG] Received request: {'command': 'insert', 'key': 106705866732257196016312190360906842968329567690, 'value': 'ca8jbNHO5Awz', 'is_already_hashed': True, 'k': 2}
+Starting Insert
+2
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=1)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49814)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Into the Mystic', 'value': '5w8csVBIPZnV'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:280622508483348214600347262058575036498401469220
+{'command': 'insert', 'key': 'Into the Mystic', 'value': 'zPRf2CU9Kszt'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49820)
+[DEBUG] Received request: {'command': 'insert', 'key': 280622508483348214600347262058575036498401469220, 'value': 'SsuDDWWcHaQC', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49824)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Wild Horses', 'value': 'WomluTg2He8O'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:327256532488106307227688572150900514331942326616
+{'command': 'insert', 'key': 'Wild Horses', 'value': 'HX5V9gnXzFYN'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49830)
+[DEBUG] Received request: {'command': 'insert', 'key': 327256532488106307227688572150900514331942326616, 'value': 'pfX4A9q15tgH', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49842)
+[DEBUG] Received request: {'command': 'insert', 'key': 'While My Guitar Gently Weeps', 'value': 'MZ1ziItLIVRR'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:188799358911286009562636770757877279596272515633
+{'command': 'insert', 'key': 'While My Guitar Gently Weeps', 'value': '9nIWWD7OLyXA'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49852)
+[DEBUG] Received request: {'command': 'insert', 'key': 188799358911286009562636770757877279596272515633, 'value': 'NJaVFd6OrnNU', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49856)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Every Breath You Take', 'value': 'Y2RQg5ayHxbe'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:298180925359102484767502499411416276635252134766
+{'command': 'insert', 'key': 'Every Breath You Take', 'value': 'TDEnypOcS8XB'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49870)
+[DEBUG] Received request: {'command': 'insert', 'key': 298180925359102484767502499411416276635252134766, 'value': '7BTXBRue4XbR', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49880)
+[DEBUG] Received request: {'command': 'insert', 'key': 'River Deep - Mountain High', 'value': 'Qo8FaOgb5T5K'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:111781251863594393405556337680414080419473609450
+{'command': 'insert', 'key': 'River Deep - Mountain High', 'value': 'zH5STIeCo6CK'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49882)
+[DEBUG] Received request: {'command': 'insert', 'key': 111781251863594393405556337680414080419473609450, 'value': 'LTg93YES1Glz', 'is_already_hashed': True, 'k': 2}
+Starting Insert
+2
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=1)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49894)
+[DEBUG] Received request: {'command': 'insert', 'key': 'I Never Loved a Man (The Way I Love You)', 'value': '0r9DHoCu5N3S'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:356856966406269883590761018748547722716365621750
+{'command': 'insert', 'key': 'I Never Loved a Man (The Way I Love You)', 'value': '8VdRnJcy1OgE'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49906)
+[DEBUG] Received request: {'command': 'insert', 'key': 356856966406269883590761018748547722716365621750, 'value': '5gSlJGBlmmYD', 'is_already_hashed': True, 'k': 4}
+Starting Insert
+4
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=3)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49912)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Mustang Sally', 'value': 'HuLA75Ml9bV9'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:94133650525610236612105867242986572803128964243
+{'command': 'insert', 'key': 'Mustang Sally', 'value': 'sIpYQrLopUw7'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49928)
+[DEBUG] Received request: {'command': 'insert', 'key': 94133650525610236612105867242986572803128964243, 'value': 'x3vGKJrC8TY2', 'is_already_hashed': True, 'k': 2}
+Starting Insert
+2
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=1)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49934)
+[DEBUG] Received request: {'command': 'insert', 'key': 1351739896458174751718828933278968718072862316110, 'value': '9r5FcoQlZiRH', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49940)
+[DEBUG] Received request: {'command': 'insert', 'key': "You've Lost That Lovin' Feelin'", 'value': '7MJca7veCPzB'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:93459153333835758931472137978034014503344790063
+{'command': 'insert', 'key': "You've Lost That Lovin' Feelin'", 'value': 'MEuG1cG4IL4U'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49952)
+[DEBUG] Received request: {'command': 'insert', 'key': 93459153333835758931472137978034014503344790063, 'value': '5sMoU24haTIa', 'is_already_hashed': True, 'k': 2}
+Starting Insert
+2
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=1)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49958)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Eleanor Rigby', 'value': 'WCc6JAZyOCl4'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:123417512776672344502972089197013878973164965629
+{'command': 'insert', 'key': 'Eleanor Rigby', 'value': 'K9O3X2MJ7mYa'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49960)
+[DEBUG] Received request: {'command': 'insert', 'key': 123417512776672344502972089197013878973164965629, 'value': 'UZNZsIRgdwAx', 'is_already_hashed': True, 'k': 2}
+Starting Insert
+2
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=1)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49976)
+[DEBUG] Received request: {'command': 'insert', 'key': 1361236449156621731415253150080180606308665832333, 'value': '3m4ic8xCf7Mr', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 49990)
+[DEBUG] Received request: {'command': 'insert', 'key': "I Love Rock 'N Roll", 'value': 'wZ0UrRQ8ZLdt'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:132825467434209084936379542507599541338393188477
+{'command': 'insert', 'key': "I Love Rock 'N Roll", 'value': 'IdB9e8Dm9aPm'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50006)
+[DEBUG] Received request: {'command': 'insert', 'key': 132825467434209084936379542507599541338393188477, 'value': 'ZcJWYd1tdNNR', 'is_already_hashed': True, 'k': 2}
+Starting Insert
+2
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=1)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50022)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Tiny Dancer', 'value': 'I0xoslJIF30R'}
+Starting Insert
+Hashing
+None
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=4)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50032)
+[DEBUG] Received request: {'command': 'insert', 'key': "Stayin' Alive", 'value': 'VUV4KDKGHu06'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:166051097733384843060243478357048184426642481806
+{'command': 'insert', 'key': "Stayin' Alive", 'value': 'wyNYFiYq1SvI'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50042)
+[DEBUG] Received request: {'command': 'insert', 'key': 166051097733384843060243478357048184426642481806, 'value': 'fMr1tyfUtY17', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50058)
+[DEBUG] Received request: {'command': 'insert', 'key': 'How Soon Is Now?', 'value': 'vvNXcPJ9tM3W'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:210404886852020094335699082317970722101732129200
+{'command': 'insert', 'key': 'How Soon Is Now?', 'value': 'Zekp5DMmssWu'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50066)
+[DEBUG] Received request: {'command': 'insert', 'key': 210404886852020094335699082317970722101732129200, 'value': 'qYys4rURilPJ', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50068)
+[DEBUG] Received request: {'command': 'insert', 'key': 1387139024832624810488125761436070421735397220703, 'value': '2XqPvR3jHU6z', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50080)
+[DEBUG] Received request: {'command': 'insert', 'key': 1400619885623333415125564359798194224315866986580, 'value': 'W7frjJw95xvO', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50086)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Under the Boardwalk', 'value': 'J1qtvHfbpK3Q'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:187783225582021375145946985309667386363106549241
+{'command': 'insert', 'key': 'Under the Boardwalk', 'value': 'JOW0fuo1sqvN'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50098)
+[DEBUG] Received request: {'command': 'insert', 'key': 187783225582021375145946985309667386363106549241, 'value': 'iLH9Fgsa52En', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50102)
+[DEBUG] Received request: {'command': 'insert', 'key': "Can't Buy Me Love", 'value': 'wBlEKpOjgvD8'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:246341503837452318703083172692922418586673383081
+{'command': 'insert', 'key': "Can't Buy Me Love", 'value': 'gm5vMTGcEhyU'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50110)
+[DEBUG] Received request: {'command': 'insert', 'key': 246341503837452318703083172692922418586673383081, 'value': 'voSFP9YXWkTC', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50124)
+[DEBUG] Received request: {'command': 'insert', 'key': "Baba O'Riley", 'value': 'mixkPoDxCrst'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:373623464534471504284739629834579721944100837185
+{'command': 'insert', 'key': "Baba O'Riley", 'value': 'DbZroD2LNntX'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50140)
+[DEBUG] Received request: {'command': 'insert', 'key': 373623464534471504284739629834579721944100837185, 'value': 'QXprsZqU4Qyj', 'is_already_hashed': True, 'k': 4}
+Starting Insert
+4
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=3)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50150)
+[DEBUG] Received request: {'command': 'insert', 'key': 1454363866302586688719027922720402431468226443457, 'value': 'F2QQpxVuJUcs', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50152)
+[DEBUG] Received request: {'command': 'insert', 'key': 1424110295054483149589103486913934433235274150912, 'value': '8T1e38FMA38h', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50168)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Pink Houses', 'value': 'NIZdMEOtfohz'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:363231662579402935625900930885975804247396781269
+{'command': 'insert', 'key': 'Pink Houses', 'value': 'FIJb5UfJyhDD'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50172)
+[DEBUG] Received request: {'command': 'insert', 'key': 363231662579402935625900930885975804247396781269, 'value': 'Y1aZA7jGkiPX', 'is_already_hashed': True, 'k': 4}
+Starting Insert
+4
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=3)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50184)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Rocket Man', 'value': 'Wo4VWN9cKebG'}
+Starting Insert
+Hashing
+None
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=4)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50200)
+[DEBUG] Received request: {'command': 'insert', 'key': "That'll Be the Day", 'value': 'oBT3b8dMSRwz'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:8659885596364418658808046758698124121124421417
+{'command': 'insert', 'key': "That'll Be the Day", 'value': 'wRkyg2ttfLFN'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50204)
+[DEBUG] Received request: {'command': 'insert', 'key': 'The Harder They Come', 'value': 'mLswGfYUaqKP'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:81299254383089011938400212292023133456153063870
+{'command': 'insert', 'key': 'The Harder They Come', 'value': 'tXVN4BgiklqW'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50208)
+[DEBUG] Received request: {'command': 'insert', 'key': 8659885596364418658808046758698124121124421417, 'value': 'QkBIwC2R2JiY', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50216)
+[DEBUG] Received request: {'command': 'insert', 'key': 81299254383089011938400212292023133456153063870, 'value': 'zjaX2l7oJvDf', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50224)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Band of Gold', 'value': 'CXfWCDDfMgUd'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:77739550953534246241799182507752498904580106717
+{'command': 'insert', 'key': 'Band of Gold', 'value': 'kO1PlZz0hIiR'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50236)
+[DEBUG] Received request: {'command': 'insert', 'key': 77739550953534246241799182507752498904580106717, 'value': '1LRybm1BsJia', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50248)
+[DEBUG] Received request: {'command': 'insert', 'key': 'I Will Survive', 'value': 'jWFLbZXL5BT2'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:267193693029775015389047058209116789798013712172
+{'command': 'insert', 'key': 'I Will Survive', 'value': 'QSdwazWtgNcI'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50262)
+[DEBUG] Received request: {'command': 'insert', 'key': 267193693029775015389047058209116789798013712172, 'value': 'e3Q8hFAMoHDm', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50266)
+[DEBUG] Received request: {'command': 'insert', 'key': 1440508216567276903764922200144303509007560390741, 'value': 'Qo5Dl8mh6ejP', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50270)
+[DEBUG] Received request: {'command': 'insert', 'key': 1427708089631822183833778410145962402568737335138, 'value': 'K85mMjD5W826', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50276)
+[DEBUG] Received request: {'command': 'insert', 'key': 1358816276447151290908708515155151679311549998034, 'value': 'hSqpHpJahNdk', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50284)
+[DEBUG] Received request: {'command': 'insert', 'key': 1394033856444623131961227695679755176086200687011, 'value': 'AgGLKjBjqoBS', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50286)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50300)
+[DEBUG] Received request: {'command': 'insert', 'key': 'The Weight', 'value': '13lCh8BUYElT'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:302681533271034543519645059166497619588025388286
+{'command': 'insert', 'key': 'The Weight', 'value': 'wO10Wk3KyDIP'}
+[DEBUG] Received request: {'command': 'insert', 'key': 1395616819315434948267400825393501933892671123670, 'value': 'nOixx1swtkOD', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50316)
+[DEBUG] Received request: {'command': 'insert', 'key': 302681533271034543519645059166497619588025388286, 'value': 'KKPsiBafBpHG', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50328)
+[DEBUG] Received request: {'command': 'insert', 'key': 1359249695602899156184769349276842989697853004803, 'value': 'wMvASHNOmsvG', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50336)
+[DEBUG] Received request: {'command': 'insert', 'key': "You Don't Have to Say You Love Me", 'value': 'AHeUOMcU6zCq'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:69577078285171062000725560373639145737408360209
+{'command': 'insert', 'key': "You Don't Have to Say You Love Me", 'value': 'BcTIlZPbz2Pt'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50348)
+[DEBUG] Received request: {'command': 'insert', 'key': 69577078285171062000725560373639145737408360209, 'value': '9eLhwfQDCGRt', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50358)
+[DEBUG] Received request: {'command': 'insert', 'key': "Keep a Knockin'", 'value': 'FLWyddPj4yBH'}
+Starting Insert
+Hashing
+None
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=4)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50368)
+[DEBUG] Received request: {'command': 'insert', 'key': 1362040474167780636311126882712319042657370823712, 'value': 'MYWT9MaEadgf', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50374)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Running on Empty', 'value': '1Qb1ambpnBZP'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:359847055052725933079168005289471179210724359990
+{'command': 'insert', 'key': 'Running on Empty', 'value': 'gdpvN1eQQxBU'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50386)
+[DEBUG] Received request: {'command': 'insert', 'key': 359847055052725933079168005289471179210724359990, 'value': 'rDtomniZPHxX', 'is_already_hashed': True, 'k': 4}
+Starting Insert
+4
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=3)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50400)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Good Golly', 'value': 'S2GmRo6y8fkb'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:227530705841421245532950733333598313482967595791
+{'command': 'insert', 'key': 'Good Golly', 'value': 'B4BclxnTxxjB'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50416)
+[DEBUG] Received request: {'command': 'insert', 'key': 227530705841421245532950733333598313482967595791, 'value': 'ORXcet8Lya8e', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50426)
+[DEBUG] Received request: {'command': 'insert', 'key': "Sweet Child O' Mine", 'value': 'f9APE2mpDB6M'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:325799497614792052845746357556063052128551661826
+{'command': 'insert', 'key': "Sweet Child O' Mine", 'value': 'gjb1I4ZzPgIJ'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50442)
+[DEBUG] Received request: {'command': 'insert', 'key': 325799497614792052845746357556063052128551661826, 'value': 'f1nw3QCN7fmF', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50458)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Then He Kissed Me', 'value': 'CGPF8BdXD7Dt'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:14461973021111126102100595307893212436934142231
+{'command': 'insert', 'key': 'Then He Kissed Me', 'value': 'Of0rIqeilVTH'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50474)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Street Fighting Man', 'value': '904yYYdNmpxM'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:357651355992833563260464649792071446175970785046
+{'command': 'insert', 'key': 'Street Fighting Man', 'value': 'VFzbiykOltHK'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50484)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50494)
+[DEBUG] Received request: {'command': 'insert', 'key': 14461973021111126102100595307893212436934142231, 'value': '278pIIxRZk4s', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[DEBUG] Received request: {'command': 'insert', 'key': 357651355992833563260464649792071446175970785046, 'value': 'qVV4hANnDlFS', 'is_already_hashed': True, 'k': 4}
+Starting Insert
+4
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=3)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50506)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Get Up', 'value': 'zO6IDGA9lxS4'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:296588418830591769974366186184248207955295936917
+{'command': 'insert', 'key': 'Get Up', 'value': 'ppW0ibfUrNNB'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50508)
+[DEBUG] Received request: {'command': 'insert', 'key': 296588418830591769974366186184248207955295936917, 'value': 'BQZKFaBgxu2i', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50524)
+[DEBUG] Received request: {'command': 'insert', 'key': 1446366813062106426852776304847150398761805628636, 'value': 'UyITJqYND6NJ', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50528)
+[DEBUG] Received request: {'command': 'insert', 'key': 1362989827789496932804116931224525352647676967988, 'value': 'GGqDVndb3A5v', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50540)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Me and Bobby McGee', 'value': 'nhU2rRGG05qW'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:315733051578763966380792869960916655202365355434
+{'command': 'insert', 'key': 'Me and Bobby McGee', 'value': 'rYWppwIadhIO'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50556)
+[DEBUG] Received request: {'command': 'insert', 'key': 315733051578763966380792869960916655202365355434, 'value': 'ZUDe8TIos3dl', 'is_already_hashed': True, 'k': 3}
+Starting Insert
+3
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=2)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50562)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Come As You Are', 'value': 'MqXVMnoNFfoj'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:351589462464107945875006416880168579288410568523
+{'command': 'insert', 'key': 'Come As You Are', 'value': 'V8urDLQskqUr'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50568)
+[DEBUG] Received request: {'command': 'insert', 'key': 351589462464107945875006416880168579288410568523, 'value': 'z0suzJbjmaqh', 'is_already_hashed': True, 'k': 4}
+Starting Insert
+4
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=3)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50580)
+[DEBUG] Received request: {'command': 'insert', 'key': "(Don't Fear) the Reaper", 'value': 'gCqr6mAu3rry'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:115668017366897142121513262243527174018632988894
+{'command': 'insert', 'key': "(Don't Fear) the Reaper", 'value': '6vvfyilY2v56'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50588)
+[DEBUG] Received request: {'command': 'insert', 'key': 115668017366897142121513262243527174018632988894, 'value': 'fR1k0tNqychI', 'is_already_hashed': True, 'k': 2}
+Starting Insert
+2
+[NODE 420139047123305418451206450639216810642337245175] Forwarding replication to 127.0.0.1:5002 (k=1)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50596)
+[DEBUG] Received request: {'command': 'insert', 'key': "Cathy's Clown", 'value': 'xDF2umpg7gcJ'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:30656211857127899967542494632570130816897122858
+{'command': 'insert', 'key': "Cathy's Clown", 'value': 'YbC9MtaS47Yz'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50600)
+[DEBUG] Received request: {'command': 'insert', 'key': 30656211857127899967542494632570130816897122858, 'value': 'mgHWDnXaD7gb', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50604)
+[DEBUG] Received request: {'command': 'insert', 'key': 'One Way or Another', 'value': 'zxbjc7bxtPCo'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:17862834334073387005200190089130906900237874054
+{'command': 'insert', 'key': 'One Way or Another', 'value': 'kIoMYD2VxGGh'}
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50620)
+[DEBUG] Received request: {'command': 'insert', 'key': 17862834334073387005200190089130906900237874054, 'value': 'YpojyOQRTrnY', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 420139047123305418451206450639216810642337245175] Final replication node reached. Replication complete.
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50634)
+[NODE 420139047123305418451206450639216810642337245175] Connection from ('127.0.0.1', 50642)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Paranoid', 'value': 'eeMtOVXXfhom'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+Hashed key:17925476045454516436163884385578538032591609724
+{
+    "status": "success",
+    "message": "Inserted 820447274225298678674902237570449491585421372334 -> {'value': 'eMkxSaRMH6ZZ', 'k': 1},replication successful"
+}
+Inserting key: 'Bizarre Love Triangle' (value auto-generated by node.py)
+{
+    "status": "success",
+    "message": "Inserted 591880059390228897149159394340100945236736296893 -> {'value': 'kPAXuh6V7aXf', 'k': 1},replication successful"
+}
+Inserting key: 'Come Together' (value auto-generated by node.py)
+{
+    "status": "success",
+    "message": "Inserted 1454058321857354921907888319375182835706354078857 -> {'value': '3n7CdUS1HRkl', 'k': 1},replication successful"
+}
