@@ -50,16 +50,16 @@ execute_requests() {
         file="$REQUEST_PATH/requests_0${i}.txt"
         echo "Executing requests from $file on node $i (port $port)..." | tee -a "$LOG_DIR/requestLog_${i}.txt"
 
-        while IFS= read -r line; do
-            request_type=$(echo "$line" | awk '{print $1}')
-            args=$(echo "$line" | cut -d' ' -f2-)
+        while IFS=',' read -r request_type key value; do
+            key=$(echo "$key" | xargs)  # Clean whitespace
+            value=$(echo "$value" | xargs)  # Clean whitespace
             
             if [ "$request_type" == "insert" ]; then
-                echo "Inserting: $args on node $i (port $port)" | tee -a "$LOG_DIR/requestLog_${i}.txt"
-                python3 Chord_Client.py insert "$args" --port $port | tee -a "$LOG_DIR/requestLog_${i}.txt"
+                echo "Inserting: key=$key, value=$value on node $i (port $port)" | tee -a "$LOG_DIR/requestLog_${i}.txt"
+                python3 Chord_Client.py insert "$key" "$value" --port $port | tee -a "$LOG_DIR/requestLog_${i}.txt"
             elif [ "$request_type" == "query" ]; then
-                echo "Querying: $args on node $i (port $port)" | tee -a "$LOG_DIR/requestLog_${i}.txt"
-                python3 Chord_Client.py query "$args" --port $port | tee -a "$LOG_DIR/requestLog_${i}.txt"
+                echo "Querying: key=$key on node $i (port $port)" | tee -a "$LOG_DIR/requestLog_${i}.txt"
+                python3 Chord_Client.py query "$key" --port $port | tee -a "$LOG_DIR/requestLog_${i}.txt"
             fi
         done < "$file" &
     done
@@ -81,7 +81,8 @@ for consistency in "${CONSISTENCIES[@]}"; do
     sleep 5
     execute_requests "$consistency"
     echo "Experiment with k=$k and consistency=$consistency completed." | tee -a "$LOG_DIR/requestResults.csv"
+    pkill -f node.py
     sleep 5
 done
 
-echo "Request phase completed. Nodes are still running for further queries."
+echo "All experiments completed. Nodes have been shut down." | tee -a "$LOG_DIR/requestResults.csv"

@@ -1,1 +1,2687 @@
-Executing requests from ./data/requests/requests_00.txt on node 0 (port 5000)...
+[DEBUG] Trying to start server on 127.0.0.1:5000
+[DEBUG] Creating socket...
+[NODE 1041195083025998055559450424623959893298787457821] Server running at 127.0.0.1:5000. Press Ctrl+C to shut down.
+[BOOTSTRAP NODE] Initialized with self-successor: {'node_id': 1041195083025998055559450424623959893298787457821, 'ip': '127.0.0.1', 'port': 5000}
+[DEBUG] Setting socket options...
+[DEBUG] Binding server to 127.0.0.1:5000...
+[DEBUG] Server is now listening...
+[NODE 1041195083025998055559450424623959893298787457821] Listening on 127.0.0.1:5000...
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 54998)
+[DEBUG] Received request: {'command': 'find_neighbours', 'node_id': 773152486527641703026531079380358735484735592536}
+[DEBUG] find_successor() called for node_id: 773152486527641703026531079380358735484735592536
+[DEBUG] Returning bootstrap node as successor: {'node_id': 1041195083025998055559450424623959893298787457821, 'ip': '127.0.0.1', 'port': 5000}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 55012)
+[DEBUG] Received request: {'command': 'update_predecessor', 'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+[NODE 1041195083025998055559450424623959893298787457821] Predecessor updated: {'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 55024)
+[DEBUG] Received request: {'command': 'update_successor', 'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+[NODE 1041195083025998055559450424623959893298787457821] Successor updated: {'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 55038)
+[DEBUG] Received request: {'command': 'get_k'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 55040)
+[DEBUG] Received request: {'command': 'manage_join_data'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 55050)
+[DEBUG] Received request: {'command': 'find_neighbours', 'node_id': 687218964143197871100890128042487595246201047671}
+[DEBUG] find_successor() called for node_id: 687218964143197871100890128042487595246201047671
+[DEBUG] Returning smallest node as successor: {'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 55056)
+[DEBUG] Received request: {'command': 'update_successor', 'node_id': 687218964143197871100890128042487595246201047671, 'ip': '127.0.0.1', 'port': 5002}
+[NODE 1041195083025998055559450424623959893298787457821] Successor updated: {'node_id': 687218964143197871100890128042487595246201047671, 'ip': '127.0.0.1', 'port': 5002}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 55062)
+[DEBUG] Received request: {'command': 'get_k'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 55076)
+[DEBUG] Received request: {'command': 'find_neighbours', 'node_id': 420139047123305418451206450639216810642337245175}
+[DEBUG] find_successor() called for node_id: 420139047123305418451206450639216810642337245175
+[DEBUG] Returning smallest node as successor: {'node_id': 687218964143197871100890128042487595246201047671, 'ip': '127.0.0.1', 'port': 5002}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 55092)
+[DEBUG] Received request: {'command': 'update_successor', 'node_id': 420139047123305418451206450639216810642337245175, 'ip': '127.0.0.1', 'port': 5003}
+[NODE 1041195083025998055559450424623959893298787457821] Successor updated: {'node_id': 420139047123305418451206450639216810642337245175, 'ip': '127.0.0.1', 'port': 5003}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 55100)
+[DEBUG] Received request: {'command': 'get_k'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 55112)
+[DEBUG] Received request: {'command': 'find_neighbours', 'node_id': 135117988181535955003563159026686220824819050071}
+[DEBUG] find_successor() called for node_id: 135117988181535955003563159026686220824819050071
+[DEBUG] Returning smallest node as successor: {'node_id': 420139047123305418451206450639216810642337245175, 'ip': '127.0.0.1', 'port': 5003}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 55126)
+[DEBUG] Received request: {'command': 'update_successor', 'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+[NODE 1041195083025998055559450424623959893298787457821] Successor updated: {'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 55134)
+[DEBUG] Received request: {'command': 'get_k'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 42990)
+[DEBUG] Received request: {'command': 'find_neighbours', 'node_id': 1334330932393287978545097924263031908973855107846}
+[DEBUG] find_successor() called for node_id: 1334330932393287978545097924263031908973855107846
+[DEBUG] Returning smallest node as successor: {'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 42992)
+[DEBUG] Received request: {'command': 'update_successor', 'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+[NODE 1041195083025998055559450424623959893298787457821] Successor updated: {'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 43002)
+[DEBUG] Received request: {'command': 'get_k'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 43006)
+[DEBUG] Received request: {'command': 'find_neighbours', 'node_id': 92721375935003651661177999486775259999124498565}
+[DEBUG] find_successor() called for node_id: 92721375935003651661177999486775259999124498565
+[DEBUG] Forwarding find_successor request to {'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 43012)
+[DEBUG] Received request: {'command': 'get_k'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 43024)
+[DEBUG] Received request: {'command': 'find_neighbours', 'node_id': 1106009239349327606828036238693922505549953820430}
+[DEBUG] find_successor() called for node_id: 1106009239349327606828036238693922505549953820430
+[DEBUG] Returning successor: {'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 43026)
+[DEBUG] Received request: {'command': 'update_successor', 'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+[NODE 1041195083025998055559450424623959893298787457821] Successor updated: {'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 43038)
+[DEBUG] Received request: {'command': 'get_k'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 43046)
+[DEBUG] Received request: {'command': 'find_neighbours', 'node_id': 342694636883129667016187263873021694770474360405}
+[DEBUG] find_successor() called for node_id: 342694636883129667016187263873021694770474360405
+[DEBUG] Forwarding find_successor request to {'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 43048)
+[DEBUG] Received request: {'command': 'get_k'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 43050)
+[DEBUG] Received request: {'command': 'find_neighbours', 'node_id': 386338222825788925027014385113142312278570765577}
+[DEBUG] find_successor() called for node_id: 386338222825788925027014385113142312278570765577
+[DEBUG] Forwarding find_successor request to {'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 43060)
+[DEBUG] Received request: {'command': 'get_k'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36602)
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36614)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36620)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36632)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36642)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36650)
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36662)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36664)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36666)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+{'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'BaRqy8nQg5OP'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36670)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36686)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+{'command': 'insert', 'key': 'Respect', 'value': 'GhtMf6nWENyz'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36696)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+{'command': 'insert', 'key': 'Respect', 'value': 'TPVVAZTTjLv0'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36708)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36714)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'w1ZrTmYj98Vm'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36722)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36726)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36742)
+[DEBUG] Received request: {'command': 'insert'}
+Starting Insert
+Hashing
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36750)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36762)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36766)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36774)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36780)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36790)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36800)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36816)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36824)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36838)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36840)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36846)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36860)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36872)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36884)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36900)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36906)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36922)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36924)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36926)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36930)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36936)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36952)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36968)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36976)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36980)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36982)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36984)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36986)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 36996)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37004)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37012)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37022)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37034)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37038)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37050)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37058)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+{'command': 'insert', 'key': 'Respect', 'value': 'eoAV7MuX3zP3'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37072)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37076)
+[DEBUG] Received request: {'command': 'insert'}
+Starting Insert
+Hashing
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37092)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37108)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37122)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'WOwRIyQ7167k'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37132)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37138)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37144)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37160)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37162)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37176)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37188)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'yaCChb21DILr'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37200)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': '5YaVolp08wTb'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37210)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+{'command': 'insert', 'key': 'Respect', 'value': 'MnCKQMhLh4BN'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37224)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37230)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37246)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37262)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'HM8Ycbf8h0pL'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37264)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37278)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37280)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37296)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37312)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37318)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37330)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37332)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+{'command': 'insert', 'key': 'Respect', 'value': '7ZqchzXIpkm6'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37346)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37354)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37368)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37376)
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37382)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37384)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'OZ550MIQr8wC'}
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37386)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37402)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37414)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37416)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'hRQ3v4IKN1Np'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37430)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37432)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37446)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37448)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37460)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+{'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'g9qXixDfN0nq'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37474)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37486)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37500)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37510)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37526)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37540)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37542)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37546)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37556)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37564)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37568)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37584)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37590)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+{'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'VjauVw4luEta'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37604)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37616)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37630)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37636)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37640)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37650)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+{'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'uUeIG5l2rrPU'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37664)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37678)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': '6CYgDJXALwOk'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37690)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37696)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+{'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'fMRQQg2Rgi61'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37702)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37716)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37726)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37742)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37754)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+{'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'XazL51IZpYFc'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37770)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37772)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37786)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37800)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37812)
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37820)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37836)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37850)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'Dlv4FT0w9HcQ'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37866)
+[DEBUG] Received request: {'command': 'insert'}
+Starting Insert
+Hashing
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37876)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+{'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'FrP48GnWBKyq'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37892)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37898)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37906)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37918)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37926)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37930)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37934)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37948)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37954)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37962)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37972)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37984)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37988)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 37996)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'ltOapUxO0Y3A'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38004)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38014)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38024)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38032)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38046)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38052)
+[DEBUG] Received request: {'command': 'insert'}
+Starting Insert
+Hashing
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38056)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+{'command': 'insert', 'key': 'Respect', 'value': 'MSxHpqRuidyS'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38070)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': '8BhaEqLcdxOO'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38078)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38086)
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38080)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+{'command': 'insert', 'key': 'Respect', 'value': 'SUzO9s7LSRZO'}
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38094)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+{'command': 'insert', 'key': 'Respect', 'value': 'drrVp9p5PhYW'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38106)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38116)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38118)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38126)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38130)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'RgTiu9pVDsYl'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38138)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38152)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38162)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38166)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38174)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38180)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38196)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38210)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38226)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38228)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38234)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38246)
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38248)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38270)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38286)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38300)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+{'command': 'insert', 'key': 'Respect', 'value': 'GxN9fZ6dnn77'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38304)
+[DEBUG] Received request: {'command': 'insert'}
+Starting Insert
+Hashing
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38310)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+{'command': 'insert', 'key': 'Respect', 'value': 'IWafYs07FD5o'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38318)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38332)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38342)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38358)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+{'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'MP8G4tKuok56'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38372)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38386)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38396)
+[DEBUG] Received request: {'command': 'insert'}
+Starting Insert
+Hashing
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38402)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38418)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38434)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38436)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'cXwYmTVgBXkk'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38440)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38456)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38466)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38480)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38484)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+{'command': 'insert', 'key': 'Like a Rolling Stone', 'value': '7w8Cww28OMyq'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38488)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38500)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38510)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38520)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38528)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38542)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38550)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38556)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38562)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38578)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38594)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38598)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38610)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38614)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38630)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'HuZzX9sFGVjU'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38638)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38642)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38650)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'Y0byO1nqPfHP'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38664)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38666)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38680)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': '8NCfcz5Qb7C8'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38696)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38712)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38716)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38722)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38730)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38734)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+{'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'wiRbq1loFDxV'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38740)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'eiyKDES3Yvpp'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38756)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'XiITyx7pVOl0'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38758)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38772)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+{'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'OAdfewMMOoCM'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38784)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38794)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+{'command': 'insert', 'key': 'Respect', 'value': 'SmpAamnK2tpr'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38800)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': '2tf6nSD96lmT'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38806)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38820)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38830)
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38844)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'ZtIK08Wtat8w'}
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38860)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'Ug6OkWQatEEL'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38872)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38874)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38888)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'aIJcGwMQMk1s'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38900)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38912)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38926)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38942)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38944)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+{'command': 'insert', 'key': 'Respect', 'value': 'TA0K2hBGujxj'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38956)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': '0NwknRKBxwfF'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38966)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38980)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38994)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 38996)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39004)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39010)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39018)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39032)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+{'command': 'insert', 'key': 'Respect', 'value': 'Oiq2AQFKgXmH'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39040)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39054)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39062)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'i6Vv8wnH9Cl6'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39064)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+{'command': 'insert', 'key': 'Respect', 'value': 'BYFqOL0AoM47'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39078)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39086)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'KzAQ8xXl1uVp'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39088)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39098)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39100)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'pJydKzpcBc3G'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39116)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+{'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'R0jFEgMgqrVt'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39122)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'W9qYkz4zMM3v'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39126)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39136)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+{'command': 'insert', 'key': 'Like a Rolling Stone', 'value': '7e0SMZcAcTWG'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39140)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39144)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39150)
+[DEBUG] Received request: {'command': 'insert'}
+Starting Insert
+Hashing
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39156)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39158)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+{'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'amxQMLpsO0CU'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39160)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39168)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39184)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': '4RVwaA8Mcxax'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39190)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39202)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39206)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39216)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39232)
+[DEBUG] Received request: {'command': 'insert'}
+Starting Insert
+Hashing
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39238)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39240)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39248)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39256)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39266)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39282)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39290)
+[DEBUG] Received request: {'command': 'insert'}
+Starting Insert
+Hashing
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39302)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39304)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 39310)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 51978)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 51994)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52000)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52008)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'DgJooXL4KojS'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52020)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52024)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52028)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52040)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52050)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52060)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52070)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52084)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52098)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52106)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52108)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52124)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52130)
+[DEBUG] Received request: {'command': 'insert'}
+Starting Insert
+Hashing
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52144)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': '9Oegfok5vYWT'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52146)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52158)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52174)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': '9XqkO2EAys2Q'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52184)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'IBZvZGdg5zcd'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52186)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52192)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52198)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52214)
+[DEBUG] Received request: {'command': 'insert'}
+Starting Insert
+Hashing
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52230)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52240)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+{'command': 'insert', 'key': 'Respect', 'value': 'MDgI7yavHQoi'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52248)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52258)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52262)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'xlQcH4ArX490'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52272)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52280)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52290)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52302)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52310)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52318)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+{'command': 'insert', 'key': 'Like a Rolling Stone', 'value': '1R9mmxyEIG2o'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52334)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52344)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52356)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52364)
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52366)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52382)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'fGuHEsXPKVMr'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52386)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52402)
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52412)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52422)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52426)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52436)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52444)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52454)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52456)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52464)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52474)
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52486)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52502)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52506)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52510)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52518)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52522)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52536)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52552)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52564)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52572)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52582)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52588)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+{'command': 'insert', 'key': 'Respect', 'value': '7Y5N1zGNPswd'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52604)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'ErUkWLOH6Ar1'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52614)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52630)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52640)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52646)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52656)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+{'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'yrKJBT18bXnU'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52668)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52678)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52680)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52692)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52702)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52704)
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52712)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52728)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52734)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52748)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52758)
+[DEBUG] Received request: {'command': 'insert'}
+Starting Insert
+Hashing
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52766)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52772)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52784)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52786)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52790)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'JKgU71WKWBXc'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52806)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52810)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52826)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52836)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52852)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52862)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52864)
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52874)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52886)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52888)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'h2EwgBcaoRNE'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52896)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': '4CoDhwJfDCq9'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52904)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52908)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52922)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52934)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52942)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52944)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+{'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'QwPa2eM25I3h'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52946)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52958)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52972)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 52988)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53002)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53010)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53026)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53036)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53050)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53064)
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53076)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53090)
+[DEBUG] Received request: {'command': 'insert'}
+Starting Insert
+Hashing
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53102)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53108)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53110)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+{'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'qVeFE8jDPSbN'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53112)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53126)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53136)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53138)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53154)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53158)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53166)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53168)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'DbiKJ5lTIdIo'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53172)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53188)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53204)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53218)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'C99ezw6aZOJ4'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53234)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53242)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53244)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53254)
+[DEBUG] Received request: {'command': 'insert'}
+Starting Insert
+Hashing
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53266)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53278)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53288)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53292)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53296)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53306)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53310)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53322)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53338)
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53336)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53346)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53362)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53372)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53380)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53394)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53406)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53422)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53426)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53440)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53454)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53458)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53468)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'mdfCxnli6d5N'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53482)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53498)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53504)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53520)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53530)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+{'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'HhvkIfT8TW3E'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53536)
+[DEBUG] Received request: {'command': 'insert'}
+Starting Insert
+Hashing
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53544)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53552)
+[DEBUG] Received request: {'command': 'insert'}
+Starting Insert
+Hashing
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53564)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53568)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53572)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53586)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53596)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53602)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53616)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect', 'value': '--port'}
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53626)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'abZ68TgAYSTR'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53628)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'D5mFkbLJXe7i'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53644)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53656)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 773152486527641703026531079380358735484735592536, 'ip': '127.0.0.1', 'port': 5001}
+Hashed key:104083428957902221840953429332483363381421817453
+{'command': 'insert', 'key': 'Respect', 'value': 'SLRMM5xzfgHr'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53670)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53676)
+[DEBUG] Received request: {'command': 'insert'}
+Starting Insert
+Hashing
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53678)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53692)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53708)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53722)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+{'command': 'insert', 'key': 'Hey Jude', 'value': 'HbTaJ8ru7B91'}
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53728)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53732)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53740)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53742)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53754)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53766)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53774)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53782)
+[DEBUG] Received request: {'command': 'query', 'value': '--port'}
+[ERROR] Request handling failed: 'NoneType' object has no attribute 'encode'
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53786)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude', 'value': '--port'}
+Forwarding to successor:
+{'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1041195083025998055559450424623959893298787457821] Connection from ('127.0.0.1', 53794)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude'}
+Starting Insert
+Hashing
+None
+Forwarding to successor:
+{
+    "status": "success",
+    "value": {
+        "value": "3cHDFLYceuzpqESml3feRsYbXwbQxR042Pqc4KiWIRpMy6dk8PXB9VvvXGIB0teZZdwGzS4JMMjMpdxWexksfQbgRoGSn7HIanDLJQWS7aFJpHz9B4ITaCzdH8rU9rU3GNfLyLCJ02lhYfbyoVuCiPJjB8NZTJuWD2ir4pQPvAVE41CUhapWPPTBTUdf9u0pxn2ttly6iHv3BcKrPMQUaxiKcs2PfTB2LvLY",
+        "k": 3
+    }
+}
+Inserting: key=Hey Jude, value=502 on node 0 (port 5000)
+{
+    "status": "success",
+    "message": "Inserted 1184237517711722360570059270454065399878606026334 -> {'value': 'zuqRrSvAQ1jDQxbxT6eieB2wA5EYAp9GhQ1yY8wVbTxHh4Wqznox9AzKKfvncuyRpQnKctZ5JDZT2vFqaV8N3B1aAVUEtKke3vjigmalVmKVqUb0mjGa7AXa68kFYdhyH52l0kko40ZOe7jfTjOvEOp0iDPrQ8JPB0GkugTu0fdalymXAlGwcrp3MDEMp76cgkr2rFdxw8RYsgT8HgdU9GBccxN4tHV9M4a9H3T2P6FTFHO8JpgkDTolYpSvK5OPiE8GWn8cmmZk3TsFBg5recAO6bIbX5WdDAYzBNwetIFqojs3SOTpSeHVAysUciHeaLRrGdV4mDLo79UHIoE8BtGtFCKxInp0203Rm5S1JR5a0a7u8xSxzviE8OvoiTJ23qWelqOQFuWUuVZ7XbqxJH2S8Xc6VoNS57oc6dQUOyZmLUhjsYdbm34Vggt0yFcvyGDtCGvReADFWNPVlOhjxnUpUUVDLPoTGB51gaMFph4nOSfEWLsATz8FSa3pv4TGBsbcEHreBCDSX0uFoPWBeVRwGPPxrUSwyh3CLkvU', 'k': 1},replication successful"
+}
+Querying: key= on node 0 (port 5000)
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Expecting value: line 1 column 1 (char 0)'}}
