@@ -9,7 +9,6 @@ import sys
 import signal
 import random
 import string
-import threading
 
 #Random string generator for value
 def random_string_value(length=12):
