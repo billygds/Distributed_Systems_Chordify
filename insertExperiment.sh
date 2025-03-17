@@ -35,26 +35,6 @@ start_nodes() {
 }
 
 # Function to execute inserts
-#execute_inserts() {
-#    local k=$1
-#    local consistency=$2
-#    
-#    echo "Running inserts with k=$k and consistency=$consistency" | tee -a insertResults.csv
-#    start_time=$(date +%s.%N)
-#    
-#    for ((i=0; i<$NODE_COUNT; i++)); do
-#        port=$((BASE_PORT + i))
-#        file="$INSERT_PATH/insert_0${i}_part.txt"
-#        echo "Inserting data from $file to node $i on port $port..." | tee -a insertLog_${i}.txt
-#        bash -c "while read -r line; do python3 testClient.py insert \"$line\" | tee -a insertLog_${i}.txt; done < $file &" &
-#    done
-#    
-#    wait
-#    end_time=$(date +%s.%N)
-#    duration=$(echo "$end_time - $start_time" | bc)
-#    echo "Write throughput for k=$k, consistency=$consistency: $duration seconds" | tee -a insertResults.csv
-#    echo "$k,$consistency,$duration" >> insertResults.csv
-#}
 execute_inserts() {
     local k=$1
     local consistency=$2
