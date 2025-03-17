@@ -439,7 +439,6 @@ class ChordNode:
             })
         
     def manage_join_data(self):
-        time.sleep(8)
         for key, value in self.data_store.items():
                 #If the joining node is now the first node responsible for this data
                 #we must add it to its data and then decrement k values of
