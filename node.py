@@ -229,18 +229,22 @@ class ChordNode:
         key = request.get("key")
         value = request.get("value")
         node_id = request.get("node_id")
+        k = request.get('k')
 
         if command == "insert":
             if request.get("is_already_hashed") and request.get("is_already_hashed")==True:
                 if request.get('k'):
-                    return self.insert(key,value,True,request.get('k'))
+                    return self.insert(key,value,True,k)
                 else:
                     return self.insert(key,value,True)
             else:
                 if request.get('k'):
-                    return self.insert(key, random_string_value(),False,request.get('k'))
+                    return self.insert(key, random_string_value(),False,k)
                 else:
                     return self.insert(key, random_string_value())
+                
+        if command == 'handle_departing_data':
+            return self.handle_departing_data(key,value,request.get('k'))
 
         elif command == "query":
             if key !='*':
@@ -297,9 +301,9 @@ class ChordNode:
         else:
             k=int(k)
             if hashed_key in self.data_store:
-                self.data_store[hashed_key] = self.data_store[hashed_key] + value
+                self.data_store[hashed_key]['value'] = self.data_store[hashed_key]['value'] + value
             else:
-                self.data_store[hashed_key] = value
+                self.data_store[hashed_key] = {'value':value,'k':k}
             if k > 1:
                 forward_insert = {
                     'command': 'insert',
@@ -321,9 +325,9 @@ class ChordNode:
         #Either this node is the only one,the Bootstrap or the first with ID >= key,or this is the one with the smallest ID
         if (self.successor['node_id'] == self.node_id or self.predecessor['node_id'] < hashed_key and self.node_id >= hashed_key) or self.predecessor['node_id'] > self.node_id:
             if hashed_key in self.data_store:
-                self.data_store[hashed_key] = self.data_store[hashed_key] + value
+                self.data_store[hashed_key]['value'] = self.data_store[hashed_key]['value'] + value
             else:
-                self.data_store[hashed_key] = value
+                self.data_store[hashed_key] = {'value':value,'k':k}
             #return {"status": "success", "message": f"Inserted {key} -> {self.data_store[hashed_key]}"}
 
         
@@ -372,6 +376,20 @@ class ChordNode:
             print(forward_insert_successor)
             return self.send_request(self.successor['ip'],self.successor['port'],forward_insert_successor)
 
+    def handle_departing_data(self,key,value,k):
+        if k == 1:
+            #Insert new data into newly responsible node
+            self.data_store[key] = {'value':value,'k':k}
+            return
+        else:
+            #update k value of this data and forward to successor
+            self.data_store[key]['k'] = self.data_store[key]['k'] + 1
+            return self.send_request(self.successor['ip'],self.successor['port'],{
+                'command': 'handle_departing_data',
+                'key': key,
+                'value': value,
+                'k': k - 1
+            })
 
     def query(self, key):
         """ Αναζητά ένα τραγούδι στο DHT """
@@ -550,6 +568,8 @@ class ChordNode:
             }
             self.send_request(self.successor["ip"], self.successor["port"], notify_successor_request)
 
+            #Deprecated
+            '''
             if self.node_id > self.successor['node_id']:
                 # Αν ο successor έχει το μικρότερο ID, μεταφέρουμε τα δεδομένα στον predecessor
                 target_node = self.predecessor
@@ -558,17 +578,19 @@ class ChordNode:
                 # Κανονική μεταφορά στον successor
                 target_node = self.successor
                 print(f"[NODE {self.node_id}] Transferring data to successor {self.successor}")
+            '''
 
-            # Μεταφορά δεδομένων μέσω insert
+            target_node=self.successor
+            # Ενημερωση και μεταφορα δεδομένων μέσω ειδικού function
             for key, value in self.data_store.items():
-                insert_request = {
-                    "command": "insert",
+                handle_data_request = {
+                    "command": "handle_departing_data",
                     "key": key,
-                    "value": value,
-                    "is_already_hashed": True
+                    "value": value['value'],
+                    "k": value['k']
                 }
-                print(insert_request)
-                self.send_request(target_node["ip"], target_node["port"], insert_request)
+                print(handle_data_request)
+                self.send_request(target_node["ip"], target_node["port"], handle_data_request)
 
             
 
@@ -617,7 +639,7 @@ if __name__ == "__main__":
 
     else:
         print("Usage:")
-        print("  Bootstrap node: python node.py <ip> <port>")
-        print("  Joining node:  python node.py <ip> <port> <bootstrap_ip> <bootstrap_port>")
+        print("  Bootstrap node: python node.py <ip> <port> <replication factor>")
+        print("  Joining node:  python node.py <ip> <port> <bootstrap_ip> <bootstrap_port> <replication factor>")
         sys.exit(1)
 
