@@ -1,15 +1,28 @@
 # Distributed_Systems_Chordify
 
-# Οδηγίες Χρήσης ;)
-
 Πρωτα τρεχουμε αυτό:
 
 python node.py 127.0.0.1 5000
 
 Υστερα:
 
-python testClient.py insert song.mp3 192.168.1.2
+Chordify Client - Available Commands:
 
-python testClient.py query song.mp3
+        insert <key>        - Εισάγει ένα νέο (key, value) ζεύγος στον DHT.
+        delete <key>           - Διαγράφει το (key, value) ζεύγος με κλειδί <key>.
+        query <key>            - Αναζητά την τιμή του <key>. Αν <key> είναι '*', επιστρέφει όλα τα αποθηκευμένα δεδομένα.
+        join <ip> <port> ( <bootstrap_ip> <bootstrap port> )     -Δημιουργεί ενα Chord Ring με τις δωσμένες πληροφορίες ή εισχωρεί έναν κόμβο
+                                                                 σε Chord Ring αν δωθεί η ip και port του bootstrap
+        depart <node_id>       - Ο κόμβος με αναγνωριστικό <node_id> αποχωρεί από το δίκτυο.
+        overlay               - Εμφανίζει την τρέχουσα τοπολογία του Chord δακτυλίου.
+        help                  - Εμφανίζει αυτό το μήνυμα βοήθειας.
 
-python testClient.py delete song.mp3
+        Παράδειγμα χρήσης:
+        python Chord_Client.py insert "song"
+        python Chord_Client.py query "song"
+        python Chord_Client.py delete "song"
+        python Chord_Client.py join 127.0.0.1 5000 - Starts Chord Ring
+        python Chord_Client.py join 127.0.0.1 5001 127.0.0.1 5000 - Adds node to existing chord ring
+        python Chord_Client.py depart "5604500"
+        python Chord_Client.py overlay
+        python Chord_Client.py help
