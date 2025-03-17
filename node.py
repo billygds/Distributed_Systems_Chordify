@@ -26,6 +26,15 @@ class ChordNode:
         self.predecessor = None
         self.k = None
 
+        # Start the server
+        server_thread = threading.Thread(target=self.start_server)
+        server_thread.start()
+
+        # Capture Ctrl+C
+        signal.signal(signal.SIGINT, self.signal_handler)
+
+        print(f"[NODE {self.node_id}] Server running at {self.ip}:{self.port}. Press Ctrl+C to shut down.")
+
         if bootstrap_ip and bootstrap_port:
             # This is a new node joining an existing network
             print(f"[NODE {self.node_id}] Attempting to join network via {bootstrap_ip}:{bootstrap_port}")
@@ -42,15 +51,7 @@ class ChordNode:
             self.k = factor
             self.successor = {"node_id": self.node_id, "ip": self.ip, "port": self.port}
             print(f"[BOOTSTRAP NODE] Initialized with self-successor: {self.successor}")
-
-        # Start the server
-        server_thread = threading.Thread(target=self.start_server)
-        server_thread.start()
-
-        # Capture Ctrl+C
-        signal.signal(signal.SIGINT, self.signal_handler)
-
-        print(f"[NODE {self.node_id}] Server running at {self.ip}:{self.port}. Press Ctrl+C to shut down.")
+        
         while True:
             time.sleep(1)  # Keep the program alive
 
