@@ -11,3 +11,11 @@ insert που εχει κληθει με υπαρχον key
 + Κατανομη δεδομενων ανα κομβο
 
 -> Ανακατανομή των δεδομένων στο depart ενος node
+
+-> Handling data properly on join
+Το Joining node πρέπει να "κλεβει" τα δεδομένα για τα οποια πλεον
+είναι ο υπεύθυνος κομβος
+
+-μεταφορα δεδομένων σε joining node απο successor
+-decrementing k value των επόμενων κόμβων κατα 1
+-delete data απο τον τελευταίο κομβο
