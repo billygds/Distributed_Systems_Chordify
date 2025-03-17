@@ -25,6 +25,7 @@ class ChordNode:
         self.data_store = {}  # DHT key-value store
         self.predecessor = None
         self.k = None
+        self.consistency = None
 
         # Start the server
         server_thread = threading.Thread(target=self.start_server)
@@ -49,6 +50,7 @@ class ChordNode:
         else:
              # This is the bootstrap node, initialize `k`
             self.k = factor
+            self.consistency = consistency
             self.successor = {"node_id": self.node_id, "ip": self.ip, "port": self.port}
             print(f"[BOOTSTRAP NODE] Initialized with self-successor: {self.successor}")
         
@@ -135,7 +137,11 @@ class ChordNode:
                 print(f"[NODE {self.node_id}] Update successor response: {update_response}")
 
                 #Λαμβανουμε το k replication factor απο το bootstrap
-                self.k = self.send_request(bootstrap_ip,bootstrap_port,{"command":"get_k"})['k']
+                configuration = self.send_request(bootstrap_ip,bootstrap_port,{"command":"get_k_and_consistency"})
+                self.k = configuration['k']
+                self.consistency = configuration['consistency']
+                print(self.k)
+                print(self.consistency)
 
                 #Handle the changes of data correctness with the joining node
                 self.send_request(self.successor['ip'],self.successor['port'],{"command":"manage_join_data"})
@@ -296,8 +302,8 @@ class ChordNode:
             return self.update_successor(request["node_id"], request["ip"], request["port"])
         elif command == "update_predecessor":
             return self.update_predecessor(request["node_id"], request["ip"], request["port"])
-        elif command == "get_k":
-            return {"status":"success","k":self.k}
+        elif command == "get_k_and_consistency":
+            return {"status":"success","k":self.k,"consistency":self.consistency}
             #return self.request_k_from_bootstrap(bootstrap_ip, bootstrap_port) # Send back k
         #elif command == "shutdown":
         #    return self.shutdown(conn)  # Περνάμε τη σύνδεση
@@ -335,7 +341,7 @@ class ChordNode:
                 return self.send_request(self.successor['ip'], self.successor['port'], forward_insert)
             else:
                 print(f"[NODE {self.node_id}] Final replication node reached. Replication complete.")
-                return {"status": "success", "message": f"Inserted {key} -> {self.data_store[hashed_key]},replication successful"}
+                return {"status": "success", "message": f"Inserted {key} -> {self.data_store[hashed_key]['value']},replication successful"}
 
         #The following code is for the case that this is the first insert,so we must search
         #the correct node
@@ -351,7 +357,26 @@ class ChordNode:
 
         
             # If k > 1, forward to next node for replication
-            if k > 1:
+            #handle different consistencies
+
+            #for linearizability:
+            if (self.consistency == 'linearizability'):
+                if k > 1:
+                    forward_insert = {
+                        'command': 'insert',
+                        'key': hashed_key,
+                        'value': value,
+                        'is_already_hashed': True,
+                        'k': k - 1  # Decrease k by 1
+                    }
+                    print(f"[NODE {self.node_id}] Forwarding replication to {self.successor['ip']}:{self.successor['port']} (k={k-1})")
+                    return self.send_request(self.successor['ip'], self.successor['port'], forward_insert)
+                else:
+                    print(f"[NODE {self.node_id}] Final replication node reached. Replication complete.")
+                    return {"status": "success", "message": f"Inserted {key} -> {self.data_store[hashed_key]['value']},replication successful"}
+            
+            #For eventual consistency:
+            else:
                 forward_insert = {
                     'command': 'insert',
                     'key': hashed_key,
@@ -360,10 +385,9 @@ class ChordNode:
                     'k': k - 1  # Decrease k by 1
                 }
                 print(f"[NODE {self.node_id}] Forwarding replication to {self.successor['ip']}:{self.successor['port']} (k={k-1})")
-                return self.send_request(self.successor['ip'], self.successor['port'], forward_insert)
-            else:
-                print(f"[NODE {self.node_id}] Final replication node reached. Replication complete.")
-                return {"status": "success", "message": f"Inserted {key} -> {self.data_store[hashed_key]},replication successful"}
+                self.send_request(self.successor['ip'], self.successor['port'], forward_insert)
+                print(f"[NODE {self.node_id}] Lazy Insertion Completed")
+                return {"status": "success", "message": f"Inserted {key} -> {self.data_store[hashed_key]['value']},replication successful"}
         
         #This is not the correct node,forward to predecessor
         elif self.predecessor['node_id'] >= hashed_key:
@@ -706,13 +730,30 @@ class ChordNode:
 # Εκκίνηση κόμβου
 # Node startup logic
 if __name__ == "__main__":
-    if len(sys.argv) == 4:
-        # This is the bootstrap node
-        ip = sys.argv[1]
-        port = int(sys.argv[2])
-        factor = int(sys.argv[3])
-        node = ChordNode(ip, port)
-    
+    if len(sys.argv) == 5:
+        if sys.argv[4] == "linearizability" or sys.argv[4] == "eventual":
+            # This is the bootstrap node
+            ip = sys.argv[1]
+            port = int(sys.argv[2])
+            factor = int(sys.argv[3])
+            consistency = sys.argv[4]
+            node = ChordNode(ip, port)
+
+        else:
+            # This is a new node joining an existing network
+            ip = sys.argv[1]
+            port = int(sys.argv[2])
+            bootstrap_ip = sys.argv[3]
+            bootstrap_port = int(sys.argv[4])
+            node = ChordNode(ip, port, bootstrap_ip, bootstrap_port)
+
+    else:
+        print("Usage:")
+        print("  Bootstrap node: python node.py <ip> <port> <replication factor>")
+        print("  Joining node:  python node.py <ip> <port> <bootstrap_ip> <bootstrap_port> <replication factor>")
+        sys.exit(1)
+
+    '''
     elif len(sys.argv) == 5:
         # This is a new node joining an existing network
         ip = sys.argv[1]
@@ -721,9 +762,5 @@ if __name__ == "__main__":
         bootstrap_port = int(sys.argv[4])
         node = ChordNode(ip, port, bootstrap_ip, bootstrap_port)
 
-    else:
-        print("Usage:")
-        print("  Bootstrap node: python node.py <ip> <port> <replication factor>")
-        print("  Joining node:  python node.py <ip> <port> <bootstrap_ip> <bootstrap_port> <replication factor>")
-        sys.exit(1)
+    '''
 
