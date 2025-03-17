@@ -58,7 +58,7 @@ if __name__ == "__main__":
         insert <key>        - Εισάγει ένα νέο (key, value) ζεύγος στον DHT.
         delete <key>           - Διαγράφει το (key, value) ζεύγος με κλειδί <key>.
         query <key>            - Αναζητά την τιμή του <key>. Αν <key> είναι '*', επιστρέφει όλα τα αποθηκευμένα δεδομένα.
-        join <ip> <port> ( <bootstra_ip> <bootstrap port> )     -Δημιουργεί ενα Chord Ring με τις δωσμένες πληροφορίες ή εισχωρεί έναν κόμβο
+        join <ip> <port> ( <bootstrap_ip> <bootstrap port> )     -Δημιουργεί ενα Chord Ring με τις δωσμένες πληροφορίες ή εισχωρεί έναν κόμβο
                                                                  σε Chord Ring αν δωθεί η ip και port του bootstrap
         depart <node_id>       - Ο κόμβος με αναγνωριστικό <node_id> αποχωρεί από το δίκτυο.
         overlay               - Εμφανίζει την τρέχουσα τοπολογία του Chord δακτυλίου.
