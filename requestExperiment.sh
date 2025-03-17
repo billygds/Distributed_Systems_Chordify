@@ -53,10 +53,10 @@ execute_requests() {
             
             if [ "$request_type" == "insert" ]; then
                 echo "Inserting: $args" | tee -a requestLog_${i}.txt
-                python3 testClient.py insert $args | tee -a requestLog_${i}.txt
+                python3 Chord_Client.py insert $args | tee -a requestLog_${i}.txt
             elif [ "$request_type" == "query" ]; then
                 echo "Querying: $args" | tee -a requestLog_${i}.txt
-                python3 testClient.py query $args | tee -a requestLog_${i}.txt
+                python3 Chord_Client.py query $args | tee -a requestLog_${i}.txt
             fi
         done < "$file" &
     done

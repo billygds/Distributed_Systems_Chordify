@@ -49,7 +49,7 @@ execute_queries() {
 
         while read -r line; do
             echo "Querying key: '$line'" | tee -a queryLog_${i}.txt
-            python3 testClient.py query "$line" | tee -a queryLog_${i}.txt
+            python3 Chord_Client.py query "$line" | tee -a queryLog_${i}.txt
         done < "$file" &
     done
     
