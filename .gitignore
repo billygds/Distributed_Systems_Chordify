@@ -1,3 +1,5 @@
 #Ignore the following
 team_24_credentials.csv
 team_24_ips.csv
+chordify.tar.gz
+logs/*
