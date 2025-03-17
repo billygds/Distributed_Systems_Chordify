@@ -68,6 +68,8 @@ execute_requests() {
     wait
     end_time=$(date +%s.%N)
     duration=$(echo "$end_time - $start_time" | bc)
+    #calculating throughput
+    duration=$(echo "$duration / 500" | bc -l)
     echo "Request execution time for k=$k, consistency=$consistency: $duration seconds" | tee -a "$LOG_DIR/requestResults.csv"
     echo "$k,$consistency,$duration" >> "$LOG_DIR/requestResults.csv"
 }

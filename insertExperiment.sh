@@ -62,7 +62,9 @@ execute_inserts() {
     wait
     end_time=$(date +%s.%N)
     duration=$(echo "$end_time - $start_time" | bc)
-    echo "Write throughput for k=$k and consistency=$consistency: $duration seconds" | tee -a "$LOG_DIR/insertResults.csv"
+    #calculating throughput
+    duration=$(echo "$duration / 500" | bc -l)
+    echo "Write throughput for k=$k and consistency=$consistency: $duration seconds/operation" | tee -a "$LOG_DIR/insertResults.csv"
     echo "$k,$consistency,$duration" >> "$LOG_DIR/insertResults.csv"
 }
 

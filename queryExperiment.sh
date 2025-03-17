@@ -62,6 +62,8 @@ execute_queries() {
     wait
     end_time=$(date +%s.%N)
     duration=$(echo "$end_time - $start_time" | bc)
+    #calculating throughput
+    duration=$(echo "$duration / 500" | bc -l)
     echo "Read throughput for k=$k and consistency=$consistency: $duration seconds" | tee -a "$LOG_DIR/queryResults.csv"
     echo "$k,$consistency,$duration" >> "$LOG_DIR/queryResults.csv"
 }
