@@ -1,0 +1,25 @@
+k,consistency,time
+Running queries with k=1 and consistency=linearizability
+Read throughput for k=1 and consistency=linearizability: 7.468776147 seconds
+1,linearizability,7.468776147
+Experiment with k=1 and consistency=linearizability completed.
+Running queries with k=1 and consistency=eventual
+Read throughput for k=1 and consistency=eventual: 6.745044251 seconds
+1,eventual,6.745044251
+Experiment with k=1 and consistency=eventual completed.
+Running queries with k=3 and consistency=linearizability
+Read throughput for k=3 and consistency=linearizability: 6.594628667 seconds
+3,linearizability,6.594628667
+Experiment with k=3 and consistency=linearizability completed.
+Running queries with k=3 and consistency=eventual
+Read throughput for k=3 and consistency=eventual: 6.807461046 seconds
+3,eventual,6.807461046
+Experiment with k=3 and consistency=eventual completed.
+Running queries with k=5 and consistency=linearizability
+Read throughput for k=5 and consistency=linearizability: 6.620136761 seconds
+5,linearizability,6.620136761
+Experiment with k=5 and consistency=linearizability completed.
+Running queries with k=5 and consistency=eventual
+Read throughput for k=5 and consistency=eventual: 6.490446670 seconds
+5,eventual,6.490446670
+Experiment with k=5 and consistency=eventual completed.

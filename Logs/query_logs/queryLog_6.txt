@@ -1,0 +1,101 @@
+Executing queries from ./data/queries/query_06.txt on node 6 (port 5006)...
+Querying key: 'Like a Rolling Stone'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Smells Like Teen Spirit'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Good Vibrations'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Johnny B. Goode'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Hey Jude'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Smells Like Teen Spirit'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Imagine'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Satisfaction'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Good Vibrations'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Smells Like Teen Spirit'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Johnny B. Goode'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Johnny B. Goode'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Satisfaction'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Hey Jude'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'What's Going On'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Like a Rolling Stone'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Hey Jude'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'What's Going On'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'What'd I Say'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Johnny B. Goode'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Hey Jude'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Imagine'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'What's Going On'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Like a Rolling Stone'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Imagine'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Johnny B. Goode'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Like a Rolling Stone'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Hey Jude'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Johnny B. Goode'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Satisfaction'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Johnny B. Goode'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Like a Rolling Stone'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Imagine'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Hey Jude'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Like a Rolling Stone'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Respect'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'What's Going On'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Like a Rolling Stone'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Johnny B. Goode'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Like a Rolling Stone'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Imagine'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Imagine'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'What's Going On'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Satisfaction'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Satisfaction'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Satisfaction'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Imagine'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'What'd I Say'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Smells Like Teen Spirit'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Respect'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}

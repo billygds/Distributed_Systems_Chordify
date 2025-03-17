@@ -1,0 +1,541 @@
+[DEBUG] Trying to start server on 127.0.0.1:5008
+[DEBUG] Creating socket...
+[NODE 342694636883129667016187263873021694770474360405] Server running at 127.0.0.1:5008. Press Ctrl+C to shut down.
+[NODE 342694636883129667016187263873021694770474360405] Attempting to join network via 127.0.0.1:5000
+[NODE 342694636883129667016187263873021694770474360405] Attempting to join network via 127.0.0.1:5000
+[DEBUG] Sending request to bootstrap node: {'command': 'find_neighbours', 'node_id': 342694636883129667016187263873021694770474360405}
+[DEBUG] Setting socket options...
+[DEBUG] Binding server to 127.0.0.1:5008...
+[DEBUG] Server is now listening...
+[NODE 342694636883129667016187263873021694770474360405] Listening on 127.0.0.1:5008...
+[DEBUG] Response from bootstrap: {'status': 'success', 'successor': {'node_id': 420139047123305418451206450639216810642337245175, 'ip': '127.0.0.1', 'port': 5003}, 'predecessor': {'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}}
+{'status': 'success', 'successor': {'node_id': 420139047123305418451206450639216810642337245175, 'ip': '127.0.0.1', 'port': 5003}, 'predecessor': {'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}}
+[NODE 342694636883129667016187263873021694770474360405] Successor found: {'node_id': 420139047123305418451206450639216810642337245175, 'ip': '127.0.0.1', 'port': 5003}
+[DEBUG] Sending update_predecessor request: {'command': 'update_predecessor', 'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
+[DEBUG] Sending update_successor request to predecessor: {'command': 'update_successor', 'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
+[NODE 342694636883129667016187263873021694770474360405] Update successor response: {'status': 'success', 'message': 'Successor updated'}
+5
+eventual
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 44044)
+[DEBUG] Received request: {'command': 'find_neighbours', 'node_id': 386338222825788925027014385113142312278570765577}
+[DEBUG] find_successor() called for node_id: 386338222825788925027014385113142312278570765577
+[DEBUG] Returning successor: {'node_id': 420139047123305418451206450639216810642337245175, 'ip': '127.0.0.1', 'port': 5003}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 44056)
+[DEBUG] Received request: {'command': 'update_successor', 'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+[NODE 342694636883129667016187263873021694770474360405] Successor updated: {'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 44058)
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 60972)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 60974)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 60988)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 60994)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 60996)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 32776)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 32778)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 32790)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 32802)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 32818)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 32832)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 32838)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 32844)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 32856)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 32870)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 32872)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 32876)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 32880)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 32882)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 32886)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 32900)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 32914)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 32926)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 32936)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 32940)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 32956)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 32962)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 32966)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 32982)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 32990)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 32992)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 32998)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33002)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33006)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33020)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33028)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33036)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33038)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33044)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33048)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33050)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33062)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33066)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33076)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33092)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33102)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33104)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33120)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33136)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33152)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33154)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33156)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33160)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33164)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33170)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33180)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33188)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33202)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33214)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33226)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33238)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33248)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33256)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33266)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33272)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33286)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33292)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33300)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33304)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33314)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33326)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33328)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33338)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33342)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33346)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33358)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33364)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33374)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33380)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33396)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33412)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33414)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33428)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33442)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33452)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33462)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33478)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33482)
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33484)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33498)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33514)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33516)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33518)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33534)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33548)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33552)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33566)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33570)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33586)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33592)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33604)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33620)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33632)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33634)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33644)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33646)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33654)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33660)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33674)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33682)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33686)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33692)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33694)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33706)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33714)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33728)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33738)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33750)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33758)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33770)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33774)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33784)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33798)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33800)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33810)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33812)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33828)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33832)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33842)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33848)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33860)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33874)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33888)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33892)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33902)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33910)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33924)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33926)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33936)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33952)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33962)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33966)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33970)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33982)
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33986)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33372)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33378)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33390)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33400)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33408)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33416)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33418)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33434)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33450)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33466)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33476)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33486)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33502)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33516)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33526)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33532)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33540)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33548)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33558)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33570)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33586)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33596)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33602)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33612)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33614)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33628)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33644)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33654)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33660)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33670)
+[DEBUG] Received request: {'command': 'query', 'key': "What'd I Say"}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33684)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33700)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33706)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33716)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33722)
+[DEBUG] Received request: {'command': 'query', 'key': 'Imagine'}
+[NODE 342694636883129667016187263873021694770474360405] Connection from ('127.0.0.1', 33728)
+[DEBUG] Received request: {'command': 'query', 'key': 'Johnny B. Goode'}
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Good Vibrations'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Johnny B. Goode'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Satisfaction'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'What'd I Say'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}

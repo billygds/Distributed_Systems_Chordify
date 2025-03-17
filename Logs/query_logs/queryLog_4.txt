@@ -1,0 +1,134 @@
+[DEBUG] Trying to start server on 127.0.0.1:5004
+[DEBUG] Creating socket...
+[NODE 135117988181535955003563159026686220824819050071] Server running at 127.0.0.1:5004. Press Ctrl+C to shut down.
+[NODE 135117988181535955003563159026686220824819050071] Attempting to join network via 127.0.0.1:5000
+[NODE 135117988181535955003563159026686220824819050071] Attempting to join network via 127.0.0.1:5000
+[DEBUG] Sending request to bootstrap node: {'command': 'find_neighbours', 'node_id': 135117988181535955003563159026686220824819050071}
+[DEBUG] Setting socket options...
+[DEBUG] Binding server to 127.0.0.1:5004...
+[DEBUG] Server is now listening...
+[NODE 135117988181535955003563159026686220824819050071] Listening on 127.0.0.1:5004...
+[DEBUG] Response from bootstrap: {'status': 'success', 'successor': {'node_id': 420139047123305418451206450639216810642337245175, 'ip': '127.0.0.1', 'port': 5003}, 'predecessor': {'node_id': 1041195083025998055559450424623959893298787457821, 'ip': '127.0.0.1', 'port': 5000}}
+{'status': 'success', 'successor': {'node_id': 420139047123305418451206450639216810642337245175, 'ip': '127.0.0.1', 'port': 5003}, 'predecessor': {'node_id': 1041195083025998055559450424623959893298787457821, 'ip': '127.0.0.1', 'port': 5000}}
+[NODE 135117988181535955003563159026686220824819050071] Successor found: {'node_id': 420139047123305418451206450639216810642337245175, 'ip': '127.0.0.1', 'port': 5003}
+[DEBUG] Sending update_predecessor request: {'command': 'update_predecessor', 'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+[DEBUG] Sending update_successor request to predecessor: {'command': 'update_successor', 'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
+[NODE 135117988181535955003563159026686220824819050071] Update successor response: {'status': 'success', 'message': 'Successor updated'}
+5
+eventual
+[NODE 135117988181535955003563159026686220824819050071] Connection from ('127.0.0.1', 52516)
+[DEBUG] Received request: {'command': 'update_predecessor', 'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+[NODE 135117988181535955003563159026686220824819050071] Predecessor updated: {'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+[NODE 135117988181535955003563159026686220824819050071] Connection from ('127.0.0.1', 52528)
+[DEBUG] Received request: {'command': 'manage_join_data'}
+[NODE 135117988181535955003563159026686220824819050071] Connection from ('127.0.0.1', 50416)
+[DEBUG] Received request: {'command': 'update_predecessor', 'node_id': 92721375935003651661177999486775259999124498565, 'ip': '127.0.0.1', 'port': 5006}
+[NODE 135117988181535955003563159026686220824819050071] Predecessor updated: {'node_id': 92721375935003651661177999486775259999124498565, 'ip': '127.0.0.1', 'port': 5006}
+[NODE 135117988181535955003563159026686220824819050071] Connection from ('127.0.0.1', 50430)
+[DEBUG] Received request: {'command': 'manage_join_data'}
+[NODE 135117988181535955003563159026686220824819050071] Connection from ('127.0.0.1', 50438)
+[DEBUG] Received request: {'command': 'find_neighbours', 'node_id': 342694636883129667016187263873021694770474360405}
+[DEBUG] find_successor() called for node_id: 342694636883129667016187263873021694770474360405
+[DEBUG] Returning successor: {'node_id': 420139047123305418451206450639216810642337245175, 'ip': '127.0.0.1', 'port': 5003}
+[NODE 135117988181535955003563159026686220824819050071] Connection from ('127.0.0.1', 50444)
+[DEBUG] Received request: {'command': 'update_successor', 'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
+[NODE 135117988181535955003563159026686220824819050071] Successor updated: {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
+[NODE 135117988181535955003563159026686220824819050071] Connection from ('127.0.0.1', 50454)
+[DEBUG] Received request: {'command': 'find_neighbours', 'node_id': 386338222825788925027014385113142312278570765577}
+[DEBUG] find_successor() called for node_id: 386338222825788925027014385113142312278570765577
+[DEBUG] Forwarding find_successor request to {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
+[NODE 135117988181535955003563159026686220824819050071] Connection from ('127.0.0.1', 50456)
+[NODE 135117988181535955003563159026686220824819050071] Connection from ('127.0.0.1', 39258)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+[NODE 135117988181535955003563159026686220824819050071] Connection from ('127.0.0.1', 39270)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+[NODE 135117988181535955003563159026686220824819050071] Connection from ('127.0.0.1', 39284)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+[NODE 135117988181535955003563159026686220824819050071] Connection from ('127.0.0.1', 39298)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+[NODE 135117988181535955003563159026686220824819050071] Connection from ('127.0.0.1', 39306)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+[NODE 135117988181535955003563159026686220824819050071] Connection from ('127.0.0.1', 39320)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+[NODE 135117988181535955003563159026686220824819050071] Connection from ('127.0.0.1', 39334)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+[NODE 135117988181535955003563159026686220824819050071] Connection from ('127.0.0.1', 39342)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+[NODE 135117988181535955003563159026686220824819050071] Connection from ('127.0.0.1', 39348)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+[NODE 135117988181535955003563159026686220824819050071] Connection from ('127.0.0.1', 39352)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+[NODE 135117988181535955003563159026686220824819050071] Connection from ('127.0.0.1', 39362)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+[NODE 135117988181535955003563159026686220824819050071] Connection from ('127.0.0.1', 39368)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+[NODE 135117988181535955003563159026686220824819050071] Connection from ('127.0.0.1', 39370)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+[NODE 135117988181535955003563159026686220824819050071] Connection from ('127.0.0.1', 39378)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+[NODE 135117988181535955003563159026686220824819050071] Connection from ('127.0.0.1', 39394)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+[NODE 135117988181535955003563159026686220824819050071] Connection from ('127.0.0.1', 39398)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+[NODE 135117988181535955003563159026686220824819050071] Connection from ('127.0.0.1', 39402)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+[NODE 135117988181535955003563159026686220824819050071] Connection from ('127.0.0.1', 39418)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+[NODE 135117988181535955003563159026686220824819050071] Connection from ('127.0.0.1', 39432)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+[NODE 135117988181535955003563159026686220824819050071] Connection from ('127.0.0.1', 39434)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+[NODE 135117988181535955003563159026686220824819050071] Connection from ('127.0.0.1', 39448)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+[NODE 135117988181535955003563159026686220824819050071] Connection from ('127.0.0.1', 39456)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+[NODE 135117988181535955003563159026686220824819050071] Connection from ('127.0.0.1', 39464)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+[NODE 135117988181535955003563159026686220824819050071] Connection from ('127.0.0.1', 39468)
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Hey Jude'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Imagine'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'What's Going On'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Johnny B. Goode'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'What's Going On'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'What'd I Say'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Respect'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Johnny B. Goode'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'What'd I Say'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Like a Rolling Stone'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Johnny B. Goode'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Johnny B. Goode'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'What'd I Say'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Smells Like Teen Spirit'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Hey Jude'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Imagine'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Good Vibrations'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'What'd I Say'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Johnny B. Goode'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Satisfaction'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Johnny B. Goode'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Imagine'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Imagine'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}

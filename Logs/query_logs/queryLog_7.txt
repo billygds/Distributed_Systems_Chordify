@@ -1,0 +1,552 @@
+[DEBUG] Trying to start server on 127.0.0.1:5007
+[DEBUG] Creating socket...
+[NODE 1106009239349327606828036238693922505549953820430] Server running at 127.0.0.1:5007. Press Ctrl+C to shut down.
+[NODE 1106009239349327606828036238693922505549953820430] Attempting to join network via 127.0.0.1:5000
+[NODE 1106009239349327606828036238693922505549953820430] Attempting to join network via 127.0.0.1:5000
+[DEBUG] Sending request to bootstrap node: {'command': 'find_neighbours', 'node_id': 1106009239349327606828036238693922505549953820430}
+[DEBUG] Setting socket options...
+[DEBUG] Binding server to 127.0.0.1:5007...
+[DEBUG] Server is now listening...
+[NODE 1106009239349327606828036238693922505549953820430] Listening on 127.0.0.1:5007...
+[DEBUG] Response from bootstrap: {'status': 'success', 'successor': {'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}, 'predecessor': {'node_id': 1041195083025998055559450424623959893298787457821, 'ip': '127.0.0.1', 'port': 5000}}
+{'status': 'success', 'successor': {'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}, 'predecessor': {'node_id': 1041195083025998055559450424623959893298787457821, 'ip': '127.0.0.1', 'port': 5000}}
+[NODE 1106009239349327606828036238693922505549953820430] Successor found: {'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+[DEBUG] Sending update_predecessor request: {'command': 'update_predecessor', 'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+[DEBUG] Sending update_successor request to predecessor: {'command': 'update_successor', 'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
+[NODE 1106009239349327606828036238693922505549953820430] Update successor response: {'status': 'success', 'message': 'Successor updated'}
+5
+eventual
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 56730)
+[DEBUG] Received request: {'command': 'find_neighbours', 'node_id': 342694636883129667016187263873021694770474360405}
+[DEBUG] find_successor() called for node_id: 342694636883129667016187263873021694770474360405
+[DEBUG] Forwarding find_successor request to {'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 56734)
+[DEBUG] Received request: {'command': 'find_neighbours', 'node_id': 386338222825788925027014385113142312278570765577}
+[DEBUG] find_successor() called for node_id: 386338222825788925027014385113142312278570765577
+[DEBUG] Forwarding find_successor request to {'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 56744)
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59474)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59476)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59478)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59484)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59498)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59508)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59522)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59538)
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59548)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59556)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59562)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59568)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59584)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59588)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59594)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59600)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59608)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59614)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59624)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59636)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59640)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59642)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59652)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59662)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59672)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59674)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59678)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59688)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59700)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59704)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59712)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59720)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59724)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59736)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59744)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59760)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59772)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59788)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59796)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59806)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59818)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59824)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59830)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59836)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59840)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59842)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59856)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59862)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59876)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59878)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59892)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59904)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59918)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59926)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59940)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59954)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59966)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59976)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59980)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59992)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 59996)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60002)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60018)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60022)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60032)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60042)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60058)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60068)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60072)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60074)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60078)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60090)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60098)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60102)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60114)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60120)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60132)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60148)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60152)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60164)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60180)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60186)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60194)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60204)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60218)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60226)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60234)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60236)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60252)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60260)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60262)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60266)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60276)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60290)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60300)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60306)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60308)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60314)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60324)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60330)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60340)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60348)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60360)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60376)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60386)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 60392)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 49784)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 49794)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 49802)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 49804)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 49818)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 49822)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 49838)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 49852)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 49868)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 49880)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 49894)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 49910)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 49912)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 49916)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 49918)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 49928)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 49938)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 49944)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 49946)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 49962)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 49968)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 49976)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 49986)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 49990)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 49994)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1184237517711722360570059270454065399878606026334
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 50004)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+Hashed key:1269897298038472934144701591059251391044386555370
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 50006)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 50010)
+[DEBUG] Received request: {'command': 'query', 'key': 'Smells Like Teen Spirit'}
+[NODE 1106009239349327606828036238693922505549953820430] Connection from ('127.0.0.1', 50022)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+Forwarding to successor:
+{'node_id': 1334330932393287978545097924263031908973855107846, 'ip': '127.0.0.1', 'port': 5005}
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Hey Jude'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Respect'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Like a Rolling Stone'
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
