@@ -1,8 +1,7 @@
-#!/bin/bash
-
 #--------Usage---------
 #chmod +x queryExperiment.sh
-#./queryExperiment.sh
+#dos2unix queryExperiment.sh
+#bash queryExperiment.sh
 
 # Configuration
 IP="127.0.0.1"

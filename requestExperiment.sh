@@ -1,8 +1,7 @@
-#!/bin/bash
-
 #--------Usage---------
 #chmod +x requestExperiment.sh
-#./requestExperiment.sh
+#dos2unix requestExperiment.sh
+#bash requestExperiment.sh
 
 # Configuration
 IP="127.0.0.1"
@@ -18,8 +17,10 @@ mkdir -p "$LOG_DIR"
 
 # Function to start nodes
 start_nodes() {
-    echo "Starting bootstrap node..." | tee -a "$LOG_DIR/requestLog_0.txt"
-    bash -c "python3 node.py $IP $BASE_PORT $k | tee $LOG_DIR/requestLog_0.txt &" &
+    local consistency=$1
+    
+    echo "Starting bootstrap node with k=$k and consistency=$consistency..." | tee -a "$LOG_DIR/requestLog_0.txt"
+    bash -c "python3 node.py $IP $BASE_PORT $k $consistency | tee $LOG_DIR/requestLog_0.txt &" &
     sleep 2
     
     for ((i=1; i<$NODE_COUNT; i++)); do
@@ -77,12 +78,12 @@ rm -f "$LOG_DIR/requestLog_*.txt"
 echo "k,consistency,time" > "$LOG_DIR/requestResults.csv"
 
 for consistency in "${CONSISTENCIES[@]}"; do
-    start_nodes
+    start_nodes "$consistency"
     sleep 5
     execute_requests "$consistency"
     echo "Experiment with k=$k and consistency=$consistency completed." | tee -a "$LOG_DIR/requestResults.csv"
-    pkill -f node.py
     sleep 5
+    pkill -f node.py
 done
 
-echo "All experiments completed. Nodes have been shut down." | tee -a "$LOG_DIR/requestResults.csv"
+echo "All experiments completed. Nodes have been shut down."

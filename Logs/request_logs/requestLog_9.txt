@@ -14,615 +14,612 @@
 [DEBUG] Sending update_predecessor request: {'command': 'update_predecessor', 'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
 [DEBUG] Sending update_successor request to predecessor: {'command': 'update_successor', 'node_id': 386338222825788925027014385113142312278570765577, 'ip': '127.0.0.1', 'port': 5009}
 [NODE 386338222825788925027014385113142312278570765577] Update successor response: {'status': 'success', 'message': 'Successor updated'}
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48240)
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48242)
-[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
-Forwarding to predecessor:
-{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
-Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48248)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': 'mSTTpfByUUSd'}
+3
+eventual
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 46192)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56292)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': 'CSjswaBGBW2M'}
 Starting Insert
 Hashing
 None
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-{'command': 'insert', 'key': 'Respect', 'value': '5Hx4bOiiBDyt'}
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48264)
-[DEBUG] Received request: {'command': 'insert', 'key': 104083428957902221840953429332483363381421817453, 'value': 'ribjiTyXT6Yj', 'is_already_hashed': True, 'k': 1}
+{'command': 'insert', 'key': 'Respect', 'value': 'R510GBKDtuif'}
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56308)
+[DEBUG] Received request: {'command': 'insert', 'key': 104083428957902221840953429332483363381421817453, 'value': 'Gtco7khcGjNf', 'is_already_hashed': True, 'k': 1}
 Starting Insert
 1
 [NODE 386338222825788925027014385113142312278570765577] Final replication node reached. Replication complete.
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48272)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': '5msIgjaL0YKH'}
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56314)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56318)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': 'xQMxAT4zLdiY'}
 Starting Insert
 Hashing
 None
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-{'command': 'insert', 'key': 'Respect', 'value': 'ZIlEsUcfs3CW'}
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48276)
-[DEBUG] Received request: {'command': 'insert', 'key': 104083428957902221840953429332483363381421817453, 'value': 'MWk03yy7deHX', 'is_already_hashed': True, 'k': 1}
+{'command': 'insert', 'key': 'Respect', 'value': 'NIb4iU2iSieC'}
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56322)
+[DEBUG] Received request: {'command': 'insert', 'key': 104083428957902221840953429332483363381421817453, 'value': 'QebEQ16v6ElI', 'is_already_hashed': True, 'k': 1}
 Starting Insert
 1
 [NODE 386338222825788925027014385113142312278570765577] Final replication node reached. Replication complete.
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48292)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56326)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48306)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56338)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48314)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56350)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48318)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56360)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48324)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56372)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48332)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56382)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48334)
-[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
-Forwarding to predecessor:
-{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
-Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48338)
-[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
-Forwarding to predecessor:
-{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
-Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48344)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': 'pVPBNk7w2Ilq'}
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56390)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': 'wueAkF7BrV9A'}
 Starting Insert
 Hashing
 None
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-{'command': 'insert', 'key': 'Respect', 'value': 'Wla8vmx9SSez'}
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48354)
-[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
-Forwarding to predecessor:
-{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
-Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48360)
-[DEBUG] Received request: {'command': 'insert', 'key': 104083428957902221840953429332483363381421817453, 'value': 'yzOoGGMCMAHt', 'is_already_hashed': True, 'k': 1}
+{'command': 'insert', 'key': 'Respect', 'value': 'zr55W1DipARR'}
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56394)
+[DEBUG] Received request: {'command': 'insert', 'key': 104083428957902221840953429332483363381421817453, 'value': 'Yl7QlYxJJYyS', 'is_already_hashed': True, 'k': 1}
 Starting Insert
 1
 [NODE 386338222825788925027014385113142312278570765577] Final replication node reached. Replication complete.
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48366)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56402)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48376)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': 'TiTvKgJ6rki0'}
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56414)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56424)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56430)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56440)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': 'XE4F2dSfybIv'}
 Starting Insert
 Hashing
 None
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-{'command': 'insert', 'key': 'Respect', 'value': 'l9TyZ6f118KJ'}
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48386)
-[DEBUG] Received request: {'command': 'insert', 'key': 104083428957902221840953429332483363381421817453, 'value': 'F1VVDoIfLnfC', 'is_already_hashed': True, 'k': 1}
+{'command': 'insert', 'key': 'Respect', 'value': 'RSY7PsOAJuoR'}
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56446)
+[DEBUG] Received request: {'command': 'insert', 'key': 104083428957902221840953429332483363381421817453, 'value': 'LP2JHPOakh7l', 'is_already_hashed': True, 'k': 1}
 Starting Insert
 1
 [NODE 386338222825788925027014385113142312278570765577] Final replication node reached. Replication complete.
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48398)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56450)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48414)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56452)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48422)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': 'UEBpc84L5UZB'}
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56464)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': 'brs9lqP5IlhF'}
 Starting Insert
 Hashing
 None
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-{'command': 'insert', 'key': 'Respect', 'value': 'HGiR23iWgxXY'}
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48434)
-[DEBUG] Received request: {'command': 'insert', 'key': 104083428957902221840953429332483363381421817453, 'value': 'vQPkZSar5uzC', 'is_already_hashed': True, 'k': 1}
+{'command': 'insert', 'key': 'Respect', 'value': 'q8jzW6jp2mcQ'}
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56466)
+[DEBUG] Received request: {'command': 'insert', 'key': 104083428957902221840953429332483363381421817453, 'value': '0364sIcRyx4K', 'is_already_hashed': True, 'k': 1}
 Starting Insert
 1
 [NODE 386338222825788925027014385113142312278570765577] Final replication node reached. Replication complete.
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48444)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56476)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48452)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56484)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48462)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56500)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48466)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56510)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48476)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56512)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48478)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56516)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48484)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56520)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48492)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56536)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48494)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56544)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48508)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56550)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48522)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56552)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48524)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56566)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48534)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': 'EvbyqBjcMjOK'}
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56576)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': 'cBG5ZvTNjFPL'}
 Starting Insert
 Hashing
 None
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-{'command': 'insert', 'key': 'Respect', 'value': 'jA0dUZ3M3dHN'}
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48550)
-[DEBUG] Received request: {'command': 'insert', 'key': 104083428957902221840953429332483363381421817453, 'value': 'QWJiYhWdzBxT', 'is_already_hashed': True, 'k': 1}
+{'command': 'insert', 'key': 'Respect', 'value': 'GBpvXQVZaE6j'}
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56582)
+[DEBUG] Received request: {'command': 'insert', 'key': 104083428957902221840953429332483363381421817453, 'value': 'jH3NsjllnWPP', 'is_already_hashed': True, 'k': 1}
 Starting Insert
 1
 [NODE 386338222825788925027014385113142312278570765577] Final replication node reached. Replication complete.
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48566)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': '6B9C3XllluTf'}
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56586)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': 'tDOd9SQB7XTk'}
 Starting Insert
 Hashing
 None
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-{'command': 'insert', 'key': 'Respect', 'value': 'rE5EWapyuwkb'}
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48572)
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48588)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': 'QvSlBL2eleLU'}
-Starting Insert
-Hashing
-None
-Forwarding to predecessor:
-{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
-Hashed key:104083428957902221840953429332483363381421817453
-{'command': 'insert', 'key': 'Respect', 'value': 'EQNryBjOq3PR'}
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48598)
-[DEBUG] Received request: {'command': 'insert', 'key': 104083428957902221840953429332483363381421817453, 'value': 'yRCg7Dod8CXs', 'is_already_hashed': True, 'k': 1}
+{'command': 'insert', 'key': 'Respect', 'value': 'sJlrSLA465cp'}
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56596)
+[DEBUG] Received request: {'command': 'insert', 'key': 104083428957902221840953429332483363381421817453, 'value': 'Pp6nkq4JMlMx', 'is_already_hashed': True, 'k': 1}
 Starting Insert
 1
 [NODE 386338222825788925027014385113142312278570765577] Final replication node reached. Replication complete.
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48606)
-[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
-Forwarding to predecessor:
-{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
-Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48616)
-[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
-Forwarding to predecessor:
-{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
-Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48626)
-[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
-Forwarding to predecessor:
-{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
-Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48628)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': 'VhMLR0Thd5vW'}
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56604)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': 'g9Yn4lqinZQm'}
 Starting Insert
 Hashing
 None
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-{'command': 'insert', 'key': 'Respect', 'value': 'oPSfWGNKj9nD'}
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48630)
-[DEBUG] Received request: {'command': 'insert', 'key': 104083428957902221840953429332483363381421817453, 'value': 'Qf6BtTnb135E', 'is_already_hashed': True, 'k': 1}
+{'command': 'insert', 'key': 'Respect', 'value': 'LhJmxd5cJDkl'}
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56620)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56630)
+[DEBUG] Received request: {'command': 'insert', 'key': 104083428957902221840953429332483363381421817453, 'value': 'BWG1ANfO6Y3X', 'is_already_hashed': True, 'k': 1}
 Starting Insert
 1
 [NODE 386338222825788925027014385113142312278570765577] Final replication node reached. Replication complete.
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48644)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': 'Pu6sUjZ5WjvW'}
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56644)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56658)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56668)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56682)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': 'htYbb6IZCPcV'}
 Starting Insert
 Hashing
 None
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-{'command': 'insert', 'key': 'Respect', 'value': 'tdXvdfKCSx3f'}
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48648)
-[DEBUG] Received request: {'command': 'insert', 'key': 104083428957902221840953429332483363381421817453, 'value': 'w6uQeQmPT6HK', 'is_already_hashed': True, 'k': 1}
+{'command': 'insert', 'key': 'Respect', 'value': '8OoQqzUqGgUg'}
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56684)
+[DEBUG] Received request: {'command': 'insert', 'key': 104083428957902221840953429332483363381421817453, 'value': 'O3FLN2hhuJRh', 'is_already_hashed': True, 'k': 1}
 Starting Insert
 1
 [NODE 386338222825788925027014385113142312278570765577] Final replication node reached. Replication complete.
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48660)
-[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
-Forwarding to predecessor:
-{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
-Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48674)
-[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
-Forwarding to predecessor:
-{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
-Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48690)
-[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
-Forwarding to predecessor:
-{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
-Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48706)
-[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
-Forwarding to predecessor:
-{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
-Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48722)
-[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
-Forwarding to predecessor:
-{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
-Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48732)
-[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
-Forwarding to predecessor:
-{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
-Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48748)
-[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
-Forwarding to predecessor:
-{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
-Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48754)
-[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
-Forwarding to predecessor:
-{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
-Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48760)
-[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
-Forwarding to predecessor:
-{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
-Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48776)
-[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
-Forwarding to predecessor:
-{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
-Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48790)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': 'gYJK6gnxcScZ'}
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56690)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': 'LlomTRjFHaie'}
 Starting Insert
 Hashing
 None
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-{'command': 'insert', 'key': 'Respect', 'value': 'gwghWe9BVh3P'}
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48806)
-[DEBUG] Received request: {'command': 'insert', 'key': 104083428957902221840953429332483363381421817453, 'value': '8BVfMOrjgtBN', 'is_already_hashed': True, 'k': 1}
+{'command': 'insert', 'key': 'Respect', 'value': 'bCeN477Ao9sR'}
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56702)
+[DEBUG] Received request: {'command': 'insert', 'key': 104083428957902221840953429332483363381421817453, 'value': 'kZRihSkZd11Q', 'is_already_hashed': True, 'k': 1}
 Starting Insert
 1
 [NODE 386338222825788925027014385113142312278570765577] Final replication node reached. Replication complete.
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48816)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56706)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
-{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}                                                                                                                                                                                                                                                                                                     
+{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48818)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': 'nf8oYMBC77Tn'}
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56720)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56730)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56746)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56754)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56760)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56772)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56776)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56778)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56782)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': 'SbHEYah58Mcg'}
 Starting Insert
 Hashing
 None
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-{'command': 'insert', 'key': 'Respect', 'value': 'iM9Fjq4ylbct'}
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48820)
-[DEBUG] Received request: {'command': 'insert', 'key': 104083428957902221840953429332483363381421817453, 'value': 'TOi4wXL1CdLJ', 'is_already_hashed': True, 'k': 1}
+{'command': 'insert', 'key': 'Respect', 'value': 'j32sO1jay94o'}
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56792)
+[DEBUG] Received request: {'command': 'insert', 'key': 104083428957902221840953429332483363381421817453, 'value': 'QrGw4wyNDr0e', 'is_already_hashed': True, 'k': 1}
 Starting Insert
 1
 [NODE 386338222825788925027014385113142312278570765577] Final replication node reached. Replication complete.
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48828)
-[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
-Forwarding to predecessor:
-{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
-Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48842)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': 'bpSLtjOFtony'}
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56800)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': 'lakdGiCSkjtr'}
 Starting Insert
 Hashing
 None
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-{'command': 'insert', 'key': 'Respect', 'value': 'iMGEiBV44lDG'}
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48856)
-[DEBUG] Received request: {'command': 'insert', 'key': 104083428957902221840953429332483363381421817453, 'value': 'wLX0f8lnkmHu', 'is_already_hashed': True, 'k': 1}
+{'command': 'insert', 'key': 'Respect', 'value': '9NHlNIBr3oW7'}
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56816)
+[DEBUG] Received request: {'command': 'insert', 'key': 104083428957902221840953429332483363381421817453, 'value': 'WFsqUJykBnAf', 'is_already_hashed': True, 'k': 1}
 Starting Insert
 1
 [NODE 386338222825788925027014385113142312278570765577] Final replication node reached. Replication complete.
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48866)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': 'utKQlpdrj6bp'}
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56832)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56838)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56850)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': 'njkxICPTTeX6'}
 Starting Insert
 Hashing
 None
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-{'command': 'insert', 'key': 'Respect', 'value': 'AgiuX73wgF50'}
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48874)
-[DEBUG] Received request: {'command': 'insert', 'key': 104083428957902221840953429332483363381421817453, 'value': 'GujEMREWDnAm', 'is_already_hashed': True, 'k': 1}
+{'command': 'insert', 'key': 'Respect', 'value': 'OVXlGAmOMGum'}
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56858)
+[DEBUG] Received request: {'command': 'insert', 'key': 104083428957902221840953429332483363381421817453, 'value': '542F9ACzeqb8', 'is_already_hashed': True, 'k': 1}
 Starting Insert
 1
 [NODE 386338222825788925027014385113142312278570765577] Final replication node reached. Replication complete.
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48890)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56864)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48894)
-[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
-Forwarding to predecessor:
-{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
-Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 48904)
-[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
-Forwarding to predecessor:
-{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
-Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57510)
-[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
-Forwarding to predecessor:
-{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
-Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57522)
-[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
-Forwarding to predecessor:
-{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
-Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57528)
-[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
-Forwarding to predecessor:
-{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
-Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57544)
-[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
-Forwarding to predecessor:
-{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
-Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57558)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': 'iJ26J5uP7EoQ'}
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56878)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': 'j60eI2gGprxl'}
 Starting Insert
 Hashing
 None
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-{'command': 'insert', 'key': 'Respect', 'value': 'hPlbSm8rESIS'}
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57560)
-[DEBUG] Received request: {'command': 'insert', 'key': 104083428957902221840953429332483363381421817453, 'value': 'cB8lpFoF8KyO', 'is_already_hashed': True, 'k': 1}
+{'command': 'insert', 'key': 'Respect', 'value': 'lwlkFeFs0hGs'}
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56892)
+[DEBUG] Received request: {'command': 'insert', 'key': 104083428957902221840953429332483363381421817453, 'value': 'PPVltqshdL1C', 'is_already_hashed': True, 'k': 1}
 Starting Insert
 1
 [NODE 386338222825788925027014385113142312278570765577] Final replication node reached. Replication complete.
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57568)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56906)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57580)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56916)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57582)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56920)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57590)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56934)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57594)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56940)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57602)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56946)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57612)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': 'MwWnzyAv7RHc'}
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56948)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56960)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56970)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': 'txw2gVEVIrrx'}
 Starting Insert
 Hashing
 None
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-{'command': 'insert', 'key': 'Respect', 'value': 'Qfymq8fAi71D'}
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57626)
-[DEBUG] Received request: {'command': 'insert', 'key': 104083428957902221840953429332483363381421817453, 'value': 'ehiWkwLdGXIn', 'is_already_hashed': True, 'k': 1}
+{'command': 'insert', 'key': 'Respect', 'value': 'gR5DTzdNL0Vg'}
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56976)
+[DEBUG] Received request: {'command': 'insert', 'key': 104083428957902221840953429332483363381421817453, 'value': 'mMJGMqoPhe6Y', 'is_already_hashed': True, 'k': 1}
 Starting Insert
 1
 [NODE 386338222825788925027014385113142312278570765577] Final replication node reached. Replication complete.
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57630)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56982)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57640)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 56992)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57656)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57000)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57668)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57008)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57674)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Respect', 'value': 'bimQ573DspsQ'}
+Starting Insert
+Hashing
+None
+Forwarding to predecessor:
+{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
+Hashed key:104083428957902221840953429332483363381421817453
+{'command': 'insert', 'key': 'Respect', 'value': 'pn0RzOgOivoL'}
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57036)
+[DEBUG] Received request: {'command': 'insert', 'key': 104083428957902221840953429332483363381421817453, 'value': 'EfG4ShwF1DTr', 'is_already_hashed': True, 'k': 1}
+Starting Insert
+1
+[NODE 386338222825788925027014385113142312278570765577] Final replication node reached. Replication complete.
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57040)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57676)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57046)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57690)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57058)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57702)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57070)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57706)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57072)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57720)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57084)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57722)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57096)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57738)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57110)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57740)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57122)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57748)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57138)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57750)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57148)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57754)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57160)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57766)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57162)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57772)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57178)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57788)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57188)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57804)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57202)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57808)
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57208)
 [DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
 Forwarding to predecessor:
 {'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
 Hashed key:104083428957902221840953429332483363381421817453
-[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57816)
-{
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57218)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57224)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57240)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57246)
+[DEBUG] Received request: {'command': 'query', 'key': 'Respect'}
+Forwarding to predecessor:
+{'node_id': 342694636883129667016187263873021694770474360405, 'ip': '127.0.0.1', 'port': 5008}
+Hashed key:104083428957902221840953429332483363381421817453
+[NODE 386338222825788925027014385113142312278570765577] Connection from ('127.0.0.1', 57248)
+                                                                                             {
     "status": "success",
-    "value": {
-        "value": "ribjiTyXT6YjMWk03yy7deHXyzOoGGMCMAHtF1VVDoIfLnfCvQPkZSar5uzCQWJiYhWdzBxTQbp5cXJk8izRyRCg7Dod8CXsQf6BtTnb135Ew6uQeQmPT6HK8BVfMOrjgtBNTOi4wXL1CdLJwLX0f8lnkmHuGujEMREWDnAmcB8lpFoF8KyOehiWkwLdGXIn",
-        "k": 3
-    }
-}
-Inserting: key=Hey Jude, value=591 on node 9 (port 5009)
-{
-    "status": "success",
-    "message": "Inserted 1184237517711722360570059270454065399878606026334 -> {'value': 'zuqRrSvAQ1jDQxbxT6eieB2wA5EYAp9GhQ1yY8wVbTxHh4Wqznox9AzKKfvncuyRpQnKctZ5JDZT2vFqaV8N3B1aAVUEtKke3vjigmalVmKVqUb0mjGa7AXa68kFYdhyH52l0kko40ZOe7jfTjOvEOp0iDPrQ8JPB0GkugTu0fdalymXAlGwcrp3MDEMp76cgkr2rFdxw8RYsgT8HgdU9GBccxN4tHV9M4a9H3T2P6FTFHO8JpgkDTolYpSvK5OPiE8GWn8cmmZk3TsFBg5recAO6bIbX5WdDAYzBNwetIFqojs3SOTpSeHVAysUciHeaLRrGdV4mDLo79UHIoE8BtGtFCKxInp0203Rm5S1JR5a0a7u8xSxzviE8OvoiTJ23qWelqOQFuWUuVZ7XbqxJH2S8Xc6VoNS57oc6dQUOyZmLUhjsYdbm34Vggt0yFcvyGDtCGvReADFWNPVlOhjxnUpUUVDLPoTGB51gaMFph4nOSfEWLsATz8FSa3pv4TGBsbcEHreBCDSX0uF', 'k': 1},replication successful"
+    "message": "Inserted Hey Jude -> Ulebly5YVDuIya42YWfZcHn7VpKpaf7M2ERPfILnMzmfcaM0KSE3OZcpXap05hjCOfZMkrOWzDL7wItfbY5kbkjiODu50ODlNN1TuZalVD5oVQ9R66U43BWuqUZjRubdVioB08mj0z4GNSabgwgEtnKY33JHtbJ2lkwC6isB429NhtHphNnzLtLTdx33OgIKmtgy9clZehwg7iBGKKCatxB8NG6XLmidsRxYrSfjgyi2JKWZsO0r0aHUmtMcOLHy1bNqGMmNOA1NgisrBvlGEDjAcNWiokuvj2tzVNUBbHDb4vGdAObFzkKPSkEf1SrsaPaz9zO13LjCRvr87cgz0TOnlHloNCqBxSAZtBhXvo0Z3ZFauvCatEr8UBlwzkESgMFEJ6g2vnnrUDp5ChFfwtxUElABNQaQtsXDlPBKXBmorgooZvQtQz9LOXupIqoPcbOlDhrSW64hGCNihOYKddy89SS9qNnHlRi8Ib3KKhMyaqTxD8uwUhUy10BMKRztDW2O,replication successful"
 }
 Querying: key=Hey Jude on node 9 (port 5009)
 {
     "status": "success",
     "value": {
-        "value": "zuqRrSvAQ1jDQxbxT6eieB2wA5EYAp9GhQ1yY8wVbTxHh4Wqznox9AzKKfvncuyRpQnKctZ5JDZT2vFqaV8N3B1aAVUEtKke3vjigmalVmKVqUb0mjGa7AXa68kFYdhyH52l0kko40ZOe7jfTjOvEOp0iDPrQ8JPB0GkugTu0fdalymXAlGwcrp3MDEMp76cgkr2rFdxw8RYsgT8HgdU9GBccxN4tHV9M4a9H3T2P6FTFHO8JpgkDTolYpSvK5OPiE8GWn8cmmZk3TsFBg5recAO6bIbX5WdDAYzBNwetIFqojs3SOTpSeHVAysUciHeaLRrGdV4mDLo79UHIoE8BtGtFCKxInp0203Rm5S1JR5a0a7u8xSxzviE8OvoiTJ23qWelqOQFuWUuVZ7XbqxJH2S8Xc6VoNS57oc6dQUOyZmLUhjsYdbm34Vggt0yFcvyGDtCGvReADFWNPVlOhjxnUpUUVDLPoTGB51gaMFph4nSa3pv4TGBsbcOSfEWLsATz8FEHreBCDSX0uF",
+        "value": "Ulebly5YVDuIya42YWfZcHn7VpKpaf7M2ERPfILnMzmfcaM0KSE3OZcpXap05hjCOfZMkrOWzDL7wItfbY5kbkjiODu50ODlNN1TuZalVD5oVQ9R66U43BWuqUZjRubdVioB08mj0z4GNSabgwgEtnKY33JHtbJ2lkwC6isB429NhtHphNnzLtLTdx33OgIKmtgy9clZehwg7iBGKKCatxB8NG6XLmidsRxYrSfjgyi2JKWZsO0r0aHUmtMcOLHy1bNqGMmNOA1NgisrBvlGEDjAcNWiokuvj2tzVNUBbHDb4vGdAObFzkKPSkEf1SrsaPaz9zO13LjCRvr87cgz0TOnlHloNCqBxSAZtBhXvo0Z3ZFauvCatEr8UBlwzkESgMFEJ6g2vnnrUDp5ChFfwtxUElABNQaQtsXDlPBKXBmorgooZvQtQz9LOXupIqoPcbOlDhrSW64hGCNihOYKddy89SS9qNnHlRi8Ib3KKhMyaqTxD8uwUhUy10BMKRztDW2O5QSEPLJ2m75T",
         "k": 3
     }
 }
@@ -630,7 +627,7 @@ Querying: key=Hey Jude on node 9 (port 5009)
 {
     "status": "success",
     "value": {
-        "value": "zuqRrSvAQ1jDQxbxT6eieB2wA5EYAp9GhQ1yY8wVbTxHh4Wqznox9AzKKfvncuyRpQnKctZ5JDZT2vFqaV8N3B1aAVUEtKke3vjigmalVmKVqUb0mjGa7AXa68kFYdhyH52l0kko40ZOe7jfTjOvEOp0iDPrQ8JPB0GkugTu0fdalymXAlGwcrp3MDEMp76cgkr2rFdxw8RYsgT8HgdU9GBccxN4tHV9M4a9H3T2P6FTFHO8JpgkDTolYpSvK5OPiE8GWn8cmmZk3TsFBg5recAO6bIbX5WdDAYzBNwetIFqojs3SOTpSeHVAysUciHeaLRrGdV4mDLo79UHIoE8BtGtFCKxInp0203Rm5S1JR5a0a7u8xSxzviE8OvoiTJ23qWelqOQFuWUuVZ7XbqxJH2S8Xc6VoNS57oc6dQUOyZmLUhjsYdbm34Vggt0yFcvyGDtCGvReADFWNPVlOhjxnUpUUVDLPoTGB51gaMFph4nSa3pv4TGBsbcOSfEWLsATz8FEHreBCDSX0uFoPWBeVRwGPPx",
+        "value": "Ulebly5YVDuIya42YWfZcHn7VpKpaf7M2ERPfILnMzmfcaM0KSE3OZcpXap05hjCOfZMkrOWzDL7wItfbY5kbkjiODu50ODlNN1TuZalVD5oVQ9R66U43BWuqUZjRubdVioB08mj0z4GNSabgwgEtnKY33JHtbJ2lkwC6isB429NhtHphNnzLtLTdx33OgIKmtgy9clZehwg7iBGKKCatxB8NG6XLmidsRxYrSfjgyi2JKWZsO0r0aHUmtMcOLHy1bNqGMmNOA1NgisrBvlGEDjAcNWiokuvj2tzVNUBbHDb4vGdAObFzkKPSkEf1SrsaPaz9zO13LjCRvr87cgz0TOnlHloNCqBxSAZtBhXvo0Z3ZFauvCatEr8UBlwzkESgMFEJ6g2vnnrUDp5ChFfwtxUElABNQaQtsXDlPBKXBmorgooZvQtQz9LOXupIqoPcbOlDhrSW64hGCNihOYKddy89SS9qNnHlRi8Ib3KKhMyaqTxD8uwUhUy10BMKRztDW2O5QSEPLJ2m75T",
         "k": 3
     }
 }

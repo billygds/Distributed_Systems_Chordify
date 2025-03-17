@@ -1,8 +1,7 @@
-#!/bin/bash
-
 #--------Usage---------
 #chmod +x insertExperiment.sh
-#./insertExperiment.sh
+#dos2unix insertExperiment.sh
+#bash insertExperiment.sh
 
 # Configuration
 IP="127.0.0.1"

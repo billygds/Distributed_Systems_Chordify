@@ -1,10 +1,9 @@
 k,consistency,time
 Running requests with k=3 and consistency=linearizability
-Request execution time for k=3, consistency=linearizability: 8.636736329 seconds
-3,linearizability,8.636736329
+Request execution time for k=3, consistency=linearizability: 7.620501433 seconds
+3,linearizability,7.620501433
 Experiment with k=3 and consistency=linearizability completed.
 Running requests with k=3 and consistency=eventual
-Request execution time for k=3, consistency=eventual: 8.484456065 seconds
-3,eventual,8.484456065
+Request execution time for k=3, consistency=eventual: 6.891539143 seconds
+3,eventual,6.891539143
 Experiment with k=3 and consistency=eventual completed.
-All experiments completed. Nodes have been shut down.
