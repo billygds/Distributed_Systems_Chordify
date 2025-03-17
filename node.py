@@ -265,6 +265,13 @@ class ChordNode:
                 return self.query_all({})
         elif command == "query_all":
             return self.query_all(value)
+        
+        elif command == "overlay":
+            if value == []:
+                return self.overlay([])
+            else:
+                return self.overlay(value)
+        
         elif command == "delete":
             if request.get("is_already_hashed") and request.get("k"):
                 return self.delete(key,True,request.get('k'))
@@ -500,6 +507,25 @@ class ChordNode:
         })
         #else:
         #    return {"status":"success","value":list(self.data_store.values())}
+
+    def overlay(self,nodes_info):
+        """ Τυπώνει ολα τα δεδομενα των κομβων """
+        #If this is the case,we are on the correct node
+        #Either this node is the first with ID >= key,or this is the one with the smallest ID
+        if not nodes_info:
+            nodes_info = []
+        nodes_info.append(self.node_id)
+        
+
+        if int(self.successor['node_id']) in nodes_info and nodes_info:
+            print(f"[NODE {self.node_id}] Completed node info collection.")
+            return {"status":"success","nodes_info":nodes_info}\
+            
+        print(f"[NODE {self.node_id}] Forwarding node info request to {self.successor}")
+        return self.send_request(self.successor["ip"], self.successor["port"], {
+            "command":"overlay",
+            "value": nodes_info
+        })
 
     def delete(self, key,is_already_hashed=False,k=None):
         """ Διαγράφει ένα τραγούδι από το DHT """
