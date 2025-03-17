@@ -9,6 +9,7 @@ import sys
 import signal
 import random
 import string
+import threading
 
 #Random string generator for value
 def random_string_value(length=12):
@@ -136,6 +137,9 @@ class ChordNode:
                 #Λαμβανουμε το k replication factor απο το bootstrap
                 self.k = self.send_request(bootstrap_ip,bootstrap_port,{"command":"get_k"})['k']
 
+                #Handle the changes of data correctness with the joining node
+                self.send_request(self.successor['ip'],self.successor['port'],{"command":"manage_join_data"})
+
             else:
                 print(f"[ERROR] Could not find successor: {neighbours_response['message']}")
 
@@ -242,9 +246,17 @@ class ChordNode:
                     return self.insert(key, random_string_value(),False,k)
                 else:
                     return self.insert(key, random_string_value())
-                
+        if command == "force_insert":
+            return self.force_insert(key,value)
+        
         if command == 'handle_departing_data':
-            return self.handle_departing_data(key,value,request.get('k'))
+            return self.handle_departing_data(key,value,k)
+        
+        if command == 'manage_join_data':
+            return self.manage_join_data()
+    
+        if command == 'handle_join_data':
+            return self.handle_join_data(key,value,k)
 
         elif command == "query":
             if key !='*':
@@ -375,6 +387,10 @@ class ChordNode:
                 forward_insert_successor['is_already_hashed'] = True
             print(forward_insert_successor)
             return self.send_request(self.successor['ip'],self.successor['port'],forward_insert_successor)
+        
+    def force_insert(self,key,value):
+        self.data_store[key] = value 
+        return
 
     def handle_departing_data(self,key,value,k):
         if k == 1:
@@ -390,6 +406,48 @@ class ChordNode:
                 'value': value,
                 'k': k - 1
             })
+        
+    def manage_join_data(self):
+        time.sleep(8)
+        for key, value in self.data_store.items():
+                #If the joining node is now the first node responsible for this data
+                #we must add it to its data and then decrement k values of
+                #following nodes and delete it from last node
+                print(self.predecessor)
+                #If predecessor is now valid or this node holds overflow keys
+                if (self.predecessor['node_id'] >= key or key > self.node_id) and value['k'] == self.k:
+                    #handles adding the data to joining node
+                    print('sending force insert')
+                    print(self.predecessor)
+                    self.send_request(self.predecessor['ip'],self.predecessor['port'],{
+                        "command" : 'force_insert',
+                        'key': key,
+                        'value': value
+                    })
+
+                    #handles 2nd and 3rd objective
+                    self.send_request(self.ip,self.port,{
+                        "command" : 'handle_join_data',
+                        'key': key,
+                        'value': value ['value'],
+                        'k': value['k']
+                    })
+        return
+        
+    def handle_join_data(self,key,value,k):
+        if k == 1:
+            #the node that needs to have the data deleted is reached
+            del self.data_store[key]
+        else:
+            #decrement k value of this data and forward to successor
+            self.data_store[key]['k'] = self.data_store[key]['k'] - 1
+            return self.send_request(self.successor['ip'],self.successor['port'],{
+                'command': 'handle_join_data',
+                'key': key,
+                'value': value,
+                'k': k - 1
+            })
+        return
 
     def query(self, key):
         """ Αναζητά ένα τραγούδι στο DHT """
