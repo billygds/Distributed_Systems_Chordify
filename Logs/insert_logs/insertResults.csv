@@ -1,25 +1,25 @@
 k,consistency,time
 Running inserts with k=1 and consistency=linearizability
-Write throughput for k=1 and consistency=linearizability: 7.344104257 seconds
-1,linearizability,7.344104257
+Write throughput for k=1 and consistency=linearizability: .00996788828800000000 seconds/operation
+1,linearizability,.00996788828800000000
 Experiment with k=1 and consistency=linearizability completed.
 Running inserts with k=1 and consistency=eventual
-Write throughput for k=1 and consistency=eventual: 7.866619555 seconds
-1,eventual,7.866619555
+Write throughput for k=1 and consistency=eventual: .02338002728200000000 seconds/operation
+1,eventual,.02338002728200000000
 Experiment with k=1 and consistency=eventual completed.
 Running inserts with k=3 and consistency=linearizability
-Write throughput for k=3 and consistency=linearizability: 6.345298827 seconds
-3,linearizability,6.345298827
+Write throughput for k=3 and consistency=linearizability: .01099876069200000000 seconds/operation
+3,linearizability,.01099876069200000000
 Experiment with k=3 and consistency=linearizability completed.
 Running inserts with k=3 and consistency=eventual
-Write throughput for k=3 and consistency=eventual: 7.502946208 seconds
-3,eventual,7.502946208
+Write throughput for k=3 and consistency=eventual: .01560272523400000000 seconds/operation
+3,eventual,.01560272523400000000
 Experiment with k=3 and consistency=eventual completed.
 Running inserts with k=5 and consistency=linearizability
-Write throughput for k=5 and consistency=linearizability: 7.500535045 seconds
-5,linearizability,7.500535045
+Write throughput for k=5 and consistency=linearizability: .01675704201200000000 seconds/operation
+5,linearizability,.01675704201200000000
 Experiment with k=5 and consistency=linearizability completed.
 Running inserts with k=5 and consistency=eventual
-Write throughput for k=5 and consistency=eventual: 7.580167869 seconds
-5,eventual,7.580167869
+Write throughput for k=5 and consistency=eventual: .01623045471600000000 seconds/operation
+5,eventual,.01623045471600000000
 Experiment with k=5 and consistency=eventual completed.

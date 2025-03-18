@@ -16,900 +16,900 @@
 [NODE 1334330932393287978545097924263031908973855107846] Update successor response: {'status': 'success', 'message': 'Successor updated'}
 3
 eventual
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59006)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33486)
 [DEBUG] Received request: {'command': 'find_neighbours', 'node_id': 92721375935003651661177999486775259999124498565}
 [DEBUG] find_successor() called for node_id: 92721375935003651661177999486775259999124498565
 [DEBUG] Returning smallest node as successor: {'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59020)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33498)
 [DEBUG] Received request: {'command': 'update_successor', 'node_id': 92721375935003651661177999486775259999124498565, 'ip': '127.0.0.1', 'port': 5006}
 [NODE 1334330932393287978545097924263031908973855107846] Successor updated: {'node_id': 92721375935003651661177999486775259999124498565, 'ip': '127.0.0.1', 'port': 5006}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 42950)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33500)
 [DEBUG] Received request: {'command': 'update_predecessor', 'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
 [NODE 1334330932393287978545097924263031908973855107846] Predecessor updated: {'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 42966)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33516)
 [DEBUG] Received request: {'command': 'manage_join_data'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 42968)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 50128)
 [DEBUG] Received request: {'command': 'find_neighbours', 'node_id': 342694636883129667016187263873021694770474360405}
 [DEBUG] find_successor() called for node_id: 342694636883129667016187263873021694770474360405
 [DEBUG] Forwarding find_successor request to {'node_id': 92721375935003651661177999486775259999124498565, 'ip': '127.0.0.1', 'port': 5006}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 42976)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 50140)
 [DEBUG] Received request: {'command': 'find_neighbours', 'node_id': 386338222825788925027014385113142312278570765577}
 [DEBUG] find_successor() called for node_id: 386338222825788925027014385113142312278570765577
 [DEBUG] Forwarding find_successor request to {'node_id': 92721375935003651661177999486775259999124498565, 'ip': '127.0.0.1', 'port': 5006}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 42986)
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59698)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59714)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59722)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 50152)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 50166)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 50180)
 [DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59728)
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59732)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'vT9dAJPelivA'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59744)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59752)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59760)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 50190)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 50196)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59762)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'uLjMOj0EKeEP'}
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 50198)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 50202)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 50210)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'A2yna0E63yG0'}
 Starting Insert
 Hashing
 None
 [NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
 [NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59778)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59794)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59806)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59820)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59828)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59838)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59846)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59848)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59862)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59876)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59892)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59898)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59910)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59914)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59928)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59944)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59958)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59962)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59968)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59980)
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59984)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59990)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60002)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60012)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60018)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60022)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60038)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60044)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'Gvp8ERBfCDsk'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 50220)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'RHVpwYP4tT8i'}
 Starting Insert
 Hashing
 None
 [NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
 [NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60050)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'H5e5sLXWVbMr'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60066)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57192)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57194)
 [DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60070)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'WO9SlQsIsaL3'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60080)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57198)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60086)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57214)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60096)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'xFjwlNtJf5C3'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60106)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57224)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60114)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60126)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60136)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60144)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57232)
 [DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60146)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57244)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60158)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57250)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60164)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60180)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60196)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57262)
 [DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60208)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57272)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60216)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57278)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60224)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57292)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60240)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60244)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'cAfjkl4mtQqe'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60260)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'qssnTiGNIoAU'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60274)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60280)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60296)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57308)
 [DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60298)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57324)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60302)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57326)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60306)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57334)
 [DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60310)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57350)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60322)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57356)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60328)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'MFYOSsdYJzr4'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60338)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57370)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60346)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57374)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57386)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57388)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57392)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57400)
 [DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60360)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57402)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57414)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57418)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57428)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57436)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'as8jWvwyKiep'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57452)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57466)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': '0KpuxjpJE8kR'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57482)
 [DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60362)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57494)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57500)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'SZWzRgw2cV79'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57508)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'q8A8Oeq934ku'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57518)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57520)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57526)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57542)
 [DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60376)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57556)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60380)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'R9oUkS0iQAWz'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57572)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57574)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57582)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57594)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57596)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57598)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57612)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57622)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57630)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57644)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'pDcDwdumXY0q'}
 Starting Insert
 Hashing
 None
 [NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
 [NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60382)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'mOl1v7Ewle34'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57652)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'nYVNP0j8QxQK'}
 Starting Insert
 Hashing
 None
 [NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60390)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60398)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'DRrCJya0idDB'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60406)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': '3UqP2m2d5Kde'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60420)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60428)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'SKJePp35TPZi'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60442)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60450)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': '0YSKtKsnNGWa'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60464)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60478)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'srAIUu2A2dux'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60482)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60484)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60492)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60498)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60504)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60518)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60524)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60528)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60538)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': '7g4Jm5Ut4FeH'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60546)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60554)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60564)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60568)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60576)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60592)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'wpv0Jf2oGqt0'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60600)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60602)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'Wgod1jGiYOSW'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60604)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60612)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60618)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60628)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60630)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60646)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60654)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60666)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60672)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60686)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60702)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60704)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'NpQ0EiEAGvGF'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60706)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'JEhWMhVBtzuF'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60710)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60720)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60730)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'kaLPTDwfAYTO'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60740)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60750)
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60752)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60758)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60766)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60782)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60792)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60794)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60806)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': '9jSfQEoWccYO'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60822)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60836)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60844)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': '5UCOG7eV5pHp'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60860)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'WZ48M2qVCzWY'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60874)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'woI4ewGQyM7Q'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60882)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60890)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'MKPSPFHLmHF1'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60898)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'Uzb6XlGXNpI0'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60902)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'bgUiikLBOd85'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60912)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': '9KW7VQdMakmD'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60914)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60928)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60932)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'wYhEg89taxt7'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60934)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60940)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60946)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60950)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60954)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60966)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60980)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'vbrHUrPwLmB2'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60992)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'Prz6GxY0eFeP'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 60994)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'Z7I9uD1sZ4Il'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 32778)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 32788)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 32792)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 32794)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 32796)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 32812)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'YpKHoqitivFN'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 32814)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 32816)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 32824)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 32836)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'qdKu41WTDl0T'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 32844)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 32860)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 32872)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': '81CbIqDB8vjY'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 32884)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 32894)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 32896)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': '0GZk8Dq0iuVw'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 32904)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 32920)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'kTTKHyniHyT3'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 32930)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'QBK8pKYbMLZw'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 32932)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 32948)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'IKV4rzO7B0Dg'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 32952)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 32958)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 32966)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'pUNwxlSKp601'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 32968)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 32970)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 32986)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 32990)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 32996)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33008)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33012)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33020)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33034)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33036)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33042)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33056)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': '5MyUMqkCx7gy'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33062)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33068)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33072)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33074)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33090)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33104)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33118)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33122)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33132)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'SB3rmhwjboXl'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33142)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'hOdkVwEhd45E'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33156)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'ovlmx55vHrqm'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33172)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33178)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33188)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'mhdoayMoDrZB'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33194)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33196)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33200)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33216)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33226)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33232)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'ap2d3LuUKTSI'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33240)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33254)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33270)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33274)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'ToxbQ6Q9pD25'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33276)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33290)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33298)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33308)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33312)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33328)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33340)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33354)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33356)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33372)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33374)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33380)
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33388)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'UVC3pOUzaWMb'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33396)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57666)
 [DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
 [NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33408)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57680)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33420)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57682)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33430)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57696)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57708)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57724)
 [DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33440)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33454)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33462)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57730)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33476)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33490)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57732)
 [DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33496)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33508)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'lMDsF0yNgEMT'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57740)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'zm01ZwfP4ccT'}
 Starting Insert
 Hashing
 None
 [NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
 [NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33524)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'l9e3gWIRWCSA'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33526)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57752)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33532)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': '6TeqZbvlOkSE'}
-Starting Insert
-Hashing
-None
-[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
-[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33542)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57756)
 [DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33556)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57758)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57760)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57764)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33572)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'zy9xHr4obS0y'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57770)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'eepu7UW6hMH7'}
 Starting Insert
 Hashing
 None
 [NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
 [NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33576)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33582)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33590)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33600)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'GWHd2RGTMLkv'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57782)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'WZ9hu9bT8RA2'}
 Starting Insert
 Hashing
 None
 [NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
 [NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33614)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33630)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33638)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33640)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33656)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33668)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57790)
 [DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33682)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33688)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33700)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33704)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33716)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'CTxwmHqbnv0d'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57804)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'VosbsnQLWWem'}
 Starting Insert
 Hashing
 None
 [NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
 [NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33726)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'JRLgVr4VVFhD'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57812)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'p9D84lRJPwMb'}
 Starting Insert
 Hashing
 None
 [NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
 [NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33742)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33744)
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33748)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33756)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33766)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33782)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33792)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33794)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33810)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33814)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33824)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'jTBIBtpTlPjV'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57816)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'nnKfHexTwlTm'}
 Starting Insert
 Hashing
 None
 [NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
 [NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33828)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33830)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33842)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33844)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33852)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57818)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'wAsfcvc4iStA'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57826)
 [DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33862)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57840)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57850)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'pBMmWfpawIB7'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33874)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57862)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57864)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57872)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57874)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57890)
 [DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33882)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57894)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57904)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33888)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57916)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33902)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'goIukHDlcmhA'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57930)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57946)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'Y5mfPfqHSkTP'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57956)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57964)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57970)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57980)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57982)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57996)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57998)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'Kr0jmNiXiYCp'}
 Starting Insert
 Hashing
 None
 [NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
 [NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33912)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58006)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33926)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'QJdjkfWz8WEL'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58008)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'z2lLok8deXvM'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58010)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58022)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58026)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58032)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58046)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58056)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58062)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58068)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58084)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58090)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'bQnLvLSkOVOn'}
 Starting Insert
 Hashing
 None
 [NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
 [NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33942)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33956)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33968)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33978)
-[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'eTguK0zcjNS3'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58102)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'ImgCLpOizKGg'}
 Starting Insert
 Hashing
 None
 [NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
 [NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33994)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58104)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 's4LmhPANDktM'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58120)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58130)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58146)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58160)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58162)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58176)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58178)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58184)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58198)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58210)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58212)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'OaV8sBt8LBPx'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58214)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58224)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58230)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58232)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'bMNq5Rj5O3ea'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58248)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': '5xwtYa3pQs5V'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58258)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58270)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58278)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'D47PlbqeMO0w'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'vhvTqmAsFmIa'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58282)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'j49W9IcpbR7I'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58298)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'vsrLYutFR2AP'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58314)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'ThcygZUfpz2M'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58324)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58328)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58332)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58340)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58348)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'va1a4aQGl2Bz'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58352)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'C7v0fwwGjEpf'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58360)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58364)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58374)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58390)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58396)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'kAqUpcriSC2f'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58412)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58428)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': '0hYB8foQS2yi'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58444)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58448)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58462)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58472)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58484)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'RnY2h5HEfXio'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58492)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58504)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58516)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58528)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58532)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'sRyJBrwXvE1z'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58536)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'v75guOm6udpH'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58544)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58546)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58562)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': '3WBgsSqv9OHr'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58576)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58586)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'YU65cqHvmLHV'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58592)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'VRnH7h8vJgAE'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58596)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58612)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58628)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'FnkaNOgxjVsp'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58642)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58656)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58664)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58668)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'zJLpBVvi8Ylk'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58672)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58680)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58682)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58692)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58694)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58700)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58702)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58710)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58716)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58718)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58730)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58740)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58748)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'NjE1LGbwuH0l'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58764)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58780)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58790)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58806)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58818)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58822)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58832)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'pJLqAqSZ1xMh'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58838)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58840)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': '2tXitzuGqts5'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58848)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58864)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'FRZjasv6k5QK'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58876)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58886)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'Mn3c5Z0s1KtM'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58902)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58904)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58912)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58926)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58932)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58940)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58944)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'BybI1U1pla1Z'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58960)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58976)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58980)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58988)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'geVNuxF59Kdp'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59004)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59020)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59028)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59030)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59040)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59054)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59064)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59068)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59084)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59100)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59106)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59120)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'JJKILcCo10Gf'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59136)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59138)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59148)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59162)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59166)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59178)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59192)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59202)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'YI0OAsmwUFUm'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59204)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': '8eu1i24hFmt9'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59222)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59220)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': '8CmCM5no9R2Y'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59228)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59232)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59242)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59248)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': '4orSpeeEG81s'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59256)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'Y3ysm9xT6qv0'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59270)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59272)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59282)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59294)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59306)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59318)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59330)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59342)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59356)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59350)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59368)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59380)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59384)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59398)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59412)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59418)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'YTn8cNaxmwAO'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59422)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59432)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59448)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'xnbjGu17rzkp'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59452)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59458)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59468)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59480)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'OjYe2UDfr7Sb'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59494)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59506)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59518)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59520)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59526)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59532)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59542)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59558)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59574)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59588)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59594)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59596)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59610)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59624)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59632)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59636)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Like a Rolling Stone', 'value': 'uVUgbdUaDdCR'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59638)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'wjO3ZNofgagP'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59646)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59658)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59662)
+[DEBUG] Received request: {'command': 'insert', 'key': 'Hey Jude', 'value': 'zBz1Hg6DddDD'}
+Starting Insert
+Hashing
+None
+[NODE 1334330932393287978545097924263031908973855107846] Forwarding replication to 127.0.0.1:5006 (k=2)
+[NODE 1334330932393287978545097924263031908973855107846] Lazy Insertion Completed
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 59676)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
 {
     "status": "success",
     "value": {
-        "value": "Ulebly5YVDuIya42YWfZcHn7VpKpaf7M2ERPfILnMzmfcaM0KSE3OZcpXap05hjCOfZMkrOWzDL7wItfbY5kbkjiODu50ODlNN1TuZalVD5oVQ9R66U43BWuqUZjRubdVioB08mj0z4GNSabgwgEtnKY33JHtbJ2lkwC6isB429NhtHphNnzLtLTdx33OgIKmtgy9clZehwg7iBGKKCatxB8NG6XLmidsRxYrSfjgyi2JKWZsO0r0aHUmtMcOLHy1bNqGMmNOA1NgisrBvlGEDjAcNWiokuvj2tzVNUBbHDb4vGdAObFzkKPSkEf1SrsaPaz9zO13LjCRvr87cgz0TOnlHloNCqBxSAZtBhXvo0Z3ZFauvCatEr8UBlwzkESgMFEJ6g2vnnrUDp5ChFfwtxUElABNQaQtsXDlPBKXBmorgooZvQtQz9LOXupIqoPcbOlDhrSW64hGCNihOYKddy89SS9qNnHlRi8Ib3KKhMyaqTxD8uwUhUy",
+        "value": "zvT2qu7Xr7Gl4a5HXrhmSPgyOjXBzgDtg004CPSasnj0boaCYi7SOjckyfoEkZUjLCwxR8e56yJOYhwvHqlg9ltum8lVsa0kjoFpMDT5IarrM2q2H9vFMrhOxng0XagOpJSvUNSDUvZZzyqcm1YJb32NA3oYebo3dTlMV8BRWbDDufX7OCrf0bZB2P2OFd8jhxuY0zPoDrpmfwxWV2xY2E3LYD2vmMO9onz4b734BE9jicApRCFsQL0lpvzGXjDC1HJe94L6SqhWmppu1UEZZvoyfZ7g4T9C9q9pCuF2ZHydT25e1Q1H2pomkjMcEi3s6i5XsaZpbdcgEtbaaeGlgL1vwCUKnDncj0PdD9HIONOxod0SOICal7jGNBUjHmExggzhnoJ1eIdPvToSEYhFv4OpOPcau7bzQDHqb6gPTW7rdR08OLF0bL22kj65uXEUkIAooFXKCurWSkWTEiBKhkv6Ynb2G9pADej50KdtAWX2OV0eEyFvwyZd",
         "k": 3
     }
 }
@@ -919,7 +919,7 @@ Querying: key=Hey Jude on node 5 (port 5005)
 {
     "status": "success",
     "value": {
-        "value": "Ulebly5YVDuIya42YWfZcHn7VpKpaf7M2ERPfILnMzmfcaM0KSE3OZcpXap05hjCOfZMkrOWzDL7wItfbY5kbkjiODu50ODlNN1TuZalVD5oVQ9R66U43BWuqUZjRubdVioB08mj0z4GNSabgwgEtnKY33JHtbJ2lkwC6isB429NhtHphNnzLtLTdx33OgIKmtgy9clZehwg7iBGKKCatxB8NG6XLmidsRxYrSfjgyi2JKWZsO0r0aHUmtMcOLHy1bNqGMmNOA1NgisrBvlGEDjAcNWiokuvj2tzVNUBbHDb4vGdAObFzkKPSkEf1SrsaPaz9zO13LjCRvr87cgz0TOnlHloNCqBxSAZtBhXvo0Z3ZFauvCatEr8UBlwzkESgMFEJ6g2vnnrUDp5ChFfwtxUElABNQaQtsXDlPBKXBmorgooZvQtQz9LOXupIqoPcbOlDhrSW64hGCNihOYKddy89SS9qNnHlRi8Ib3KKhMyaqTxD8uwUhUy10BMKRztDW2O5QSEPLJ2m75T",
+        "value": "zvT2qu7Xr7Gl4a5HXrhmSPgyOjXBzgDtg004CPSasnj0boaCYi7SOjckyfoEkZUjLCwxR8e56yJOYhwvHqlg9ltum8lVsa0kjoFpMDT5IarrM2q2H9vFMrhOxng0XagOpJSvUNSDUvZZzyqcm1YJb32NA3oYebo3dTlMV8BRWbDDufX7OCrf0bZB2P2OFd8jhxuY0zPoDrpmfwxWV2xY2E3LYD2vmMO9onz4b734BE9jicApRCFsQL0lpvzGXjDC1HJe94L6SqhWmppu1UEZZvoyfZ7g4T9C9q9pCuF2ZHydT25e1Q1H2pomkjMcEi3s6i5XsaZpbdcgEtbaaeGlgL1vwCUKnDncj0PdD9HIONOxod0SOICal7jGNBUjHmExggzhnoJ1eIdPvToSEYhFv4OpOPcau7bzQDHqb6gPTW7rdR08OLF0bL22kj65uXEUkIAooFXKCurWSkWTEiBKhkv6Ynb2G9pADej50KdtAWX2OV0eEyFvwyZdZ5GsPAPf9afrVv9MvPFtXB2D",
         "k": 3
     }
 }
@@ -927,7 +927,7 @@ Querying: key=Like a Rolling Stone on node 5 (port 5005)
 {
     "status": "success",
     "value": {
-        "value": "kR4tZq2XUQ2w1ZqJZuchtwNlXZCNr3Zgb4daabMppsnbnHypxPQ1IoOHZYrZJoHVbQphePHqh9uPGWnnvjbx4dHO0tEIUq53b7pcO70DdyVTgtvqj1XXt1GhJQnJeI16KGSjV2NJ9BjtG886dGUkCBo1QPerjbYOU8bY88eOlxbdNppsjFgKvez7M9aOmfzzxbs4KxeoHwtrawDy4S00q5dnwkM34KsvRuZ1",
+        "value": "S3Ufb2xedh3rUNVksClgdC1qwKqysrMHJ0e0fGpQYE73wtBYAwGyA70JoFHUG7u4CG7MvUoymcqgVlvUxyjZFF5aZfRfhhtwS9bxCavW3p0xfjF9SVaM23RIgYewOjlLrQPrXOIYgzf0Pajn83H0qpkuHAbPvmnzs21LY54EwXk8Z2PZYopQ53D4oXCaz5s0Vo1yZ2PcLqFZMOkA7EWpdmvSkDCMVljT9WI5",
         "k": 3
     }
 }
@@ -937,7 +937,7 @@ Querying: key=Hey Jude on node 5 (port 5005)
 {
     "status": "success",
     "value": {
-        "value": "Ulebly5YVDuIya42YWfZcHn7VpKpaf7M2ERPfILnMzmfcaM0KSE3OZcpXap05hjCOfZMkrOWzDL7wItfbY5kbkjiODu50ODlNN1TuZalVD5oVQ9R66U43BWuqUZjRubdVioB08mj0z4GNSabgwgEtnKY33JHtbJ2lkwC6isB429NhtHphNnzLtLTdx33OgIKmtgy9clZehwg7iBGKKCatxB8NG6XLmidsRxYrSfjgyi2JKWZsO0r0aHUmtMcOLHy1bNqGMmNOA1NgisrBvlGEDjAcNWiokuvj2tzVNUBbHDb4vGdAObFzkKPSkEf1SrsaPaz9zO13LjCRvr87cgz0TOnlHloNCqBxSAZtBhXvo0Z3ZFauvCatEr8UBlwzkESgMFEJ6g2vnnrUDp5ChFfwtxUElABNQaQtsXDlPBKXBmorgooZvQtQz9LOXupIqoPcbOlDhrSW64hGCNihOYKddy89SS9qNnHlRi8Ib3KKhMyaqTxD8uwUhUy10BMKRztDW2O5QSEPLJ2m75TEjxGe1iSgT4gdnx6E6D1FrHT",
+        "value": "zvT2qu7Xr7Gl4a5HXrhmSPgyOjXBzgDtg004CPSasnj0boaCYi7SOjckyfoEkZUjLCwxR8e56yJOYhwvHqlg9ltum8lVsa0kjoFpMDT5IarrM2q2H9vFMrhOxng0XagOpJSvUNSDUvZZzyqcm1YJb32NA3oYebo3dTlMV8BRWbDDufX7OCrf0bZB2P2OFd8jhxuY0zPoDrpmfwxWV2xY2E3LYD2vmMO9onz4b734BE9jicApRCFsQL0lpvzGXjDC1HJe94L6SqhWmppu1UEZZvoyfZ7g4T9C9q9pCuF2ZHydT25e1Q1H2pomkjMcEi3s6i5XsaZpbdcgEtbaaeGlgL1vwCUKnDncj0PdD9HIONOxod0SOICal7jGNBUjHmExggzhnoJ1eIdPvToSEYhFv4OpOPcau7bzQDHqb6gPTW7rdR08OLF0bL22kj65uXEUkIAooFXKCurWSkWTEiBKhkv6Ynb2G9pADej50KdtAWX2OV0eEyFvwyZdZ5GsPAPf9afrVv9MvPFtXB2DPrwnymf0Az0mxmJSOfi7bLSq",
         "k": 3
     }
 }

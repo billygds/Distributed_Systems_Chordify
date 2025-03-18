@@ -16,171 +16,173 @@
 [NODE 1334330932393287978545097924263031908973855107846] Update successor response: {'status': 'success', 'message': 'Successor updated'}
 5
 eventual
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 39824)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33916)
 [DEBUG] Received request: {'command': 'find_neighbours', 'node_id': 92721375935003651661177999486775259999124498565}
 [DEBUG] find_successor() called for node_id: 92721375935003651661177999486775259999124498565
 [DEBUG] Returning smallest node as successor: {'node_id': 135117988181535955003563159026686220824819050071, 'ip': '127.0.0.1', 'port': 5004}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 39834)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 33920)
 [DEBUG] Received request: {'command': 'update_successor', 'node_id': 92721375935003651661177999486775259999124498565, 'ip': '127.0.0.1', 'port': 5006}
 [NODE 1334330932393287978545097924263031908973855107846] Successor updated: {'node_id': 92721375935003651661177999486775259999124498565, 'ip': '127.0.0.1', 'port': 5006}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 39840)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 45790)
 [DEBUG] Received request: {'command': 'update_predecessor', 'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
 [NODE 1334330932393287978545097924263031908973855107846] Predecessor updated: {'node_id': 1106009239349327606828036238693922505549953820430, 'ip': '127.0.0.1', 'port': 5007}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 39850)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 45798)
 [DEBUG] Received request: {'command': 'manage_join_data'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 39860)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 45810)
 [DEBUG] Received request: {'command': 'find_neighbours', 'node_id': 342694636883129667016187263873021694770474360405}
 [DEBUG] find_successor() called for node_id: 342694636883129667016187263873021694770474360405
 [DEBUG] Forwarding find_successor request to {'node_id': 92721375935003651661177999486775259999124498565, 'ip': '127.0.0.1', 'port': 5006}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 39872)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 45820)
 [DEBUG] Received request: {'command': 'find_neighbours', 'node_id': 386338222825788925027014385113142312278570765577}
 [DEBUG] find_successor() called for node_id: 386338222825788925027014385113142312278570765577
 [DEBUG] Forwarding find_successor request to {'node_id': 92721375935003651661177999486775259999124498565, 'ip': '127.0.0.1', 'port': 5006}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 39878)
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58118)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 45836)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57850)
 [DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58126)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57858)
 [DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58142)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57862)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58150)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57874)
 [DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58162)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57876)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58172)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57882)
 [DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58182)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57894)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57908)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57916)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57918)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57924)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57938)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57944)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57954)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57968)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57980)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57986)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 57992)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58006)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58018)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58024)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58032)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58042)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58058)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58064)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58070)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58074)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58082)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58084)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58088)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58098)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58106)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58120)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58134)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58148)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58152)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58154)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58164)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58174)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58186)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
 [NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58194)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58202)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58208)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58210)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
 [NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58214)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58222)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
 [NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58226)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58234)
 [DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
 [NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58236)
 [DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58244)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58254)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58238)
 [DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58240)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58242)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58252)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
 [NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58264)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
 [NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58280)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58288)
 [DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58290)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58298)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58292)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58312)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58306)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58328)
 [DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58310)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58334)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58314)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58322)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58330)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58342)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58356)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58344)
 [DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58350)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
 [NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58358)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58370)
 [DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58384)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58368)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58370)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58376)
 [DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
 [NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58388)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58390)
+[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
 [NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58398)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58406)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58412)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58402)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58416)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
 [NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58424)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58428)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58436)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58434)
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58446)
+[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
+[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58450)
 [DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58440)
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58442)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58454)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58464)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58466)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58480)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58484)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58500)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58512)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58524)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58536)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58552)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58564)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58570)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58586)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58602)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58618)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58628)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58632)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58636)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58642)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58656)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58664)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58668)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58682)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58692)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58700)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 58714)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 41592)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 41604)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 41620)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 41622)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 41626)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 41636)
-[DEBUG] Received request: {'command': 'query', 'key': 'Like a Rolling Stone'}
-[NODE 1334330932393287978545097924263031908973855107846] Connection from ('127.0.0.1', 41648)
-[DEBUG] Received request: {'command': 'query', 'key': 'Hey Jude'}
+{'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
+Querying key: 'Hey Jude'
 {'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
 Querying key: 'Smells Like Teen Spirit'
 {'status': 'error', 'message': 'Invalid response from server', 'response': {'status': 'error', 'message': 'Key not found'}}
